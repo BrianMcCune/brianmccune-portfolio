@@ -8,13 +8,13 @@ import Contact from './Contact'
 function App() {
 
   return (
-    <>
+    <portfolio>
       <Home />
       <About />
       <Skill />
       <Project />
       <Contact />
-    </>
+    </portfolio>
   )
 }
 
