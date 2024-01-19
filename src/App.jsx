@@ -7,14 +7,16 @@ import Contact from './Contact'
 
 function App() {
 
+
   return (
-    <portfolio>
+    <div className='portfolio'>
       <Home />
       <About />
+      <button>click</button>
       <Skill />
       <Project />
       <Contact />
-    </portfolio>
+    </div>
   )
 }
 

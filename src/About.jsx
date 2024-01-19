@@ -1,7 +1,10 @@
 const About = () => {
+
   return ( 
     <div>
-      This is the About section
+      <div className="aboutTitle">Web Developer</div>
+      <div className="aboutIntro">Front End Developer / ReactJS Focused / THREEJS Fan </div>
+      <div className="aboutBio"></div>
     </div>
    );
 }
