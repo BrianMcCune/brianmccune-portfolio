@@ -4,11 +4,6 @@
   padding: 2rem;
 }
 
-html {
-  /* scroll-snap-type: y mandatory; */
-  /* overflow: hidden; */
-}
-
 portfolio {
   display: flex;
   align-items: center;
