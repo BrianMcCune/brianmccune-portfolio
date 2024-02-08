@@ -1,13 +1,20 @@
+html, body, * {
+  margin: 0;
+  padding: 0;
+}
+
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
 }
 
 portfolio {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .portfolio > div {
@@ -18,4 +25,5 @@ portfolio {
 
 .home {
   background-color: cornflowerblue;
+  margin: 0;
 }

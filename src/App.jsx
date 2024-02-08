@@ -6,12 +6,17 @@ import Project from './Project'
 import Contact from './Contact'
 
 function App() {
-  
+
+  function handleOnWheel(e) {
+    e.preventDefault()
+    console.log('this works')
+  }
+
   return (
     <div className='portfolio'>
-      <Home />
+      <Home onClick={(e) => handleOnWheel(e)}/>
       <About />
-      <button>click</button>
+      <button onWheel={(e) => handleOnWheel(e)}>click</button>
       <Skill />
       <Project />
       <Contact />
