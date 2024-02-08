@@ -6,8 +6,7 @@ import Project from './Project'
 import Contact from './Contact'
 
 function App() {
-
-
+  
   return (
     <div className='portfolio'>
       <Home />

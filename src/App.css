@@ -15,3 +15,7 @@ portfolio {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
+
+.home {
+  background-color: cornflowerblue;
+}
