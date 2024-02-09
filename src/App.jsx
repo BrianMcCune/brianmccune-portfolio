@@ -4,47 +4,47 @@ import About from './About'
 import Skill from './Skill'
 import Project from './Project'
 import Contact from './Contact'
-import { useRef, useState, forwardRef } from 'react'
+import { useRef, useEffect, useCallback } from 'react'
+
+
+
+
+
 
 function App() {
 
-  // let counter = 0
-  const [currentWindow, setCurrentWindow] = useState()
+
+  useEffect(() => {
+    window.addEventListener('wheel', (e) => handleOnWheel(e));
+    return () => {
+      window.removeEventListener('wheel', (e) => handleOnWheel(e))
+    }
+  })
   
   const ref = useRef(null)
+  const refone = useRef(null)
 
   function handleScroll() {
-    // myRef.current.scrollIntoView()
-    console.log(myRef.current)
+    // ref.current.scrollIntoView()
+    console.log(ref)
   }
 
-  const handleOnWheel = () => {
-
-    // if (counter === 1) {
-    //   return
-    // } else if (counter === 0) {
-    //   console.log('this')
-    //   counter ++
-    // }
-
-    if (currentWindow) {
-      console.log(window.scrollY, currentWindow)
-      if (window.scrollY > currentWindow) {
-        console.log('down')
-      } if (window.scrollY < currentWindow) {
-        console.log('up')
-      }
-    }
-    setCurrentWindow(window.scrollY)
-    console.log(currentWindow)
+  const handleOnWheel = (e) => {
+      console.log(e.deltaY)
+        if (e.deltaY < 0) {
+          console.log('up')
+          refone.current.scrollIntoView()
+        } if (e.deltaY > 0) {
+          console.log('down')
+          ref.current.scrollIntoView()
+        }
   }
-
 
   return (
     <div className='portfolio'>
-      <Home handleOnWheel={handleOnWheel}/>
+      <Home handleOnWheel={handleOnWheel} ref={refone}/>
       <About ref={ref}/>
-      <button onClick={handleScroll}>click</button>
+      <button onClick={handleScroll()}>click</button>
       <Skill />
       <Project />
       <Contact />
