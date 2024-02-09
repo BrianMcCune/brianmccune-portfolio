@@ -4,30 +4,22 @@ import About from './About'
 import Skill from './Skill'
 import Project from './Project'
 import Contact from './Contact'
-import { useRef, useEffect, useCallback } from 'react'
-
-
-
+import { useRef, useEffect, useCallback, useState } from 'react'
+import { debounce } from 'lodash'
 
 
 
 function App() {
 
-
   useEffect(() => {
-    window.addEventListener('wheel', (e) => handleOnWheel(e));
+    window.addEventListener('wheel', debouncedOnChange);
     return () => {
-      window.removeEventListener('wheel', (e) => handleOnWheel(e))
+      window.removeEventListener('wheel', debouncedOnChange)
     }
-  })
+  }, [])
   
   const ref = useRef(null)
   const refone = useRef(null)
-
-  function handleScroll() {
-    // ref.current.scrollIntoView()
-    console.log(ref)
-  }
 
   const handleOnWheel = (e) => {
       console.log(e.deltaY)
@@ -40,11 +32,12 @@ function App() {
         }
   }
 
+  const debouncedOnChange = debounce(handleOnWheel, 170)
+
   return (
     <div className='portfolio'>
-      <Home handleOnWheel={handleOnWheel} ref={refone}/>
+      <Home ref={refone}/>
       <About ref={ref}/>
-      <button onClick={handleScroll()}>click</button>
       <Skill />
       <Project />
       <Contact />
