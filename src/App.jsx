@@ -4,14 +4,22 @@ import About from './About'
 import Skill from './Skill'
 import Project from './Project'
 import Contact from './Contact'
-import { useState } from 'react'
+import { useRef, useState, forwardRef } from 'react'
 
 function App() {
 
   // let counter = 0
   const [currentWindow, setCurrentWindow] = useState()
+  
+  const ref = useRef(null)
+
+  function handleScroll() {
+    // myRef.current.scrollIntoView()
+    console.log(myRef.current)
+  }
 
   const handleOnWheel = () => {
+
     // if (counter === 1) {
     //   return
     // } else if (counter === 0) {
@@ -22,20 +30,21 @@ function App() {
     if (currentWindow) {
       console.log(window.scrollY, currentWindow)
       if (window.scrollY > currentWindow) {
-        console.log('up')
-      } if (window.scrollY < currentWindow) {
         console.log('down')
+      } if (window.scrollY < currentWindow) {
+        console.log('up')
       }
     }
     setCurrentWindow(window.scrollY)
     console.log(currentWindow)
   }
 
+
   return (
     <div className='portfolio'>
       <Home handleOnWheel={handleOnWheel}/>
-      <About />
-      <button onWheel={() => handleOnWheel()}>click</button>
+      <About ref={ref}/>
+      <button onClick={handleScroll}>click</button>
       <Skill />
       <Project />
       <Contact />
