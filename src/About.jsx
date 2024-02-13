@@ -4,7 +4,7 @@ const About = forwardRef((props, ref) => {
   console.log(ref)
   return ( 
     <div ref={ref}>
-      Child
+      About Me
     </div>
    );
 })
