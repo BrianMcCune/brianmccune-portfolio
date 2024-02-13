@@ -32,7 +32,7 @@ function App() {
         }
   }
 
-  const debouncedOnChange = debounce(handleOnWheel, 170)
+  const debouncedOnChange = debounce(handleOnWheel, 150)
 
   return (
     <div className='portfolio'>
