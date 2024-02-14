@@ -1,5 +1,5 @@
 .code-icon {
-  position: absolute;
+  margin-top: 4px;
   width: 29px;
   height: 23px;
   background-color: white;
@@ -20,6 +20,37 @@
   background-color: black;
   margin-left: 13px;
   animation: blink 2s infinite;
+}
+
+.navbar {
+  height: 100px;
+  margin-top: 35px;
+}
+
+.navbar-header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.navbar-sections {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  justify-content: end;
+  height: 60px;
+  margin-right: 60px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 15px;
 }
 
 @keyframes blink {
