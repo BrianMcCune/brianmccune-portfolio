@@ -1,7 +1,9 @@
+import CodeIcon from "./CodeIcon";
+
 const Navbar = () => {
   return ( 
     <>
-      this is the Navbar
+      <CodeIcon />
     </>
    );
 }

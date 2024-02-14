@@ -1,0 +1,38 @@
+.code-icon {
+  position: absolute;
+  width: 29px;
+  height: 23px;
+  background-color: white;
+}
+
+.arrow {
+  width: 6px;
+  height: 6px;
+  margin-top: 6px;
+  transform: rotate(45deg);
+  border-top: 3.5px solid black;
+  border-right: 3.5px solid black;
+}
+
+.rectangle {
+  width: 10px;
+  height: 2.5px;
+  background-color: black;
+  margin-left: 13px;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  9% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  61% {
+    opacity: 1;
+  }
+}
