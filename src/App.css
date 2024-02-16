@@ -31,7 +31,6 @@ body {
 }
 
 .navbar {
-  /* height: 100px; */
   height: var(--navbar);
 }
 
@@ -49,7 +48,6 @@ body {
   align-items: center;
   gap: 40px;
   justify-content: end;
-  /* height: 60px; */
   height: 60px;
   margin-right: 20px;
 }
@@ -96,16 +94,21 @@ button {
 }
 
 .intro > .lineOne, .intro > .lineTwo {
-  overflow: hidden;
   line-height: 110%;
+  overflow: hidden;
 }
 
 .intro > .subtitle {
-  font-size: 1.8dvw;
+  font-size: 1.7dvw;
   width: 40dvw;
   font-weight: 500;
   text-align: center;
   margin-top: 10px;
+  color: rgb(107, 100, 92);
+}
+
+.lineOne, .lineTwo {
+  display: flex;
 }
 
 @keyframes blink {

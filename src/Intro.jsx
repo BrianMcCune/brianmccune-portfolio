@@ -6,32 +6,37 @@ const Intro = () => {
   const introOne = "HI THERE, I'M"
   const introTwo = "BRIAN MCCUNE."
   let intOneArray = introOne.split('')
+  console.log(intOneArray)
   let intTwoArray = introTwo.split('')
 
   useGSAP(() => {
-    // gsap.from('.name', {duration: 0.4, y:30, delay: 0.5})
-
+    gsap.from('.intro-container-one', {duration: 0.4, y:250, delay: 0.3, stagger: 0.05, ease: 'power3.out'})
+    gsap.from('.intro-container-two', {duration: 0.4, y:250, delay: 0.4, stagger: 0.05, ease: 'power3.out'})
   },{})
 
   return ( 
     <div className="intro">
       <div className="lineOne">
-        {intOneArray.map((index) => {
-          return (
-            <span key={intOneArray[index]}>
-              {index}
-            </span>
-          )
-        })}
+          {intOneArray.map((index) => {
+            return (
+              <div className="intro-container-one">
+                <span key={intOneArray[index]} className="letter">
+                  {index === ' ' ? '\u00A0' : index}
+                </span>
+              </div>
+            )
+          })}
       </div>
       <div className="lineTwo">
-        {intTwoArray.map((index) => {
-          return (
-            <span key={intTwoArray[index]}>
-              {index}
-            </span>
-          )
-        })}
+          {intTwoArray.map((index) => {
+            return (
+              <div className="intro-container-two">
+                <span key={index}>
+                  {index === ' ' ? '\u00A0' : index}
+                </span>
+            </div>
+            )
+          })}
       </div>
       <div className="subtitle">
         <p>Front End Web Developer & ReactJS Fan Creating modern UI designs.</p>
