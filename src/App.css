@@ -1,3 +1,11 @@
+:root {
+  --navbar: 100px;
+}
+
+body {
+  margin: 0;
+}
+
 .code-icon {
   margin-top: 4px;
   width: 29px;
@@ -23,7 +31,8 @@
 }
 
 .navbar {
-  height: 100px;
+  /* height: 100px; */
+  height: var(--navbar);
 }
 
 .navbar-header {
@@ -40,6 +49,7 @@
   align-items: center;
   gap: 40px;
   justify-content: end;
+  /* height: 60px; */
   height: 60px;
   margin-right: 20px;
 }
@@ -68,13 +78,13 @@ button {
 .intro {
   text-transform: capitalize;
   color: rgb(57, 40, 50);
-  /* font-size: 3.7em; */
   font-size: 7dvw;
   font-weight: 800;
-  margin-top: 11dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: calc(100dvh - 100px);
+  justify-content: center;
 }
 
 .intro > .lineOne {
@@ -87,12 +97,11 @@ button {
 
 .intro > .lineOne, .intro > .lineTwo {
   overflow: hidden;
-  line-height: 120%;
+  line-height: 110%;
 }
 
 .intro > .subtitle {
   font-size: 1.8dvw;
-  /* font-size: 15px; */
   width: 40dvw;
   font-weight: 500;
   text-align: center;
