@@ -41,7 +41,7 @@ const Intro = () => {
           })}
       </div>
       <div className="subtitle">
-        <p>Front End Web Developer & ReactJS Fan Creating modern UI designs.</p>
+        <p>Front End Web Developer & ReactJS Fan <br />Creating modern UI designs.</p>
       </div>
     </div>
    );

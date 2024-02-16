@@ -8,6 +8,7 @@ function App() {
     <div className='portfolio'>
       <Navbar />
       <Intro />
+      asdkfjasndkfjasnkdfjn
     </div>
   )
 }
