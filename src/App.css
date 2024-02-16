@@ -65,6 +65,15 @@ button {
   color: rgb(230, 230, 226);
 }
 
+.intro {
+  text-transform: capitalize;
+}
+
+span {
+  color: black;
+  font-size: 22px;
+}
+
 @keyframes blink {
   9% {
     opacity: 1;
