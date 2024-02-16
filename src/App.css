@@ -68,9 +68,10 @@ button {
 .intro {
   text-transform: capitalize;
   color: rgb(57, 40, 50);
-  font-size: 3.7em;
+  /* font-size: 3.7em; */
+  font-size: 8dvw;
   font-weight: 800;
-  margin-top: 15dvh;
+  margin-top: 11dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,7 +91,8 @@ button {
 }
 
 .intro > .subtitle {
-  font-size: 15px;
+  font-size: 1.8dvw;
+  /* font-size: 15px; */
   width: 40dvw;
   font-weight: 500;
   text-align: center;
