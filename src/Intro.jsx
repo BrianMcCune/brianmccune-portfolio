@@ -8,7 +8,7 @@ const Intro = () => {
 
   return ( 
     <div className="intro">
-      <div>
+      <div className="lineOne">
         {intOneArray.map((index) => {
           return (
             <span key={intOneArray[index]}>
