@@ -17,7 +17,7 @@ const Intro = () => {
           )
         })}
       </div>
-      <div>
+      <div className="lineTwo">
         {intTwoArray.map((index) => {
           return (
             <span key={intTwoArray[index]}>
@@ -25,6 +25,9 @@ const Intro = () => {
             </span>
           )
         })}
+      </div>
+      <div className="subtitle">
+        <p>Front End Web Developer & ReactJS Fan Creating modern UI designs.</p>
       </div>
     </div>
    );
