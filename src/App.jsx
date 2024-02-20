@@ -8,7 +8,7 @@ function App() {
     <div className='portfolio'>
       <Navbar />
       <Intro />
-      asdkfjasndkfjasnkdfjn
+      I create webpages, keeping up with emerging trends and technologies within web development
     </div>
   )
 }
