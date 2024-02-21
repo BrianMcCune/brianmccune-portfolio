@@ -3,7 +3,7 @@ body {
 }
 
 .code-icon {
-  margin-top: 4px;
+  margin-left: 15px;
   width: 29px;
   height: 23px;
   background-color: white;
@@ -29,37 +29,38 @@ body {
 .navbar {
   position: fixed;
   width: 100dvw;
-}
-
-.navbar-header {
-  position: absolute;
+  background-color: blue;
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin-left: 20px;
+  gap: 25px;
+  z-index: 3;
+  background-color: rgb(230, 230, 226);
+  height: 50px;
 }
 
-.navbar-sections {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 40px;
-  justify-content: end;
-  height: 60px;
-  margin-right: 20px;
+
+.navbar > h2:hover, .brand > h1:hover, button:hover {
+  opacity: 0.5;
 }
 
-h1 {
+.navbar > h2 {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.brand > h1 {
+  cursor: pointer;
   font-size: 20px;
 }
 
-.navbar-sections > h2, button {
-  font-size: 15px;
-  cursor: pointer;
-}
-
-.navbar-sections > h2:hover, button:hover {
-  opacity: 0.5;
+.brand {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  align-items: center;
+  gap: 10px;
 }
 
 button {
@@ -68,7 +69,9 @@ button {
   height: 30px;
   background-color: rgb(57, 40, 50);
   color: rgb(230, 230, 226);
-  margin-right: 13px;
+  margin-right: 30px;
+  border: none;
+  cursor: pointer;
 }
 
 .intro {
@@ -106,6 +109,11 @@ button {
 
 .lineOne, .lineTwo {
   display: flex;
+}
+
+.bio {
+  background-color: cornflowerblue;
+  min-height: 100dvh;
 }
 
 @keyframes blink {
