@@ -2,6 +2,7 @@ import './App.css'
 import Navbar from './Navbar'
 import Intro from './Intro'
 import Bio from './Bio'
+import AboutMe from './AboutMe'
 
 function App() {
  
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Intro />
       <Bio />
+      <AboutMe />
     </div>
   )
 }
