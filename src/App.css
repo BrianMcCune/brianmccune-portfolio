@@ -113,7 +113,15 @@ button {
 
 .bio {
   background-color: cornflowerblue;
-  min-height: 100dvh;
+  min-height: 110dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bio > h2 {
+  font-size: 5dvw;
+  width: 90%;
 }
 
 @keyframes blink {
