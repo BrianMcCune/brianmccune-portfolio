@@ -128,7 +128,40 @@ button {
   display: flex;
   font-size: 40px;
   padding-top: 60dvh;
+  flex-direction: column;
 }
+
+.about > h2 {
+  text-align: center;
+}
+
+.about > .container {
+  display: flex;
+  height: 75dvh;
+  gap: 3dvw;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.container > img {
+  width: 50%;
+  height: fit-content;
+}
+
+.text {
+  width: 50%;
+}
+
+.text > h3 {
+  font-size: 3dvw;
+  margin-top: 0;
+}
+
+.text > p {
+  font-size: 2dvw;
+}
+
+
 
 @keyframes blink {
   9% {
