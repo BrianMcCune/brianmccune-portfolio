@@ -1,3 +1,4 @@
+import { ReactLenis } from '@studio-freight/react-lenis'
 import './App.css'
 import Navbar from './Navbar'
 import Intro from './Intro'
@@ -7,12 +8,14 @@ import AboutMe from './AboutMe'
 function App() {
  
   return (
-    <div className='portfolio'>
-      <Navbar />
-      <Intro />
-      <Bio />
-      <AboutMe />
-    </div>
+    <ReactLenis root>
+      <div className='portfolio'>
+        <Navbar />
+        <Intro />
+        <Bio />
+        <AboutMe />
+      </div>
+    </ReactLenis>
   )
 }
 

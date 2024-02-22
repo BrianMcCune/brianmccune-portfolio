@@ -146,6 +146,7 @@ button {
 .container > img {
   width: 50%;
   height: fit-content;
+  border-radius: 5px;
 }
 
 .text {
