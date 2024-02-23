@@ -117,6 +117,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 10dvh;
 }
 
 .bio > h2 {
@@ -128,7 +129,7 @@ button {
 .about {
   display: flex;
   font-size: 40px;
-  padding-top: 60dvh;
+  padding-top: 20dvh;
   flex-direction: column;
 }
 

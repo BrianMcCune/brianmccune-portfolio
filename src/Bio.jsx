@@ -9,8 +9,8 @@ const Bio = () => {
     gsap.to('.navbar, .bio, .intro, .about', {
       scrollTrigger: {
         trigger: '.bio',
-        start: '-300px',
-        end: '550px',
+        start: 'top center',
+        end: '90% 30%',
         // markers: true,
         toggleActions: "restart reverse restart reverse"
       },
