@@ -112,18 +112,30 @@ button {
   display: flex;
 }
 
+.intro > .container {
+  position: absolute;
+  margin-top: 4dvh;
+}
+
+.circle {
+  background: linear-gradient(rgb(107, 100, 92), rgb(230, 230, 226));
+  height: calc(50dvh + 17dvw);
+  width: calc(50dvh + 17dvw);
+  border-radius: 50%;
+}
+
 .bio {
   min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 10dvh;
+  padding-top: 25dvh;
 }
 
 .bio > h2 {
   font-size: 5dvw;
   width: 90%;
-  color: rgb(107, 100, 92);
+  color: rgb(57, 40, 50);
 }
 
 .about {

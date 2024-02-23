@@ -9,8 +9,8 @@ const Bio = () => {
     gsap.to('.navbar, .bio, .intro, .about', {
       scrollTrigger: {
         trigger: '.bio',
-        start: 'top center',
-        end: '90% 30%',
+        start: '70% bottom',
+        end: '80% 30%',
         // markers: true,
         toggleActions: "restart reverse restart reverse"
       },
@@ -22,8 +22,8 @@ const Bio = () => {
     gsap.to('button', {
       scrollTrigger: {
         trigger: '.bio',
-        start: '-300px',
-        end: '550px',
+        start: '70% bottom',
+        end: '80% 30%',
         toggleActions: "restart reverse restart reverse"
       },
       backgroundColor: 'rgb(230, 230, 226)',
@@ -34,8 +34,8 @@ const Bio = () => {
     gsap.to('.bio > h2', {
       scrollTrigger: {
         trigger: '.bio',
-        start: '-300px',
-        end: '550px',
+        start: '70% bottom',
+        end: '80% 30%',
         toggleActions: "restart reverse restart reverse"
       },
       opacity: 1,

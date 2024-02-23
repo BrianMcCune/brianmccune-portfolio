@@ -16,7 +16,7 @@ const Intro = () => {
 
     gsap.from('.subtitle > p', {y: 40, duration: 0.4, delay: 1.4, opacity: 0})
 
-    gsap.to('.intro > *', {
+    gsap.to('.lineOne, .lineTwo, .subtitle', {
       scrollTrigger: {
         trigger: '.intro',
         start: '50% center',
@@ -27,11 +27,34 @@ const Intro = () => {
       y: 170
       }
     )
+
+    gsap.from('.intro > .container', {
+      y: 100,
+      duration: 0.8,
+      delay: 0.8,
+      opacity: 0
+    })
+
+    gsap.fromTo('.circle', {opacity:0.1}, {
+      scrollTrigger: {
+        trigger: '.intro',
+        start: 'center center',
+        end: '150%',
+        scrub: true,
+        // markers: true
+      },
+      opacity: 0,
+      y: 620
+      }
+    )
   },{})
 
 
   return ( 
     <div className="intro">
+      <div className="container">
+        <div className="circle"></div>
+      </div>
       <div className="lineOne">
           {intOneArray.map((index) => {
             return (
