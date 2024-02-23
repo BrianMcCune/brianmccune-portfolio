@@ -8,13 +8,27 @@ const Intro = () => {
   let intOneArray = introOne.split('')
   console.log(intOneArray)
   let intTwoArray = introTwo.split('')
-
+  
   useGSAP(() => {
+
     gsap.from('.intro-container-one', {duration: 0.4, y:250, delay: 0.3, stagger: 0.05, ease: 'power3.out'})
     gsap.from('.intro-container-two', {duration: 0.4, y:250, delay: 0.4, stagger: 0.05, ease: 'power3.out'})
 
-    gsap.from('.subtitle', {opacity: 0, duration: 1, y: 30, delay: 1.5})
+    gsap.from('.subtitle > p', {y: 40, duration: 0.4, delay: 1.4, opacity: 0})
+
+    gsap.to('.intro > *', {
+      scrollTrigger: {
+        trigger: '.intro',
+        start: '50% center',
+        end: 'center',
+        scrub: true,
+      },
+      opacity: 0,
+      y: 170
+      }
+    )
   },{})
+
 
   return ( 
     <div className="intro">
