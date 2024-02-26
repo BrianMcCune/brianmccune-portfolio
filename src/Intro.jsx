@@ -39,12 +39,11 @@ const Intro = () => {
       scrollTrigger: {
         trigger: '.intro',
         start: 'center center',
-        end: '150%',
-        scrub: true,
-        // markers: true
+        end: '110%',
+        scrub: true
       },
       opacity: 0,
-      y: 620
+      y: 505
       }
     )
   },{})
