@@ -147,17 +147,22 @@ button {
 
 .about > h2 {
   text-align: center;
+  color: rgb(126,128,104);
+  font-size: 5rem;
+  font-weight: 400;
+  margin-bottom: 5dvh;
 }
 
 .about > .container {
   display: flex;
-  height: 75dvh;
+  min-height: 75dvh;
   gap: 3dvw;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 3dvw;
+  margin-right: 3dvw;
 }
 
 .container > img {
+  min-width: 50%;
   width: 50%;
   height: fit-content;
   border-radius: 5px;
@@ -177,6 +182,15 @@ button {
 }
 
 
+
+
+
+
+
+.spacer {
+  min-height: 100dvh;
+  background-color: aliceblue;
+}
 
 @keyframes blink {
   9% {

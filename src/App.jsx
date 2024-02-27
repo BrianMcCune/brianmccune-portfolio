@@ -14,6 +14,7 @@ function App() {
         <Intro />
         <Bio />
         <AboutMe />
+        <div className='spacer'></div>
       </div>
     </ReactLenis>
   )
