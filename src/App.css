@@ -34,7 +34,7 @@ body {
   align-items: center;
   gap: 25px;
   z-index: 3;
-  background-color: rgb(254, 236, 226);
+  background-color: rgb(241, 241, 241);
   height: 50px;
 }
 
@@ -66,8 +66,8 @@ button {
   border-radius: 15px;
   width: 100px;
   height: 30px;
-  background-color: rgb(57, 40, 50);
-  color: rgb(254, 236, 226);
+  background-color: rgb(9, 9, 9);
+  color: rgb(241, 241, 241);
   margin-right: 30px;
   border: none;
   cursor: pointer;
@@ -75,7 +75,7 @@ button {
 
 .intro {
   text-transform: capitalize;
-  color: rgb(57, 40, 50);
+  color: rgb(9, 9, 9);
   font-size: 7.5dvw;
   font-weight: 800;
   display: flex;
@@ -117,7 +117,7 @@ button {
 }
 
 .circle {
-  background: linear-gradient(rgb(107, 100, 92), rgb(254, 236, 226));
+  background: linear-gradient(rgb(107, 100, 92), rgb(241, 241, 241));
   height: calc(50dvh + 17dvw);
   width: calc(50dvh + 17dvw);
   border-radius: 50%;
@@ -146,7 +146,6 @@ button {
 
 .about > h2 {
   text-align: center;
-  color: rgb(126,128,144);
   font-size: 5rem;
   font-weight: 400;
   margin-bottom: 5dvh;
