@@ -153,6 +153,7 @@ button {
   height: calc(50dvh + 17dvw);
   width: calc(50dvh + 17dvw);
   border-radius: 50%;
+  opacity:0.1
 }
 
 .bio {

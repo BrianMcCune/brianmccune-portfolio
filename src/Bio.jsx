@@ -5,6 +5,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Bio = () => {
 
+  const bio = 'I create webpages, keeping up with emerging trends and technologies within web development.'
+
   useGSAP(() => {
     gsap.to('.navbar, .bio, .intro, .about', {
       scrollTrigger: {
@@ -48,7 +50,7 @@ const Bio = () => {
   return ( 
     <div className="bio">
       <h2>
-        I create webpages, keeping up with emerging trends and technologies within web development.
+        {bio}
       </h2>
     </div>
    );

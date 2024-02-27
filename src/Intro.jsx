@@ -34,10 +34,11 @@ const Intro = () => {
       y: 100,
       duration: 0.8,
       delay: 2.4,
-      opacity: 0
+      opacity: 0,
+      scale: 0.7
     })
 
-    gsap.fromTo('.circle', {opacity:0.1}, {
+    gsap.to('.circle', {
       scrollTrigger: {
         trigger: '.intro',
         start: 'center center',
