@@ -29,13 +29,12 @@ body {
 .navbar {
   position: fixed;
   width: 100dvw;
-  background-color: blue;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 25px;
   z-index: 3;
-  background-color: rgb(230, 230, 226);
+  background-color: rgb(254, 236, 226);
   height: 50px;
 }
 
@@ -68,7 +67,7 @@ button {
   width: 100px;
   height: 30px;
   background-color: rgb(57, 40, 50);
-  color: rgb(230, 230, 226);
+  color: rgb(254, 236, 226);
   margin-right: 30px;
   border: none;
   cursor: pointer;
@@ -118,7 +117,7 @@ button {
 }
 
 .circle {
-  background: linear-gradient(rgb(107, 100, 92), rgb(230, 230, 226));
+  background: linear-gradient(rgb(107, 100, 92), rgb(254, 236, 226));
   height: calc(50dvh + 17dvw);
   width: calc(50dvh + 17dvw);
   border-radius: 50%;
@@ -135,7 +134,7 @@ button {
 .bio > h2 {
   font-size: 5dvw;
   width: 90%;
-  color: rgb(57, 40, 50);
+  color: rgb(107, 100, 92);
 }
 
 .about {
@@ -147,7 +146,7 @@ button {
 
 .about > h2 {
   text-align: center;
-  color: rgb(126,128,104);
+  color: rgb(126,128,144);
   font-size: 5rem;
   font-weight: 400;
   margin-bottom: 5dvh;
@@ -166,10 +165,6 @@ button {
   width: 50%;
   height: fit-content;
   border-radius: 5px;
-}
-
-.text {
-  width: 50%;
 }
 
 .text > h3 {

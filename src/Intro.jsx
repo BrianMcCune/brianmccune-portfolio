@@ -31,7 +31,7 @@ const Intro = () => {
     gsap.from('.intro > .container', {
       y: 100,
       duration: 0.8,
-      delay: 0.8,
+      delay: 1,
       opacity: 0
     })
 

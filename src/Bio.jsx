@@ -14,8 +14,8 @@ const Bio = () => {
         // markers: true,
         toggleActions: "restart reverse restart reverse"
       },
-      backgroundColor: 'rgb(15, 15, 13)',
-      color: 'rgb(230, 230, 226)',
+      backgroundColor: 'rgb(57, 40, 50)',
+      color: 'rgb(254, 236, 226)',
       duration: 0.2,
     })
 
@@ -26,8 +26,8 @@ const Bio = () => {
         end: '80% 30%',
         toggleActions: "restart reverse restart reverse"
       },
-      backgroundColor: 'rgb(230, 230, 226)',
-      color: 'rgb(15, 15, 13)',
+      backgroundColor: 'rgb(254, 236, 226)',
+      color: 'rgb(57, 40, 50)',
       duration: 0.2
     })
 
