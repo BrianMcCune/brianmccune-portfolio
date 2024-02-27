@@ -11,10 +11,13 @@ const Intro = () => {
   
   useGSAP(() => {
 
-    gsap.from('.intro-container-one', {duration: 0.4, y:250, delay: 0.3, stagger: 0.05, ease: 'power3.out'})
-    gsap.from('.intro-container-two', {duration: 0.4, y:250, delay: 0.4, stagger: 0.05, ease: 'power3.out'})
+    gsap.to('.intro-animation > .container', {duration: 0.5, delay: 0.7, opacity: 0})
+    gsap.to('.intro-animation', {duration: 1, height: 0, delay: 1.2, ease: 'power3.in'})
 
-    gsap.from('.subtitle > p', {y: 40, duration: 0.4, delay: 1.4, opacity: 0})
+    gsap.from('.intro-container-one', {duration: 0.4, y:250, delay: 1.83, stagger: 0.05, ease: 'power3.out'})
+    gsap.from('.intro-container-two', {duration: 0.4, y:250, delay: 1.93, stagger: 0.05, ease: 'power3.out'})
+
+    gsap.from('.subtitle > p', {y: 40, duration: 0.4, delay: 2.4, opacity: 0})
 
     gsap.to('.lineOne, .lineTwo, .subtitle', {
       scrollTrigger: {
@@ -31,7 +34,7 @@ const Intro = () => {
     gsap.from('.intro > .container', {
       y: 100,
       duration: 0.8,
-      delay: 1,
+      delay: 2.4,
       opacity: 0
     })
 
@@ -51,6 +54,15 @@ const Intro = () => {
 
   return ( 
     <div className="intro">
+      <div className='intro-animation'>
+        <div className='container'>
+          <div className='name'>Brian McCune</div>
+        </div>
+        <div className='container'>
+          <div className='folio'>Web Developer</div>
+          <div className='folio'>Portfolio ©</div>
+        </div>
+      </div>
       <div className="container">
         <div className="circle"></div>
       </div>

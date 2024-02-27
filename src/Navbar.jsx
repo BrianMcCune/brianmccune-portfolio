@@ -10,7 +10,7 @@ const Navbar = () => {
     gsap.from('.navbar', {
       y: -50,
       duration: 0.8,
-      delay: 1
+      delay: 2.4
     })
   })
 
@@ -23,7 +23,7 @@ const Navbar = () => {
         <h2>About</h2>
         <h2>Skills</h2>
         <h2>Projects</h2>
-        <button>Let's Talk</button>
+        <button>Let's Chat</button>
     </div>
    );
 }
