@@ -7,7 +7,23 @@ gsap.registerPlugin(ScrollTrigger);
 
 const AboutMe = () => {
 
+  const headline = "About Me"
+  let headlineArray = headline.split('')
+
   useGSAP(() => {
+
+    gsap.from('.about-headline', {
+      scrollTrigger: {
+        trigger: '.about > .container',
+        toggleActions: 'play none none none',
+        // markers: true
+      },
+      duration: 0.4, 
+      y:250, 
+      stagger: 0.05, 
+      ease: 'power3.out'
+    })
+
     gsap.to('.about', {
       scrollTrigger: {
         trigger: 'img',
@@ -25,7 +41,17 @@ const AboutMe = () => {
 
   return ( 
     <div className="about">
-      <h2>About Me</h2>
+      <div className="headline-container">
+        {headlineArray.map((index) => {
+          return (
+            <div className="about-headline">
+              <span key={headlineArray[index]} className="letter">
+                {index === ' ' ? '\u00A0' : index}
+              </span>
+            </div>
+          )
+        })}
+      </div>
       <div className="container">
         <img src="./headshot.jpg" alt='developer headshot' />
         <div className="text">

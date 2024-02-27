@@ -6,12 +6,11 @@ const Intro = () => {
   const introOne = "HI THERE, I'M"
   const introTwo = "BRIAN MCCUNE."
   let intOneArray = introOne.split('')
-  console.log(intOneArray)
   let intTwoArray = introTwo.split('')
   
   useGSAP(() => {
 
-    gsap.to('.intro-animation > .container', {duration: 0.5, delay: 0.7, opacity: 0})
+    gsap.to('.intro-animation > .container', {duration: 0.5, delay: 0.7, autoAlpha: 0})
     gsap.to('.intro-animation', {duration: 1, height: 0, delay: 1.2, ease: 'power3.in'})
 
     gsap.from('.intro-container-one', {duration: 0.4, y:250, delay: 1.83, stagger: 0.05, ease: 'power3.out'})

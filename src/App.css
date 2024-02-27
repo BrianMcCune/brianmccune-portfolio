@@ -176,6 +176,15 @@ button {
   flex-direction: column;
 }
 
+.about > .headline-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5dvh;
+  font-weight: 600;
+  font-size: 3rem;
+  overflow: hidden;
+}
+
 .about > h2 {
   text-align: center;
   font-size: 5rem;
