@@ -164,10 +164,17 @@ button {
   padding-top: 25dvh;
 }
 
-.bio > h2 {
+.bio-container {
+  display: flex;
+  flex-direction: row;
   font-size: 5dvw;
-  width: 90%;
+  width: 79%;
   color: rgb(107, 100, 92);
+  flex-wrap: wrap;
+}
+
+.three, .two, .one {
+  display: flex;
 }
 
 .about {
