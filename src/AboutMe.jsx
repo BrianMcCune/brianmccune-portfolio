@@ -28,7 +28,7 @@ const AboutMe = () => {
       scrollTrigger: {
         trigger: 'img',
         start: () => 'top ' + (window.innerWidth*0.01+ 130),
-        end: () => 'bottom ' + (window.innerWidth*0.31 + 130),
+        end: () => 'bottom ' + (window.innerWidth*0.34 + 130),
         pin: '.text',
         scrub: true,
         // immediateRender: false,

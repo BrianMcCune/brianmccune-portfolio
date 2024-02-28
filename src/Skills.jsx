@@ -15,11 +15,37 @@ const Skills = () => {
         trigger: '.skills',
         toggleActions: 'play none none none',
         // scrub: true,
-        markers: true
+        // markers: true
       },
       duration: 0.4, 
       y:250, 
       stagger: 0.05, 
+      ease: 'power3.out'
+    })
+
+    gsap.from('.container > .text-one', {
+      scrollTrigger: {
+        trigger: '.container > .text-one',
+        toggleActions: 'play none none none',
+        // scrub: true,
+        // markers: true
+      },
+      duration: 0.5, 
+      y: 60, 
+      opacity: 0, 
+      ease: 'power3.out'
+    })
+
+    gsap.from('.container > .text-two', {
+      scrollTrigger: {
+        trigger: '.container > .text-two',
+        toggleActions: 'play none none none',
+        // scrub: true,
+        // markers: true
+      },
+      duration: 0.5, 
+      y: 60, 
+      opacity: 0, 
       ease: 'power3.out'
     })
   })
@@ -38,12 +64,16 @@ const Skills = () => {
           )
         })}
       </div>
-      <p>
-        My main area of expertise is client side, front end development
-      </p>
-      <p>
-        Building small and medium web applications using React with HTML, CSS, and JS. I also have experience with custom libraries and animations
-      </p>
+      <div className="container">
+        <p className="text-one">
+          My main area of expertise is client side, front end development
+        </p>
+      </div>
+      <div className="container">
+        <p className="text-two">
+          Building small and medium web applications using React with HTML, CSS, and JS. I also have experience with custom libraries and animations
+        </p>
+      </div>
     </div>
    );
 }

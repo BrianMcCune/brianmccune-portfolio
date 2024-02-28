@@ -186,7 +186,7 @@ button {
 
 .about > .headline-container {
   display: flex;
-  margin-left: 3dvw;
+  margin-left: 8dvw;
   margin-bottom: 5dvh;
   font-weight: 600;
   font-size: 7dvw;
@@ -204,8 +204,8 @@ button {
   display: flex;
   min-height: 75dvh;
   gap: 3dvw;
-  margin-left: 3dvw;
-  margin-right: 3dvw;
+  margin-left: 8dvw;
+  margin-right: 8dvw;
 }
 
 .img-container {
@@ -233,7 +233,7 @@ p {
   display: flex;
   flex-direction: column;
   margin-top: 15vh;
-  margin-left: 3dvw;
+  margin-left: 8dvw;
 }
 
 .skills > .headline-container {
@@ -244,7 +244,17 @@ p {
   overflow: hidden;
 }
 
+.container > p {
+  margin: 0;
+}
 
+.container {
+  margin: 2dvh 0;
+}
+
+.skills > .container {
+  overflow: hidden;
+}
 
 
 
