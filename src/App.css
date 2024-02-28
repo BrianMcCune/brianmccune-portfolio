@@ -186,7 +186,7 @@ button {
 
 .about > .headline-container {
   display: flex;
-  justify-content: center;
+  margin-left: 3dvw;
   margin-bottom: 5dvh;
   font-weight: 600;
   font-size: 7dvw;
@@ -208,17 +208,9 @@ button {
   margin-right: 3dvw;
 }
 
-/* .container > img {
-  min-width: 50%;
-  width: 50%;
-  height: fit-content;
-  border-radius: 5px;
-} */
-
 .img-container {
   width: 50%;
   min-width: 50%;
-  /* background-color: blue; */
 }
 
 img {
@@ -232,11 +224,25 @@ img {
   margin-top: 0;
 }
 
-.text > p {
+p {
   font-size: 2dvw;
+  font-weight: 700;
 }
 
+.skills {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15vh;
+  margin-left: 3dvw;
+}
 
+.skills > .headline-container {
+  display: flex;
+  flex-direction: row;
+  font-weight: 600;
+  font-size: 7dvw;
+  overflow: hidden;
+}
 
 
 
