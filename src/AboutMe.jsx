@@ -24,17 +24,6 @@ const AboutMe = () => {
       ease: 'power3.out'
     })
 
-    gsap.to('.about', {
-      scrollTrigger: {
-        trigger: 'img',
-        start: () => 'top ' + (window.innerWidth*0.01+ 130),
-        end: () => 'bottom ' + (window.innerWidth*0.34 + 130),
-        pin: '.text',
-        scrub: true,
-        // immediateRender: false,
-        // markers: true
-      },
-    })
 
     gsap.from('img', {
       scrollTrigger: {
@@ -49,9 +38,19 @@ const AboutMe = () => {
       scale: 1
     })
 
+    gsap.to('.img-container', {
+      scrollTrigger: {
+        trigger: '.img-container',
+        start: () => 'top ' + (window.innerWidth*0.01+ 120),
+        end: () => 'bottom ' + (window.innerWidth*0.36 + 120),
+        pin: '.text',
+        scrub: true,
+        // immediateRender: false,
+        // markers: true
+      },
+    })
+
   })
-
-
 
   return ( 
     <div className="about">
