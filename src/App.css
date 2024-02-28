@@ -208,11 +208,23 @@ button {
   margin-right: 3dvw;
 }
 
-.container > img {
+/* .container > img {
   min-width: 50%;
   width: 50%;
   height: fit-content;
   border-radius: 5px;
+} */
+
+.img-container {
+  width: 50%;
+  min-width: 50%;
+  /* background-color: blue; */
+}
+
+img {
+  object-fit: contain;
+  width: 100%;
+  height: fit-content;
 }
 
 .text > h3 {

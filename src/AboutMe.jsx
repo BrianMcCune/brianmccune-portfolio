@@ -31,10 +31,24 @@ const AboutMe = () => {
         end: () => 'bottom ' + (window.innerWidth*0.31 + 130),
         pin: '.text',
         scrub: true,
-        immediateRender: false,
+        // immediateRender: false,
         // markers: true
       },
     })
+
+    gsap.from('img', {
+      scrollTrigger: {
+        trigger: 'img',
+        toggleActions: 'play none none none',
+        // markers: true
+      },
+      scale: 0.9
+    })
+
+    gsap.set('img', {
+      scale: 1
+    })
+
   })
 
 
@@ -53,7 +67,9 @@ const AboutMe = () => {
         })}
       </div>
       <div className="container">
-        <img src="./headshot.jpg" alt='developer headshot' />
+        <div className="img-container">
+          <img src="./headshot.jpg" alt='developer headshot' />
+        </div>
         <div className="text">
           <h3>A brief intro, who am I?</h3>
           <p>

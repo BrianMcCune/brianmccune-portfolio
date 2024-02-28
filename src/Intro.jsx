@@ -10,7 +10,7 @@ const Intro = () => {
   
   useGSAP(() => {
 
-    gsap.to('.intro-animation > .container', {duration: 0.5, delay: 0.7, autoAlpha: 0})
+    gsap.to('.intro-animation > .container', {duration: 0.5, delay: 1, autoAlpha: 0})
     gsap.to('.intro-animation', {duration: 1, height: 0, delay: 1.2, ease: 'power3.in'})
 
     gsap.from('.intro-container-one', {duration: 0.4, y:250, delay: 1.83, stagger: 0.05, ease: 'power3.out'})
