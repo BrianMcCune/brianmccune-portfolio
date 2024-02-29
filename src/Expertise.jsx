@@ -100,13 +100,13 @@ const Expertise = () => {
           <h3>Biggest Strengths</h3>
           <div className="container">
             <p className="text-one">
-              My main area of expertise is client side, front end development. Through web development, I am able to make the biggest impact and I am always eager to learn new technologies to expand my skills
+              My main area of expertise is client side, front end development. Through web development, I create the biggest impact and I am always eager to learn new technologies to expand my skills.
             </p>
           </div>
           <h3>Experiences</h3>
           <div className="container">
             <p className="text-two">
-              Building small and medium web applications using React with HTML, CSS, and JS. I also have experience with custom libraries and animations
+              I have built small and medium web applications using React with HTML, CSS, and JS for small companies surrounding the Austin area. I also have experience with custom libraries and animations.
             </p>
           </div>
         </div>
