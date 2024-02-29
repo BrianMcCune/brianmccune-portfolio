@@ -3,7 +3,7 @@ import { useGSAP } from '@gsap/react';
 
 const Intro = () => {
 
-  const introOne = "HI THERE, I'M"
+  const introOne = "HELLO, I'M"
   const introTwo = "BRIAN MCCUNE."
   let intOneArray = introOne.split('')
   let intTwoArray = introTwo.split('')
@@ -38,7 +38,7 @@ const Intro = () => {
       scale: 0.7
     })
 
-    gsap.to('.circle', {
+    gsap.to('.container > .circle', {
       scrollTrigger: {
         trigger: '.intro',
         start: 'center center',

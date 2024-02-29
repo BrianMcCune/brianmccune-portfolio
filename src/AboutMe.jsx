@@ -42,14 +42,13 @@ const AboutMe = () => {
       scrollTrigger: {
         trigger: '.img-container',
         start: () => 'top ' + (window.innerWidth*0.01+ 100),
-        end: () => 'bottom ' + (window.innerWidth*0.27 + 230),
+        end: () => 'bottom ' + (window.innerWidth*0.23 + 230),
         pin: '.text',
         scrub: true,
         // immediateRender: false,
         // markers: true
       },
     })
-
   })
 
   return ( 
@@ -70,7 +69,7 @@ const AboutMe = () => {
           <img src="./headshot.jpg" alt='developer headshot' />
         </div>
         <div className="text">
-          <h3>A brief intro, who am I?</h3>
+          <h3>Intro and hobbies</h3>
           <p>
             I am a creative frontend developer based in Austin, Texas. I am passionate towards creating frontend modern websites and using my work to impact and connect with small businesses.
           </p>

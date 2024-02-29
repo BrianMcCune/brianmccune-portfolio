@@ -49,6 +49,7 @@ const Expertise = () => {
       opacity: 0, 
       ease: 'power3.out'
     })
+
   })
 
 
@@ -69,6 +70,7 @@ const Expertise = () => {
         <div className="expertise-text">
           <h3>Biggest Strengths</h3>
           <div className="container">
+            <div className="expertise-circle"></div>
             <p className="text-one">
               My main area of expertise is client side, front end development. Through web development, I am able to make the biggest impact and I am always eager to learn new technologies to expand my skills
             </p>

@@ -144,7 +144,7 @@ button {
   margin-top: 4dvh;
 }
 
-.circle {
+.container > .circle {
   background: linear-gradient(rgb(107, 100, 92), rgb(241, 241, 241));
   height: calc(50dvh + 17dvw);
   width: calc(50dvh + 17dvw);
@@ -293,9 +293,25 @@ h3 {
   font-size: 1.75dvw;
 }
 
-.spacer {
-  min-height: 100dvh;
-  background-color: aliceblue;
+
+.projects {
+  /* display: flex;
+  justify-content: center;
+  overflow: hidden; */
+  min-height: 500dvh;
+}
+
+.expertise-circle {
+  background: linear-gradient(rgb(107, 100, 92), rgb(241, 241, 241));
+  position: absolute;
+  left: 29%;
+  transform: translate(-50%, 0);
+  /* margin-top: -70dvh;
+  margin-left: 3dvw; */
+  height: calc(50dvh + 17dvw);
+  width: calc(50dvh + 17dvw);
+  border-radius: 50%;
+  opacity: 0.1;
 }
 
 @keyframes blink {
