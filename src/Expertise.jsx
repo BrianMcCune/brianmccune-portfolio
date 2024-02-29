@@ -11,6 +11,34 @@ const Expertise = () => {
 
   useGSAP(() => {
 
+    gsap.fromTo('.expertise-circle', {y: 80}, {
+      scrollTrigger: {
+        trigger: '.expertise',
+        start: 'top center',
+        end: 'bottom center',
+        scrub: true,
+        // pin: '.expertise',
+        // markers: true
+      },
+      y: -120,
+      opacity: 0.01,
+      scale: 0.9
+    })
+
+    gsap.to('.headline-container, .expertise-info', {
+      scrollTrigger: {
+        trigger: '.expertise',
+        start: 'center center',
+        end: 'bottom top',
+        scrub: true,
+        // pin: '.expertise',
+        // markers: true
+      },
+      y: 100,
+      // opacity: 0.02,
+      // scale: 0.9
+    })
+
     gsap.from('.expertise-headline', {
       scrollTrigger: {
         trigger: '.expertise',
@@ -55,8 +83,9 @@ const Expertise = () => {
 
   return ( 
     <div className="expertise">
+      <div className="expertise-circle"></div>
       <div className="headline-container">
-      {headlineArray.map((index) => {
+        {headlineArray.map((index) => {
           return (
             <div className="expertise-headline">
               <span key={headlineArray[index]} className="letter">
@@ -70,7 +99,6 @@ const Expertise = () => {
         <div className="expertise-text">
           <h3>Biggest Strengths</h3>
           <div className="container">
-            <div className="expertise-circle"></div>
             <p className="text-one">
               My main area of expertise is client side, front end development. Through web development, I am able to make the biggest impact and I am always eager to learn new technologies to expand my skills
             </p>

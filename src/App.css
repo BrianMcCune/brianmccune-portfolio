@@ -304,10 +304,8 @@ h3 {
 .expertise-circle {
   background: linear-gradient(rgb(107, 100, 92), rgb(241, 241, 241));
   position: absolute;
-  left: 29%;
+  left: 69%;
   transform: translate(-50%, 0);
-  /* margin-top: -70dvh;
-  margin-left: 3dvw; */
   height: calc(50dvh + 17dvw);
   width: calc(50dvh + 17dvw);
   border-radius: 50%;
