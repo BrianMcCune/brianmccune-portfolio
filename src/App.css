@@ -187,6 +187,7 @@ button {
   font-weight: 600;
   font-size: 7dvw;
   overflow: hidden;
+  color: rgb(110, 110, 85);
 }
 
 .about > h2 {
@@ -204,6 +205,10 @@ button {
   margin-right: 8dvw;
 }
 
+.text {
+  height: fit-content;
+}
+
 .img-container {
   width: 50%;
   min-width: 50%;
@@ -213,31 +218,33 @@ img {
   object-fit: contain;
   width: 100%;
   height: fit-content;
+  border-radius: 10px;
 }
 
-.text > h3 {
-  font-size: 3dvw;
+h3 {
+  font-size: 3.3dvw;
   margin-top: 0;
 }
 
-p {
-  font-size: 2dvw;
-  font-weight: 700;
+.text > p {
+  font-size: 1.75dvw;
+  font-weight: 500;
 }
 
-.skills {
+.expertise {
   display: flex;
   flex-direction: column;
   margin-top: 15vh;
   margin-left: 8dvw;
 }
 
-.skills > .headline-container {
+.expertise > .headline-container {
   display: flex;
   flex-direction: row;
   font-weight: 600;
   font-size: 7dvw;
   overflow: hidden;
+  color: rgb(110, 110, 85);
 }
 
 .container > p {
@@ -248,11 +255,43 @@ p {
   margin: 2dvh 0;
 }
 
-.skills > .container {
+.expertise > .container {
   overflow: hidden;
 }
 
+.expertise-info {
+  display: flex;
+  gap: 7dvw;
+}
 
+.expertise-info > * {
+  width: 50%;
+}
+
+.expertise-list {
+  line-height: 1;
+}
+
+.expertise-list > p {
+  font-size: 4.5dvw;
+  font-weight: 800;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: rgb(110, 110, 85);
+  opacity: 0.8;
+}
+
+.expertise-text > h3 {
+  margin-bottom: 15px;
+}
+
+.container > .text-one {
+  margin-bottom: 70px;
+}
+
+.text-one, .text-two {
+  font-size: 1.75dvw;
+}
 
 .spacer {
   min-height: 100dvh;

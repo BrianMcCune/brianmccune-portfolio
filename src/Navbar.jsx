@@ -21,7 +21,7 @@ const Navbar = () => {
         <h1>McCune</h1>
       </div>
         <h2>About</h2>
-        <h2>Skills</h2>
+        <h2>Expertise</h2>
         <h2>Projects</h2>
         <button>Let's Chat</button>
     </div>

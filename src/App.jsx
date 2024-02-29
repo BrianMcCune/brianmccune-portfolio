@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 import Intro from './Intro'
 import Bio from './Bio'
 import AboutMe from './AboutMe'
-import Skills from './Skills'
+import Expertise from './Expertise'
 
 function App() {
  
@@ -15,7 +15,7 @@ function App() {
         <Intro />
         <Bio />
         <AboutMe />
-        <Skills />
+        <Expertise />
         <div className='spacer'></div>
       </div>
     </ReactLenis>
