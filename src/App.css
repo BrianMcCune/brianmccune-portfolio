@@ -335,7 +335,11 @@ h3 {
 }
 
 .project-image:hover {
-  width: 103%;
+  scale: 1.1;
+}
+
+.project-image {
+  transition:all .5s ease;
 }
 
 .project-image-container {
