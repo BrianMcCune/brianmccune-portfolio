@@ -29,7 +29,7 @@ const Projects = () => {
         start: '-20% top',
         end: 'center center',
         toggleActions: "restart reverse restart reverse",
-        markers: true
+        // markers: true
       },
       backgroundColor: 'rgb(9, 9, 9)',
       color: 'rgb(241, 241, 241)',

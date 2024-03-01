@@ -52,9 +52,35 @@ const Expertise = () => {
       ease: 'power3.out'
     })
 
+    gsap.from('.strengths', {
+      scrollTrigger: {
+        trigger: '.strengths',
+        toggleActions: 'play none none none',
+        // scrub: true,
+        // markers: true
+      },
+      duration: 0.5, 
+      y: 60, 
+      opacity: 0, 
+      ease: 'power3.out'
+    })
+
     gsap.from('.container > .text-one', {
       scrollTrigger: {
         trigger: '.container > .text-one',
+        toggleActions: 'play none none none',
+        // scrub: true,
+        // markers: true
+      },
+      duration: 0.5, 
+      y: 60, 
+      opacity: 0, 
+      ease: 'power3.out'
+    })
+
+    gsap.from('.experiences', {
+      scrollTrigger: {
+        trigger: '.experiences',
         toggleActions: 'play none none none',
         // scrub: true,
         // markers: true
@@ -99,13 +125,13 @@ const Expertise = () => {
       </div>
       <div className="expertise-info">
         <div className="expertise-text">
-          <h3>Biggest Strengths</h3>
+          <h3 className="strengths">Biggest Strengths</h3>
           <div className="container">
             <p className="text-one">
               My main area of expertise is client side, front end development. Through web development, I create the biggest impact and I am always eager to learn new technologies to expand my skills.
             </p>
           </div>
-          <h3>Experiences</h3>
+          <h3 className="experiences">Experiences</h3>
           <div className="container">
             <p className="text-two">
               I have built small and medium web applications using React with HTML, CSS, and JS for small companies surrounding the Austin area. I also have experience with custom libraries and animations.
