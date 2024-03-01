@@ -25,26 +25,10 @@ const Expertise = () => {
       scale: 0.9
     })
 
-    gsap.to('.headline-container, .expertise-info', {
-      scrollTrigger: {
-        trigger: '.expertise',
-        start: 'center center',
-        end: 'bottom top',
-        scrub: true,
-        // pin: '.expertise',
-        // markers: true
-      },
-      y: 100,
-      // opacity: 0.02,
-      // scale: 0.9
-    })
-
     gsap.from('.expertise-headline', {
       scrollTrigger: {
         trigger: '.expertise',
         toggleActions: 'play none none none',
-        // scrub: true,
-        // markers: true
       },
       duration: 0.4, 
       y:250, 

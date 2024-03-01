@@ -2,6 +2,7 @@ import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
+import { projectData } from "./project-data";
 
 const Projects = () => {
 
@@ -74,6 +75,12 @@ const Projects = () => {
             </div>
           )
         })}
+      </div>
+      <div className="projects-list">
+        <img src={projectData[0].image}></img>
+        <img src={projectData[1].image}></img>
+        <img src={projectData[2].image}></img>
+        <img src={projectData[3].image}></img>
       </div>
     </div>
    );
