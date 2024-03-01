@@ -248,6 +248,7 @@ h3 {
   font-weight: 600;
   font-size: 7dvw;
   color: rgb(110, 110, 85);
+  overflow: hidden;
 }
 
 .container > p {
@@ -325,6 +326,7 @@ h3 {
   font-weight: 600;
   font-size: 7dvw;
   color: rgb(110, 110, 85);
+  overflow: hidden;
 }
 
 @keyframes blink {

@@ -20,7 +20,8 @@ const Projects = () => {
       duration: 0.4, 
       y:250, 
       stagger: 0.05, 
-      ease: 'power3.out'
+      ease: 'power3.out',
+      delay: 0.1
     })
 
     gsap.to('.navbar, .projects, .expertise', {
