@@ -29,9 +29,9 @@ const Projects = () => {
       scrollTrigger: {
         trigger: '.projects',
         start: '-20% top',
-        end: 'bottom center',
+        end: '150% top',
         toggleActions: "restart reverse restart reverse",
-        // markers: true
+        markers: true
       },
       backgroundColor: 'rgb(9, 9, 9)',
       color: 'rgb(241, 241, 241)',
@@ -55,12 +55,26 @@ const Projects = () => {
         trigger: '.projects',
         start: '-20% top',
         end: 'bottom center',
-        toggleActions: "restart reverse restart reverse"
+        toggleActions: "restart reverse restart reverse",
+        // markers: true
       },
       opacity: 1,
       duration: 0.3,
       color: 'rgb(230, 230, 226)'
     })
+
+    gsap.to('.project-image-container', {
+      xPercent: -410,
+      scrollTrigger: {
+        trigger: '.projects',
+        start: '5% top',
+        pin: true,
+        scrub: 1,
+        end: '+=3000',
+        // markers: true
+      },
+    })
+
   })
 
   return ( 

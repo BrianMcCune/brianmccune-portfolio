@@ -313,7 +313,8 @@ h3 {
   /* display: flex;
   justify-content: center;
   overflow: hidden; */
-  min-height: 300dvh;
+  min-height: 130dvh;
+  overflow-x: hidden;
 }
 
 .projects > .headline-container {
@@ -324,29 +325,41 @@ h3 {
   color: rgb(110, 110, 85);
   overflow: hidden;
   margin-left: 8dvw;
+  margin-top: 20dvh;
 }
 
 .projects-list {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  overflow-x: hidden;
+  width: 400dvw;
+  gap: 5dvw;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 3dvh;
 }
 
-.project-image:hover {
+/* .project-image:hover {
   scale: 1.1;
-}
+} */
 
 .project-image {
-  transition:all .5s ease;
+  /* transition:all .5s ease; */
+  width: 80%;
 }
 
 .project-image-container {
   overflow: hidden;
   width: 50%;
   border-radius: 5px;
-  height: 60dvh;
+  height: 50dvh;
+}
+
+.testing {
+  /* margin-left: 400dvw; */
+  font-size: 50px;
+  color: blue;
 }
 
 @keyframes blink {
