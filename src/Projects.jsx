@@ -25,16 +25,28 @@ const Projects = () => {
       delay: 0.1
     })
 
-    gsap.to('.navbar, .projects, .expertise', {
+    gsap.to('.navbar, .expertise', {
       scrollTrigger: {
         trigger: '.projects',
         start: '-20% top',
-        end: '150% top',
+        end: '200% top',
         toggleActions: "restart reverse restart reverse",
-        markers: true
+        // markers: true
       },
       backgroundColor: 'rgb(9, 9, 9)',
       color: 'rgb(241, 241, 241)',
+      duration: 0.2,
+    })
+
+    gsap.to('.projects', {
+      scrollTrigger: {
+        trigger: '.projects',
+        start: '-20% top',
+        end: '200% top',
+        toggleActions: "restart reverse restart reverse",
+        // markers: true
+      },
+      backgroundColor: 'rgb(9, 9, 9)',
       duration: 0.2,
     })
 
@@ -50,27 +62,15 @@ const Projects = () => {
       duration: 0.2
     })
 
-    gsap.to('.projects', {
-      scrollTrigger: {
-        trigger: '.projects',
-        start: '-20% top',
-        end: 'bottom center',
-        toggleActions: "restart reverse restart reverse",
-        // markers: true
-      },
-      opacity: 1,
-      duration: 0.3,
-      color: 'rgb(230, 230, 226)'
-    })
-
     gsap.to('.project-image-container', {
-      xPercent: -410,
+      xPercent: -325,
+      ease: 'none',
       scrollTrigger: {
         trigger: '.projects',
-        start: '5% top',
+        start: '13.5% top',
         pin: true,
         scrub: 1,
-        end: '+=3000',
+        end: '+=1500',
         // markers: true
       },
     })
@@ -92,10 +92,15 @@ const Projects = () => {
       </div>
       <div className="projects-list">
         {projectData.map((index) => {
+          console.log({index})
           return (
+            <a href={index.deployment} target="_blank">
             <div className="project-image-container">
+              <div className="project-title">{index.title}</div>
+              <div className="project-tech">{index.usedTech}</div>
               <img className="project-image" src={index.image} />
             </div>
+            </a>
           )
         })}
       </div>

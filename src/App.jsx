@@ -18,7 +18,7 @@ function App() {
         <AboutMe />
         <Expertise />
         <Projects />
-        <div className='testing'>asdfasdfasdf</div>
+        <div className='testing'>Testing</div>
       </div>
     </ReactLenis>
   )
