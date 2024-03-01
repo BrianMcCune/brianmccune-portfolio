@@ -316,10 +316,6 @@ h3 {
   min-height: 300dvh;
 }
 
-.projects > * {
-  margin-left: 8dvw;
-}
-
 .projects > .headline-container {
   display: flex;
   flex-direction: row;
@@ -327,6 +323,26 @@ h3 {
   font-size: 7dvw;
   color: rgb(110, 110, 85);
   overflow: hidden;
+  margin-left: 8dvw;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.project-image:hover {
+  width: 103%;
+}
+
+.project-image-container {
+  overflow: hidden;
+  width: 50%;
+  border-radius: 5px;
+  height: 60dvh;
 }
 
 @keyframes blink {

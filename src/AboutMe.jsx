@@ -25,16 +25,16 @@ const AboutMe = () => {
     })
 
 
-    gsap.from('img', {
+    gsap.from('.self-image', {
       scrollTrigger: {
-        trigger: 'img',
+        trigger: '.self-image',
         toggleActions: 'play none none none',
         // markers: true
       },
       scale: 0.9
     })
 
-    gsap.set('img', {
+    gsap.set('.self-image', {
       scale: 1
     })
 
@@ -66,7 +66,7 @@ const AboutMe = () => {
       </div>
       <div className="container">
         <div className="img-container">
-          <img src="./headshot.jpg" alt='developer headshot' />
+          <img className="self-image" src="./headshot.jpg" alt='developer headshot' />
         </div>
         <div className="text">
           <h3>Intro and hobbies</h3>

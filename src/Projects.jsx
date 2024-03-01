@@ -29,9 +29,9 @@ const Projects = () => {
       scrollTrigger: {
         trigger: '.projects',
         start: '-20% top',
-        end: 'center center',
+        end: 'bottom center',
         toggleActions: "restart reverse restart reverse",
-        // markers: true
+        markers: true
       },
       backgroundColor: 'rgb(9, 9, 9)',
       color: 'rgb(241, 241, 241)',
@@ -77,10 +77,13 @@ const Projects = () => {
         })}
       </div>
       <div className="projects-list">
-        <img src={projectData[0].image}></img>
-        <img src={projectData[1].image}></img>
-        <img src={projectData[2].image}></img>
-        <img src={projectData[3].image}></img>
+        {projectData.map((index) => {
+          return (
+            <div className="project-image-container">
+              <img className="project-image" src={index.image} />
+            </div>
+          )
+        })}
       </div>
     </div>
    );
