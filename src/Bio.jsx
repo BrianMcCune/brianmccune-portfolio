@@ -9,7 +9,7 @@ const Bio = () => {
 
   const bioTwo = 'emerging trends and technologies'
 
-  const bioThree = 'within web development'
+  const bioThree = 'within web development.'
 
   let bioOneArray = bioOne.split('')
   let bioTwoArray = bioTwo.split('')

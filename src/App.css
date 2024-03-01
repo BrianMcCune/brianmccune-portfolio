@@ -235,6 +235,10 @@ h3 {
   display: flex;
   flex-direction: column;
   margin-top: 15vh;
+  /* height: 150dvh; */
+}
+
+.expertise > * {
   margin-left: 8dvw;
 }
 
@@ -243,7 +247,6 @@ h3 {
   flex-direction: row;
   font-weight: 600;
   font-size: 7dvw;
-  overflow: hidden;
   color: rgb(110, 110, 85);
 }
 
@@ -253,10 +256,6 @@ h3 {
 
 .container {
   margin: 2dvh 0;
-}
-
-.expertise > .container {
-  overflow: hidden;
 }
 
 .expertise-info {
@@ -270,6 +269,7 @@ h3 {
 
 .expertise-list {
   line-height: 1;
+  margin-bottom: 20dvh;
 }
 
 .expertise-list > p {
@@ -293,23 +293,38 @@ h3 {
   font-size: 1.75dvw;
 }
 
-
-.projects {
-  /* display: flex;
-  justify-content: center;
-  overflow: hidden; */
-  min-height: 500dvh;
+.circle-container {
+  position: relative;
 }
 
 .expertise-circle {
   background: linear-gradient(rgb(107, 100, 92), rgb(241, 241, 241));
   position: absolute;
-  left: 69%;
+  left: 65%;
   transform: translate(-50%, 0);
   height: calc(50dvh + 17dvw);
   width: calc(50dvh + 17dvw);
   border-radius: 50%;
   opacity: 0.1;
+}
+
+.projects {
+  /* display: flex;
+  justify-content: center;
+  overflow: hidden; */
+  min-height: 300dvh;
+}
+
+.projects > * {
+  margin-left: 8dvw;
+}
+
+.projects > .headline-container {
+  display: flex;
+  flex-direction: row;
+  font-weight: 600;
+  font-size: 7dvw;
+  color: rgb(110, 110, 85);
 }
 
 @keyframes blink {

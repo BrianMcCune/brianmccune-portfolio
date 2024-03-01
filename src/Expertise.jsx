@@ -83,7 +83,9 @@ const Expertise = () => {
 
   return ( 
     <div className="expertise">
-      <div className="expertise-circle"></div>
+      <div className="circle-container">
+        <div className="expertise-circle"></div>
+      </div>
       <div className="headline-container">
         {headlineArray.map((index) => {
           return (
