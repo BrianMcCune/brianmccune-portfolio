@@ -10,7 +10,7 @@ let projectData = [
   {
     title: 'NavigatEDU',
     deployment: 'https://navigatedu.netlify.app/',
-    image: '../public/NavigatEDU.png',
+    image: '/NavigatEDU.png',
     gitHub: 'https://github.com/Brian4755/navigateEDU-frontend',
     // description: '5-day Hackathon project composed of fullstack functionality and complex user experience. Worked with Several UI/UX designers'
     usedTech: 'HTML, CSS, JS, ReactJS'
@@ -18,7 +18,7 @@ let projectData = [
   {
     title: 'ReactJS Calculator',
     deployment: 'https://calcreactjavascript.netlify.app/',
-    image: '../public/Calculator.png',
+    image: '/Calculator.png',
     gitHub: 'https://github.com/Brian4755/Calculator',
     // description: 'ReactJS calculator fully designed and functional'
     usedTech: 'HTML, CSS, JS, ReactJS'
@@ -26,7 +26,7 @@ let projectData = [
   {
     title: 'TFT CheatSheet',
     deployment: 'https://tftcheatsheet.herokuapp.com/',
-    image: '../public/TFT.png',
+    image: '/TFT.png',
     gitHub: 'https://github.com/Brian4755/TFTCheatSheet',
     // description: 'Forum/guide for a game called TeamFight Tactics. Used technologies such as EJS mongoDB/mongoose and JavaScript'
     usedTech: 'HTML, CSS, JS, Bootstrap'

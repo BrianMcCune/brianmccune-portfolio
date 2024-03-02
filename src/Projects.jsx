@@ -14,6 +14,7 @@ const Projects = () => {
     gsap.from('.projects-headline', {
       scrollTrigger: {
         trigger: '.projects',
+        start: 'top center',
         toggleActions: 'play none none none',
         // scrub: true,
         // markers: true
@@ -54,7 +55,7 @@ const Projects = () => {
       scrollTrigger: {
         trigger: '.projects',
         start: '-20% top',
-        end: 'bottom center',
+        end: '200% top',
         toggleActions: "restart reverse restart reverse"
       },
       backgroundColor: 'rgb(241, 241, 241)',
@@ -74,9 +75,17 @@ const Projects = () => {
         // markers: true
       },
     })
-
+    
+    // let animation = gsap.to('.project-image-container', {
+    //   scale: 1.05,
+    //   duration: 2,
+    //   delay: 2
+    // })
+    
   })
 
+
+  
   return ( 
     <div className="projects">
       <div className="headline-container">
@@ -94,13 +103,13 @@ const Projects = () => {
         {projectData.map((index) => {
           console.log({index})
           return (
+          <div className="project-image-container">
             <a href={index.deployment} target="_blank">
-            <div className="project-image-container">
               <div className="project-title">{index.title}</div>
               <div className="project-tech">{index.usedTech}</div>
               <img className="project-image" src={index.image} />
-            </div>
             </a>
+          </div>
           )
         })}
       </div>

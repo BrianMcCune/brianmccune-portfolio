@@ -334,12 +334,13 @@ h3 {
   overflow-x: hidden;
   width: 220dvw;
   /* width: 2500px; */
-  gap: 15dvw;
+  gap: 8dvw;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin-top: 3dvh;
   margin-left: 8dvw;
+  /* padding: 25px; */
 }
 
 .project-image {
