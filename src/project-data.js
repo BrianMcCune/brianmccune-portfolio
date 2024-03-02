@@ -2,7 +2,7 @@ let projectData = [
   {
     title: 'React Business Site',
     deployment: 'https://jacks-barbershop.herokuapp.com/',
-    image: '../public/Jacks.png',
+    image: '/Jacks.png',
     gitHub: 'https://github.com/Brian4755/Jack-s-Barbershop',
     // description: 'Barbershop business website made with React and hooks such as useState and useEffect'
     usedTech: 'HTML, CSS, JS, ReactJS'
