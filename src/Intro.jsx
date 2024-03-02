@@ -26,7 +26,7 @@ const Intro = () => {
         scrub: true,
       },
       opacity: 0,
-      y: 170
+      // y: 170
       }
     )
 
