@@ -1,20 +1,23 @@
+import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 import { projectData } from "./project-data";
-import { useRef } from "react";
 
 const Projects = () => {
 
-  const imgRef = useRef(null);
+  const elementRefs = useRef([]);
 
-  const handleMouseEnter = () => {
-    gsap.to(imgRef.current, { scale: 1.2, duration: 0.3 });
+  // console.log(elementRefs)
+
+  const createHoverEffect = (element) => {
+    gsap.to(element, { scale: 1.2, duration: 0.3 });
+    console.log(elementRefs)
   };
 
-  const handleMouseLeave = () => {
-    gsap.to(imgRef.current, { scale: 1, duration: 0.3 });
+  const removeHoverEffect = (element) => {
+    gsap.to(element, { scale: 1, duration: 0.3 });
   };
 
   const headline = 'Projects'
@@ -105,17 +108,18 @@ const Projects = () => {
         })}
       </div>
       <div className="projects-list">
-        {projectData.map((index) => {
-          console.log({index})
+        {projectData.map((project, index) => {
           return (
           <div className="project-image-container"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-          ref={imgRef}>
+          key={index}
+          ref={(el) => {elementRefs.current[index] = el; console.log(index)}}
+          onMouseEnter={() => {createHoverEffect(elementRefs.current[index])
+          console.log((elementRefs))}}
+          onMouseLeave={() => removeHoverEffect(elementRefs.current[index])}>
             <a href={index.deployment} target="_blank">
-              <div className="project-title">{index.title}</div>
-              <div className="project-tech">{index.usedTech}</div>
-              <img className="project-image" src={index.image} />
+              <div className="project-title">{project.title}</div>
+              <div className="project-tech">{project.usedTech}</div>
+              <img className="project-image" src={project.image} />
             </a>
           </div>
           )
