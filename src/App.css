@@ -310,9 +310,6 @@ h3 {
 }
 
 .projects {
-  /* display: flex;
-  justify-content: center;
-  overflow: hidden; */
   min-height: 130dvh;
   overflow-x: hidden;
 }
@@ -325,43 +322,40 @@ h3 {
   color: rgb(110, 110, 85);
   overflow: hidden;
   margin-left: 8dvw;
-  margin-top: 20dvh;
+  margin-top: 150px;
 }
 
 .projects-list {
   display: flex;
-  /* flex-direction: column; */
-  overflow-x: hidden;
   width: 220dvw;
-  /* width: 2500px; */
   gap: 8dvw;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   margin-top: 3dvh;
   margin-left: 8dvw;
-  /* padding: 25px; */
 }
 
 .project-image {
-  /* width: 95%; */
-  width: 41dvw;
-  /* height: auto; */
+  width: 85%;
+  height: 100%;
+  max-height: 62dvh;
 }
 
 .project-image-container {
   overflow: hidden;
-  border-radius: 15px;
   background-color: rgb(241, 241, 241);
-  height: 60dvh;
+  height: fit-content;
+  /* min-height: 50dvh; */
+  min-height: clamp(50dvh, 60dvh, 70dvh);
+}
+
+.project-image-container:hover {
+  /* animation: slidein 1s  forwards; */
+  border-radius: 15px;
+  /* transition: all 1s ease; */
 }
 
 a:hover > .project-tech {
   display: block;
-}
-
-.project-image-container:hover {
-  background-color: rgb(255, 245, 235);
 }
 
 .project-title {

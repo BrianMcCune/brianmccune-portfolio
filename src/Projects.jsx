@@ -76,12 +76,6 @@ const Projects = () => {
       },
     })
     
-    // let animation = gsap.to('.project-image-container', {
-    //   scale: 1.05,
-    //   duration: 2,
-    //   delay: 2
-    // })
-    
   })
 
 
