@@ -11,10 +11,14 @@ const Projects = () => {
 
   
   const createHoverEffect = (element, index) => {
+// 7, 13, 6
+    const backgroundColors = ['rgb(200, 221, 233)', 'rgb(235, 194, 96)', 'rgb(120, 171, 219)', 'rgb(248, 191, 95)']
+
     gsap.to(element, { 
       scale: 1.05, 
       duration: 0.2, 
       ease: 'none',
+      background: backgroundColors[index]
     });
     gsap.to(`.project-image-container:nth-child(${index + 1}) > a > .project-image`, { 
       scale: 0.95, 
@@ -28,6 +32,7 @@ const Projects = () => {
       scale: 0.95, 
       duration: 0.2,
       ease: 'none', 
+      background: 'rgb(241, 241, 241)'
     });
     gsap.to(`.project-image`, { 
       scale: 1.05, 
