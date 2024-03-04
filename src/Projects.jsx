@@ -3,8 +3,19 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 import { projectData } from "./project-data";
+import { useRef } from "react";
 
 const Projects = () => {
+
+  const imgRef = useRef(null);
+
+  const handleMouseEnter = () => {
+    gsap.to(imgRef.current, { scale: 1.2, duration: 0.3 });
+  };
+
+  const handleMouseLeave = () => {
+    gsap.to(imgRef.current, { scale: 1, duration: 0.3 });
+  };
 
   const headline = 'Projects'
   let headlineArray = headline.split('')
@@ -97,7 +108,10 @@ const Projects = () => {
         {projectData.map((index) => {
           console.log({index})
           return (
-          <div className="project-image-container">
+          <div className="project-image-container"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          ref={imgRef}>
             <a href={index.deployment} target="_blank">
               <div className="project-title">{index.title}</div>
               <div className="project-tech">{index.usedTech}</div>
