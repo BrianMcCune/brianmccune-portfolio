@@ -113,13 +113,13 @@ button {
   justify-content: center;
 }
 
-.intro > .lineOne {
+/* .intro > .lineOne {
   margin-left: -80px;
-}
+} */
 
-.intro > .lineTwo {
+/* .intro > .lineTwo {
   margin-left: 30px;
-}
+} */
 
 .intro > .lineOne, .intro > .lineTwo {
   line-height: 110%;
@@ -327,31 +327,27 @@ h3 {
 
 .projects-list {
   display: flex;
-  width: 220dvw;
+  /* width: 220dvw; */
+  width: 400dvw;
   gap: 8dvw;
   text-align: center;
-  margin-top: 3dvh;
+  margin-top: 1dvh;
   margin-left: 8dvw;
 }
 
 .project-image {
-  width: 85%;
+  width: 90%;
   height: 100%;
-  max-height: 62dvh;
+  max-height: 65dvh;
 }
 
 .project-image-container {
   overflow: hidden;
   background-color: rgb(241, 241, 241);
   height: fit-content;
-  /* min-height: 50dvh; */
   min-height: clamp(50dvh, 60dvh, 70dvh);
   border-radius: 10px;
 }
-
-/* a:hover > .project-tech {
-  display: block;
-} */
 
 .project-title {
   font-size: 30px;
@@ -369,12 +365,14 @@ a:visited {
 }
 
 .project-tech {
-  display: none;
+  /* display: none; */
+  opacity: 0;
   text-align: left;
   margin-left: 21px;
   margin-bottom: 10px;
   margin-top: -25px;
   position: absolute;
+  font-weight: 700;
 }
 
 .testing {

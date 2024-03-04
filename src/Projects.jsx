@@ -11,7 +11,7 @@ const Projects = () => {
 
   
   const createHoverEffect = (element, index) => {
-// 7, 13, 6
+    // 7, 13, 6
     const backgroundColors = ['rgb(200, 221, 233)', 'rgb(235, 194, 96)', 'rgb(120, 171, 219)', 'rgb(248, 191, 95)']
 
     gsap.to(element, { 
@@ -25,6 +25,12 @@ const Projects = () => {
       duration: 0.2, 
       ease: 'none',
     });
+
+    gsap.to(`.project-image-container:nth-child(${index + 1}) > a > .project-tech`, {
+      opacity: 1,
+      duration: 0.2,
+      // ease: 'none'
+    })
   };
 
   const removeHoverEffect = (element) => {
@@ -34,11 +40,18 @@ const Projects = () => {
       ease: 'none', 
       background: 'rgb(241, 241, 241)'
     });
+
     gsap.to(`.project-image`, { 
       scale: 1.05, 
       duration: 0.2,
       ease: 'none', 
     });
+
+    gsap.to('.project-tech', {
+      opacity: 0,
+      duration: 0.2,
+      // ease: 'none'
+    })
   };
 
   const headline = 'Projects'
@@ -111,7 +124,7 @@ const Projects = () => {
     })
 
     gsap.to('.project-image-container', {
-      xPercent: -325,
+      xPercent: -310,
       ease: 'none',
       scrollTrigger: {
         trigger: '.projects',
