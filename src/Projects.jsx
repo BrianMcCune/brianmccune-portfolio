@@ -74,6 +74,18 @@ const Projects = () => {
       duration: 0.2,
     })
 
+    gsap.to('.projects-headline', {
+      scrollTrigger: {
+        trigger: '.projects',
+        start: '-20% top',
+        end: '200% top',
+        toggleActions: "restart reverse restart reverse",
+        // markers: true
+      },
+      color: 'rgb(241, 241, 241)',
+      duration: 0.2,
+    })
+
     gsap.to('.projects', {
       scrollTrigger: {
         trigger: '.projects',

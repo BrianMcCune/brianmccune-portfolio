@@ -43,6 +43,17 @@ const Bio = () => {
       duration: 0.2
     })
 
+    gsap.to('.about-headline', {
+      scrollTrigger: {
+        trigger: '.bio',
+        start: 'center bottom',
+        end: 'bottom center',
+        toggleActions: "restart reverse restart reverse"
+      },
+      color: 'rgb(241, 241, 241)',
+      duration: 0.2
+    })
+
     gsap.to('.bio', {
       scrollTrigger: {
         trigger: '.bio',
