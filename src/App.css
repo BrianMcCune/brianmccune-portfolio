@@ -346,17 +346,12 @@ h3 {
   height: fit-content;
   /* min-height: 50dvh; */
   min-height: clamp(50dvh, 60dvh, 70dvh);
+  border-radius: 10px;
 }
 
-.project-image-container:hover {
-  /* animation: slidein 1s  forwards; */
-  border-radius: 15px;
-  /* transition: all 1s ease; */
-}
-
-a:hover > .project-tech {
+/* a:hover > .project-tech {
   display: block;
-}
+} */
 
 .project-title {
   font-size: 30px;

@@ -9,15 +9,31 @@ const Projects = () => {
 
   const elementRefs = useRef([]);
 
-  // console.log(elementRefs)
-
-  const createHoverEffect = (element) => {
-    gsap.to(element, { scale: 1.2, duration: 0.3 });
-    console.log(elementRefs)
+  
+  const createHoverEffect = (element, index) => {
+    gsap.to(element, { 
+      scale: 1.05, 
+      duration: 0.2, 
+      ease: 'none',
+    });
+    gsap.to(`.project-image-container:nth-child(${index + 1}) > a > .project-image`, { 
+      scale: 0.95, 
+      duration: 0.2, 
+      ease: 'none',
+    });
   };
 
   const removeHoverEffect = (element) => {
-    gsap.to(element, { scale: 1, duration: 0.3 });
+    gsap.to(element, { 
+      scale: 0.95, 
+      duration: 0.2,
+      ease: 'none', 
+    });
+    gsap.to(`.project-image`, { 
+      scale: 1.05, 
+      duration: 0.2,
+      ease: 'none', 
+    });
   };
 
   const headline = 'Projects'
@@ -110,13 +126,13 @@ const Projects = () => {
       <div className="projects-list">
         {projectData.map((project, index) => {
           return (
-          <div className="project-image-container"
+          <div className="project-image-container" 
           key={index}
-          ref={(el) => {elementRefs.current[index] = el; console.log(index)}}
-          onMouseEnter={() => {createHoverEffect(elementRefs.current[index])
-          console.log((elementRefs))}}
+          ref={(el) => {elementRefs.current[index] = el}}
+          onMouseEnter={() => {createHoverEffect(elementRefs.current[index], index)
+          }}
           onMouseLeave={() => removeHoverEffect(elementRefs.current[index])}>
-            <a href={index.deployment} target="_blank">
+            <a href={project.deployment} target="_blank">
               <div className="project-title">{project.title}</div>
               <div className="project-tech">{project.usedTech}</div>
               <img className="project-image" src={project.image} />
