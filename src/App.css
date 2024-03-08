@@ -273,7 +273,7 @@ h3 {
 }
 
 .expertise-list > p {
-  font-size: 4.5dvw;
+  font-size: 4dvw;
   font-weight: 800;
   margin-top: 0px;
   margin-bottom: 10px;
@@ -379,9 +379,35 @@ a:visited {
 }
 
 .contact-headline {
+  margin-top: 10dvh;
   font-weight: 600;
   font-size: 5dvw;
   color: rgb(110, 110, 85);
+}
+
+.email {
+  margin-bottom: 2dvh;
+  font-size: 1.25dvw;
+}
+
+.social-media-icons {
+  margin-bottom: 8dvh;
+}
+
+.contact-expertise > div,
+.contact-about > div,
+.contact-projects > div,
+.contact-resume > div {
+  font-weight: 700;
+  font-size: 2dvw;
+}
+
+.contact-expertise > p,
+.contact-about > p,
+.contact-projects > p,
+.contact-resume > p {
+  margin-top: 1dvh;
+  font-size: 1.25dvw;
 }
 
 .contact > .container {
@@ -397,10 +423,17 @@ a:visited {
 .summary-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 3dvw;
 }
 
 .contact-expertise, .contact-resume {
   justify-self: right;
+}
+
+.copyright {
+  margin-top: 10dvh;
+  margin-bottom: 5dvh;
+  font-size: 1.25dvw;
 }
 
 @keyframes blink {
