@@ -183,9 +183,8 @@ button {
 .about > .headline-container {
   display: flex;
   margin-left: 8dvw;
-  margin-bottom: 5dvh;
   font-weight: 600;
-  font-size: 7dvw;
+  font-size: 5dvw;
   overflow: hidden;
   color: rgb(110, 110, 85);
 }
@@ -246,7 +245,7 @@ h3 {
   display: flex;
   flex-direction: row;
   font-weight: 600;
-  font-size: 7dvw;
+  font-size: 5dvw;
   color: rgb(110, 110, 85);
   overflow: hidden;
 }
@@ -318,7 +317,7 @@ h3 {
   display: flex;
   flex-direction: row;
   font-weight: 600;
-  font-size: 7dvw;
+  font-size: 5dvw;
   color: rgb(110, 110, 85);
   overflow: hidden;
   margin-left: 8dvw;
@@ -377,6 +376,12 @@ a:visited {
 .contact {
   margin-left: 8dvw;
   margin-right: 8dvw;
+}
+
+.contact-headline {
+  font-weight: 600;
+  font-size: 5dvw;
+  color: rgb(110, 110, 85);
 }
 
 .contact > .container {
