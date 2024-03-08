@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
 const Contact = () => {
   return ( 
     <div className="contact">
@@ -5,8 +9,16 @@ const Contact = () => {
         <div className="contact-headline">Let's Chat</div>
         <div className="email">BrianMmccune@gmail.com</div>
         <div className="social-media-icons">
-          <div>LinkedIn</div>
-          <div>Github</div>
+          <div>
+            <a href="https://www.linkedin.com/in/mccuneb/" target="_blank">
+            <FontAwesomeIcon style={{fontSize: '35px', color: 'rgb(9, 9, 9)'}} icon={faLinkedin} />
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/Brian4755" target="_blank">
+            <FontAwesomeIcon style={{fontSize: '35px', color: 'rgb(9, 9, 9)'}} icon={faGithub} />
+            </a>
+          </div>
         </div>
         <div className="contact-projects">
           <div>Projects</div>
