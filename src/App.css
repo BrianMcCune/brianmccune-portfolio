@@ -187,6 +187,7 @@ button {
   font-size: 5dvw;
   overflow: hidden;
   color: rgb(110, 110, 85);
+  margin-bottom: 5dvh;
 }
 
 .about > h2 {
@@ -211,6 +212,13 @@ button {
 .img-container {
   width: 50%;
   min-width: 50%;
+  overflow: hidden;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.img-container > img {
+  margin-top: -20%;
 }
 
 img {
@@ -389,19 +397,25 @@ a:visited {
 
 .email {
   margin-bottom: 2dvh;
-  font-size: calc(10px + 1.25dvw);
+  font-size: calc(10px + 0.5dvw);
 }
 
 .social-media-icons {
   margin-bottom: 8dvh;
 }
 
+.contact-expertise,
+.contact-about,
+.contact-projects,
+.contact-resume {
+  width: 75%;
+}
 .contact-expertise > div,
 .contact-about > div,
 .contact-projects > div,
 .contact-resume > div {
   font-weight: 700;
-  font-size: calc(15px + 2dvw);
+  font-size: calc(15px + 1dvw);
 }
 
 .contact-expertise > p,
@@ -409,7 +423,7 @@ a:visited {
 .contact-projects > p,
 .contact-resume > p {
   margin-top: 1dvh;
-  font-size: calc(10px + 1.25dvw);
+  font-size: calc(10px + 0.75dvw);
 }
 
 .contact > .container {
@@ -435,7 +449,7 @@ a:visited {
 .copyright {
   margin-top: 10dvh;
   margin-bottom: 5dvh;
-  font-size: calc(10px + 1.25dvw);
+  font-size: calc(10px + 0.5dvw);
 }
 
 @keyframes blink {

@@ -41,8 +41,8 @@ const AboutMe = () => {
     gsap.to('.img-container', {
       scrollTrigger: {
         trigger: '.img-container',
-        start: () => 'top ' + (window.innerWidth*0.01+ 100),
-        end: () => 'bottom ' + (window.innerWidth*0.23 + 230),
+        start: () => 'top ' + (window.innerWidth*0.03+ 100),
+        end: () => 'bottom ' + (window.innerWidth*0.3 + 155),
         pin: '.text',
         scrub: true,
         // immediateRender: false,
