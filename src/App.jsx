@@ -6,6 +6,7 @@ import Bio from './Bio'
 import AboutMe from './AboutMe'
 import Expertise from './Expertise'
 import Projects from './Projects'
+import Contact from './Contact'
 
 function App() {
  
@@ -18,7 +19,7 @@ function App() {
         <AboutMe />
         <Expertise />
         <Projects />
-        <div className='testing'>Testing</div>
+        <Contact />
       </div>
     </ReactLenis>
   )

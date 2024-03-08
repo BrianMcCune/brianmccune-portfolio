@@ -374,10 +374,6 @@ a:visited {
   font-weight: 700;
 }
 
-.testing {
-  min-height: 200dvh;
-}
-
 @keyframes blink {
   9% {
     opacity: 1;
