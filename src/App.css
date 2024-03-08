@@ -374,6 +374,30 @@ a:visited {
   font-weight: 700;
 }
 
+.contact {
+  margin-left: 8dvw;
+  margin-right: 8dvw;
+}
+
+.contact > .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.summary-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-expertise, .contact-resume {
+  justify-self: right;
+}
+
 @keyframes blink {
   9% {
     opacity: 1;
