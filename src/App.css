@@ -378,6 +378,10 @@ a:visited {
   margin-right: 8dvw;
 }
 
+.container > .headline-container {
+  display: flex;
+}
+
 .contact-headline {
   margin-top: 10dvh;
   font-weight: 600;
@@ -387,7 +391,7 @@ a:visited {
 
 .email {
   margin-bottom: 2dvh;
-  font-size: 1.25dvw;
+  font-size: calc(10px + 1.25dvw);
 }
 
 .social-media-icons {
@@ -399,7 +403,7 @@ a:visited {
 .contact-projects > div,
 .contact-resume > div {
   font-weight: 700;
-  font-size: 2dvw;
+  font-size: calc(15px + 2dvw);
 }
 
 .contact-expertise > p,
@@ -407,7 +411,7 @@ a:visited {
 .contact-projects > p,
 .contact-resume > p {
   margin-top: 1dvh;
-  font-size: 1.25dvw;
+  font-size: calc(10px + 1.25dvw);
 }
 
 .contact > .container {
@@ -433,7 +437,7 @@ a:visited {
 .copyright {
   margin-top: 10dvh;
   margin-bottom: 5dvh;
-  font-size: 1.25dvw;
+  font-size: calc(10px + 1.25dvw);
 }
 
 @keyframes blink {

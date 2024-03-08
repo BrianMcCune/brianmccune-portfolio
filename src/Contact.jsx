@@ -3,10 +3,24 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
+
+  const headline = "Let's Chat"
+  let headlineArray = headline.split('')
+
   return ( 
     <div className="contact">
       <div className="container">
-        <div className="contact-headline">Let's Chat</div>
+        <div className="headline-container">
+          {headlineArray.map((index) => {
+            return (
+              <div className="contact-headline">
+                <span key={headlineArray[index]} className="letter">
+                  {index === ' ' ? '\u00A0' : index}
+                </span>
+              </div>
+            )
+          })}
+        </div>
         <div className="email">BrianMmccune@gmail.com</div>
         <div className="social-media-icons">
           <div>
