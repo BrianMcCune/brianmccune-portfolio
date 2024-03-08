@@ -1,3 +1,6 @@
+import gsap from "gsap";
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -7,6 +10,20 @@ const Contact = () => {
   const headline = "Let's Chat"
   let headlineArray = headline.split('')
 
+  useGSAP(() => {
+    gsap.from('.contact-headline', {
+      scrollTrigger: {
+        trigger: '.contact',
+        toggleActions: 'play none none none',
+      },
+      duration: 0.4, 
+      y:250, 
+      stagger: 0.05, 
+      ease: 'power3.out',
+      delay: 0.1,
+    })
+  })
+  
   return ( 
     <div className="contact">
       <div className="container">

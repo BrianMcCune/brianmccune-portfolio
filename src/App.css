@@ -380,9 +380,7 @@ a:visited {
 
 .container > .headline-container {
   display: flex;
-}
-
-.contact-headline {
+  overflow: hidden;
   margin-top: 10dvh;
   font-weight: 600;
   font-size: 5dvw;
