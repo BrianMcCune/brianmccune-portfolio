@@ -329,7 +329,7 @@ h3 {
   color: rgb(110, 110, 85);
   overflow: hidden;
   margin-left: 8dvw;
-  margin-top: 150px;
+  margin-top: calc(9dvh + 100px);
 }
 
 .projects-list {
