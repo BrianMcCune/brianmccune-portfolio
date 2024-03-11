@@ -111,6 +111,18 @@ const Projects = () => {
       duration: 0.2,
     })
 
+    gsap.to('.fontawesomeicon', {
+      scrollTrigger: {
+        trigger: '.projects',
+        start: '-20% top',
+        end: '200% top',
+        toggleActions: "restart reverse restart reverse",
+        // markers: true
+      },
+      color: 'rgb(241, 241, 241)',
+      duration: 0.2,
+    })
+
     gsap.to('button', {
       scrollTrigger: {
         trigger: '.projects',

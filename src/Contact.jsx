@@ -43,12 +43,12 @@ const Contact = () => {
           <div className="social-media-icons">
             <div>
               <a href="https://www.linkedin.com/in/mccuneb/" target="_blank">
-              <FontAwesomeIcon style={{fontSize: '35px', color: 'rgb(9, 9, 9)'}} icon={faLinkedin} />
+              <FontAwesomeIcon className='fontawesomeicon' style={{fontSize: '35px', color: 'rgb(9, 9, 9)'}} icon={faLinkedin} />
               </a>
             </div>
             <div>
               <a href="https://github.com/Brian4755" target="_blank">
-              <FontAwesomeIcon style={{fontSize: '35px', color: 'rgb(9, 9, 9)'}} icon={faGithub} />
+              <FontAwesomeIcon className='fontawesomeicon' style={{fontSize: '35px', color: 'rgb(9, 9, 9)'}} icon={faGithub} />
               </a>
             </div>
           </div>
