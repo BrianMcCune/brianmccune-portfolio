@@ -371,7 +371,6 @@ a:visited {
 }
 
 .project-tech {
-  /* display: none; */
   opacity: 0;
   text-align: left;
   margin-left: 21px;
@@ -381,9 +380,13 @@ a:visited {
   font-weight: 700;
 }
 
-.contact {
+.contact-container {
   margin-left: 8dvw;
   margin-right: 8dvw;
+}
+
+.contact-container > .container {
+  margin-top: calc(0.4dvh - 3px);
 }
 
 .container > .headline-container {
@@ -426,7 +429,7 @@ a:visited {
   font-size: calc(10px + 0.75dvw);
 }
 
-.contact > .container {
+.contact-container > .container {
   display: flex;
   flex-direction: column;
 }
