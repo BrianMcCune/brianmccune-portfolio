@@ -25,18 +25,32 @@ const AboutMe = () => {
     })
 
 
-    gsap.from('.self-image', {
+    gsap.from('.img-container', {
       scrollTrigger: {
         trigger: '.self-image',
         toggleActions: 'play none none none',
         // markers: true
       },
-      scale: 0.9
+      scale: 0.5,
+      duration: 0.8,
     })
 
-    gsap.set('.self-image', {
+    gsap.set('.img-container', {
       scale: 1
     })
+
+    // gsap.from('.self-image', {
+    //   scrollTrigger: {
+    //     trigger: '.self-image',
+    //     toggleActions: 'play none none none',
+    //     // markers: true
+    //   },
+    //   scale: 0.9
+    // })
+
+    // gsap.set('.self-image', {
+    //   scale: 1
+    // })
 
     gsap.to('.img-container', {
       scrollTrigger: {
