@@ -78,9 +78,8 @@ const Projects = () => {
       scrollTrigger: {
         trigger: '.projects',
         start: '-20% top',
-        end: '200% top',
+        end: '195% top',
         toggleActions: "restart reverse restart reverse",
-        // markers: true
       },
       backgroundColor: 'rgb(9, 9, 9)',
       color: 'rgb(241, 241, 241)',
@@ -91,7 +90,7 @@ const Projects = () => {
       scrollTrigger: {
         trigger: '.projects',
         start: '-20% top',
-        end: '200% top',
+        end: '195% top',
         toggleActions: "restart reverse restart reverse",
         // markers: true
       },
@@ -103,7 +102,7 @@ const Projects = () => {
       scrollTrigger: {
         trigger: '.projects',
         start: '-20% top',
-        end: '200% top',
+        end: '195% top',
         toggleActions: "restart reverse restart reverse",
         // markers: true
       },
@@ -115,7 +114,7 @@ const Projects = () => {
       scrollTrigger: {
         trigger: '.projects',
         start: '-20% top',
-        end: '200% top',
+        end: '195% top',
         toggleActions: "restart reverse restart reverse",
         // markers: true
       },
@@ -127,7 +126,7 @@ const Projects = () => {
       scrollTrigger: {
         trigger: '.projects',
         start: '-20% top',
-        end: '200% top',
+        end: '195% top',
         toggleActions: "restart reverse restart reverse"
       },
       backgroundColor: 'rgb(241, 241, 241)',
