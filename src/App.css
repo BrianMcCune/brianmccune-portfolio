@@ -385,9 +385,10 @@ a:visited {
   margin-right: 8dvw;
 }
 
-/* .contact-container > .container {
-  margin-top: calc(0.4dvh - 3px);
-} */
+.contact-container > .container {
+  /* margin-top: calc(0.4dvh - 3px); */
+  margin-top: 0;
+}
 
 .container > .headline-container {
   display: flex;
