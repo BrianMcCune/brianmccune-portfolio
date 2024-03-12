@@ -407,6 +407,19 @@ a:visited {
   margin-bottom: 8dvh;
 }
 
+.contact-circle {
+  position: relative;
+  background: linear-gradient(rgb(107, 100, 92), rgb(241, 241, 241));
+  height: calc(50dvh + 17dvw);
+  width: calc(50dvh + 17dvw);
+  border-radius: 50%;
+  opacity:0.1;
+  margin-top: -90dvh;
+  z-index: -1;
+  margin-left: 20%;
+  transform: translate(-50%);
+}
+
 .contact-expertise,
 .contact-about,
 .contact-projects,
