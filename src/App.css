@@ -385,9 +385,9 @@ a:visited {
   margin-right: 8dvw;
 }
 
-.contact-container > .container {
+/* .contact-container > .container {
   margin-top: calc(0.4dvh - 3px);
-}
+} */
 
 .container > .headline-container {
   display: flex;
