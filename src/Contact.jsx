@@ -27,7 +27,7 @@ const Contact = () => {
       scrollTrigger: {
         trigger: '.contact',
         start: '-30%',
-        markers: true,
+        // markers: true,
         scrub: true,
       },
       opacity: 0,

@@ -11,17 +11,17 @@ import Contact from './Contact'
 function App() {
  
   return (
-    <ReactLenis root>
-      <div className='portfolio'>
-        <Navbar />
-        <Intro />
-        <Bio />
-        <AboutMe />
-        <Expertise />
-        <Projects />
-        <Contact />
-      </div>
-    </ReactLenis>
+      <ReactLenis root>
+        <div className='portfolio'>
+          <Navbar />
+          <Intro />
+          <Bio />
+          <AboutMe id='about' />
+          <Expertise id='expertise' />
+          <Projects />
+          <Contact />
+        </div>
+      </ReactLenis>
   )
 }
 
