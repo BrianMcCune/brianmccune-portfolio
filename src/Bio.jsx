@@ -16,55 +16,53 @@ const Bio = () => {
   let bioThreeArray = bioThree.split('')
 
   useGSAP(() => {
-    gsap.to('.navbar, .bio, .intro, .about, body', {
+
+    const tl = gsap.timeline({
       scrollTrigger: {
         trigger: '.bio',
-        // start: '70% bottom',
-        start: 'center bottom',
-        // end: '80% 30%',
-        end: 'bottom center',
         // markers: true,
-        toggleActions: "restart reverse restart reverse"
-      },
+        start: 'center bottom',
+        end: '90% top',
+        scrub: true,
+        stagger: 0
+      }
+    })
+
+    tl.to('.navbar, .bio, .intro, .about', {
       backgroundColor: 'rgb(9, 9, 9)',
       color: 'rgb(241, 241, 241)',
-      duration: 0.2,
+      duration: 0.2
     })
 
-    gsap.to('button', {
-      scrollTrigger: {
-        trigger: '.bio',
-        start: 'center bottom',
-        end: 'bottom center',
-        toggleActions: "restart reverse restart reverse"
-      },
+    tl.to('button', {
       backgroundColor: 'rgb(241, 241, 241)',
       color: 'rgb(9, 9, 9)',
-      duration: 0.2
-    })
+    }, 0)
 
-    gsap.to('.about-headline', {
-      scrollTrigger: {
-        trigger: '.bio',
-        start: 'center bottom',
-        end: 'bottom center',
-        toggleActions: "restart reverse restart reverse"
-      },
+    tl.to('.about-headline', {
+      color: 'rgb(241, 241, 241)'
+    }, 0)
+
+    tl.to('.navbar, .bio, .intro, .about', {
+      backgroundColor: 'rgb(9, 9, 9)',
       color: 'rgb(241, 241, 241)',
+      duration: 0.6
+    })
+
+    tl.to('.navbar, .bio, .intro, .about', {
+      color: 'rgb(9, 9, 9)',
+      backgroundColor: 'rgb(241, 241, 241)',
       duration: 0.2
     })
 
-    gsap.to('.bio', {
-      scrollTrigger: {
-        trigger: '.bio',
-        start: 'center bottom',
-        end: 'bottom center',
-        toggleActions: "restart reverse restart reverse"
-      },
-      opacity: 1,
-      duration: 0.3,
-      color: 'rgb(230, 230, 226)'
-    })
+    tl.to('button', {
+      backgroundColor: 'rgb(9, 9, 9)',
+      color: 'rgb(241, 241, 241)',
+    }, 1)
+
+    tl.to('.about-headline', {
+      color: 'rgb(110, 110, 85)'
+    }, 1)
 
     gsap.to('.bio-text', {
       scrollTrigger: {
