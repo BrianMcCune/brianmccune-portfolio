@@ -434,10 +434,13 @@ a:visited {
 .contact-resume {
   width: 75%;
 }
-.contact-expertise > div,
-.contact-about > div,
-.contact-projects > div,
-.contact-resume > div {
+
+.contact-link {
+  cursor: pointer;
+}
+
+.contact-link > div,
+a > div {
   font-weight: 700;
   font-size: calc(15px + 1dvw);
 }
