@@ -64,14 +64,19 @@ body {
   z-index: 3;
   background-color: rgb(241, 241, 241);
   height: 50px;
+  user-select: none;
 }
 
 
-.navbar > h2:hover, .brand > h1:hover, button:hover {
+.link > h2:hover, .brand > h1:hover, button:hover {
   opacity: 0.5;
 }
 
-.navbar > h2 {
+h2 > .link {
+  cursor: pointer;
+}
+
+.link > h2 {
   cursor: pointer;
   font-weight: 500;
   font-size: 15px;
@@ -386,7 +391,6 @@ a:visited {
 }
 
 .contact-container > .container {
-  /* margin-top: calc(0.4dvh - 3px); */
   margin-top: 0;
 }
 

@@ -16,7 +16,7 @@ const Bio = () => {
   let bioThreeArray = bioThree.split('')
 
   useGSAP(() => {
-    gsap.to('.navbar, .bio, .intro, .about', {
+    gsap.to('.navbar, .bio, .intro, .about, body', {
       scrollTrigger: {
         trigger: '.bio',
         // start: '70% bottom',

@@ -74,7 +74,7 @@ const Projects = () => {
       delay: 0.1
     })
 
-    gsap.to('.navbar, .expertise, .contact', {
+    gsap.to('.navbar, .expertise, .contact, .intro, .about, .bio, body', {
       scrollTrigger: {
         trigger: '.projects',
         start: '-20% top',
