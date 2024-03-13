@@ -79,7 +79,7 @@ const Contact = () => {
               <p>Take a look at some projects I've created, showcasing my skills.</p>
             </div>
             <div className="contact-resume">
-            <a href="./Resume.pdf" target="_blank"><div>Resume</div></a>
+            <a href="./Resume.pdf" target="_blank"><div className="resume">Resume</div></a>
               <p>See my work history and my achievements from my resume.</p>
             </div>
           </div>
