@@ -152,7 +152,7 @@ const Projects = () => {
 
   
   return ( 
-    <div className="projects">
+    <div className="projects" id="projects">
       <div className="headline-container">
         {headlineArray.map((index) => {
           return (

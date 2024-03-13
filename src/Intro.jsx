@@ -53,7 +53,7 @@ const Intro = () => {
 
 
   return ( 
-    <div className="intro">
+    <div className="intro" id="intro">
       <div className='intro-animation'>
         <div className='container'>
           <div className='name'>Brian McCune</div>

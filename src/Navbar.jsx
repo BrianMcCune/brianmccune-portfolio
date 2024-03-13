@@ -21,12 +21,14 @@ const Navbar = (props) => {
     <div className="navbar">
       <div className="brand">
         <CodeIcon />
-        <h1>McCune</h1>
+        <Link to="intro" className="link"><h1>McCune</h1></Link>
       </div>
-      <Link to="about" className="link"><h2>About</h2></Link>
-      <Link to="expertise" offset={-70} className="link"><h2>Expertise</h2></Link>
-      <Link className="link"><h2>Projects</h2></Link>
-      <button>Let's Chat</button>
+      <Link to="about" offset={90} className="link"><h2>About</h2></Link>
+      <Link to="expertise" offset={-70}className="link"><h2>Expertise</h2></Link>
+      <Link to="projects" offset={115} className="link"><h2>Projects</h2></Link>
+      <Link to="contact" className="link">
+      <button onClick={() => handleOnClick()}>Let's Chat</button>
+      </Link>
     </div>
    );
 }

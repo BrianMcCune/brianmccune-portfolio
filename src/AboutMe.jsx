@@ -53,7 +53,7 @@ const AboutMe = () => {
   })
 
   return ( 
-    <div className="about">
+    <div className="about" id="about">
       <div className="headline-container">
         {headlineArray.map((index) => {
           return (
