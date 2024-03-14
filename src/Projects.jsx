@@ -79,7 +79,7 @@ const Projects = () => {
         trigger: '.projects',
         // markers: true,
         start: 'center bottom',
-        end: '300% top',
+        end: '270% top',
         scrub: true,
         stagger: 0
       }
@@ -88,7 +88,7 @@ const Projects = () => {
     tl.to('.projects, .navbar, .expertise, .contact', {
       backgroundColor: 'rgb(9, 9, 9)',
       color: 'rgb(241, 241, 241)',
-      duration: 0.2
+      duration: 0.1
     })
 
     tl.to('button', {
@@ -103,27 +103,27 @@ const Projects = () => {
     tl.to('.projects, .navbar, .expertise, .contact, html', {
       backgroundColor: 'rgb(9, 9, 9)',
       color: 'rgb(241, 241, 241)',
-      duration: 0.6
+      duration: 0.8
     })
 
     tl.to('.projects, .navbar, .expertise, .contact, html', {
       color: 'rgb(9, 9, 9)',
       backgroundColor: 'rgb(241, 241, 241)',
-      duration: 0.2
+      duration: 0.1
     })
 
     tl.to('button', {
       backgroundColor: 'rgb(9, 9, 9)',
       color: 'rgb(241, 241, 241)',
-    }, 1)
+    }, 1.1)
 
     tl.to('.projects-headline, .contact-headline', {
       color: 'rgb(110, 110, 85)'
-    }, 1)
+    }, 1.1)
 
     tl.to('.fontawesomeicon', {
       color: 'rgb(9, 9, 9)'
-    }, 1)
+    }, 1.1)
 
     gsap.to('.project-image-container', {
       xPercent: -310,
