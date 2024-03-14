@@ -74,65 +74,56 @@ const Projects = () => {
       delay: 0.1
     })
 
-    gsap.to('.navbar, .expertise, .contact, .intro, .about, .bio, body', {
+    const tl = gsap.timeline({
       scrollTrigger: {
         trigger: '.projects',
-        start: '-20% top',
-        end: '195% top',
-        toggleActions: "restart reverse restart reverse",
-      },
+        // markers: true,
+        start: 'center bottom',
+        end: '300% top',
+        scrub: true,
+        stagger: 0
+      }
+    })
+
+    tl.to('.projects, .navbar, .expertise, .contact', {
       backgroundColor: 'rgb(9, 9, 9)',
       color: 'rgb(241, 241, 241)',
-      duration: 0.2,
-    })
-
-    gsap.to('.projects-headline, .contact-headline', {
-      scrollTrigger: {
-        trigger: '.projects',
-        start: '-20% top',
-        end: '195% top',
-        toggleActions: "restart reverse restart reverse",
-        // markers: true
-      },
-      color: 'rgb(241, 241, 241)',
-      duration: 0.2,
-    })
-
-    gsap.to('.projects', {
-      scrollTrigger: {
-        trigger: '.projects',
-        start: '-20% top',
-        end: '195% top',
-        toggleActions: "restart reverse restart reverse",
-        // markers: true
-      },
-      backgroundColor: 'rgb(9, 9, 9)',
-      duration: 0.2,
-    })
-
-    gsap.to('.fontawesomeicon', {
-      scrollTrigger: {
-        trigger: '.projects',
-        start: '-20% top',
-        end: '195% top',
-        toggleActions: "restart reverse restart reverse",
-        // markers: true
-      },
-      color: 'rgb(241, 241, 241)',
-      duration: 0.2,
-    })
-
-    gsap.to('button', {
-      scrollTrigger: {
-        trigger: '.projects',
-        start: '-20% top',
-        end: '195% top',
-        toggleActions: "restart reverse restart reverse"
-      },
-      backgroundColor: 'rgb(241, 241, 241)',
-      color: 'rgb(9, 9, 9)',
       duration: 0.2
     })
+
+    tl.to('button', {
+      backgroundColor: 'rgb(241, 241, 241)',
+      color: 'rgb(9, 9, 9)',
+    }, 0)
+
+    tl.to('.projects-headline, .contact-headline, .fontawesomeicon', {
+      color: 'rgb(241, 241, 241)'
+    }, 0)
+
+    tl.to('.projects, .navbar, .expertise, .contact, html', {
+      backgroundColor: 'rgb(9, 9, 9)',
+      color: 'rgb(241, 241, 241)',
+      duration: 0.6
+    })
+
+    tl.to('.projects, .navbar, .expertise, .contact, html', {
+      color: 'rgb(9, 9, 9)',
+      backgroundColor: 'rgb(241, 241, 241)',
+      duration: 0.2
+    })
+
+    tl.to('button', {
+      backgroundColor: 'rgb(9, 9, 9)',
+      color: 'rgb(241, 241, 241)',
+    }, 1)
+
+    tl.to('.projects-headline, .contact-headline', {
+      color: 'rgb(110, 110, 85)'
+    }, 1)
+
+    tl.to('.fontawesomeicon', {
+      color: 'rgb(9, 9, 9)'
+    }, 1)
 
     gsap.to('.project-image-container', {
       xPercent: -310,

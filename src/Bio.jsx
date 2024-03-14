@@ -31,7 +31,7 @@ const Bio = () => {
     tl.to('.navbar, .bio, .intro, .about', {
       backgroundColor: 'rgb(9, 9, 9)',
       color: 'rgb(241, 241, 241)',
-      duration: 0.2
+      duration: 0.3
     })
 
     tl.to('button', {
@@ -46,13 +46,13 @@ const Bio = () => {
     tl.to('.navbar, .bio, .intro, .about', {
       backgroundColor: 'rgb(9, 9, 9)',
       color: 'rgb(241, 241, 241)',
-      duration: 0.6
+      duration: 0.4
     })
 
     tl.to('.navbar, .bio, .intro, .about', {
       color: 'rgb(9, 9, 9)',
       backgroundColor: 'rgb(241, 241, 241)',
-      duration: 0.2
+      duration: 0.3
     })
 
     tl.to('button', {
