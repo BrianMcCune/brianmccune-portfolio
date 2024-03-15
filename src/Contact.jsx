@@ -16,9 +16,10 @@ const Contact = () => {
 
   const createHoverEffect = (element) => {
     gsap.to(element.current, { 
-      duration: 0.15, 
-      ease: 'power1.in',
-      y: -37,
+      duration: 0.12, 
+      ease: 'power1.out',
+      y: () => (-23 - (1.5 * window.innerWidth / 100)),
+      // y: -37,
       color: 'rgb(110, 110, 85)'
     });
     console.log(element)
@@ -26,8 +27,8 @@ const Contact = () => {
 
   const removeHoverEffect = (element) => {
     gsap.to(element.current, { 
-      duration: 0.15,
-      ease: 'power1.in', 
+      duration: 0.12,
+      ease: 'power1.out', 
       color: 'rgb(9, 9, 9)',
       y: 0
     });
