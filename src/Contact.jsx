@@ -5,11 +5,33 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Link } from "react-scroll";
+import { useRef } from "react";
 
 const Contact = () => {
 
+  const aboutRef = useRef(null)
+
   const headline = "Let's Chat"
   let headlineArray = headline.split('')
+
+  const createHoverEffect = (element) => {
+    gsap.to(element.current, { 
+      duration: 0.15, 
+      ease: 'power1.in',
+      y: -37,
+      color: 'rgb(110, 110, 85)'
+    });
+    console.log(element)
+  }
+
+  const removeHoverEffect = (element) => {
+    gsap.to(element.current, { 
+      duration: 0.15,
+      ease: 'power1.in', 
+      color: 'rgb(9, 9, 9)',
+      y: 0
+    });
+  }
 
   useGSAP(() => {
     gsap.from('.contact-headline', {
@@ -67,7 +89,17 @@ const Contact = () => {
           </div>
           <div className='summary-container'>
             <div className="contact-about">
-              <Link to="about" offset={90} className="contact-link"><div>About</div></Link>
+              <Link to="about" offset={90} className="contact-link">
+                <div className="container">
+                  <div className="about-title"
+                    ref={aboutRef} 
+                    onMouseEnter={() => {createHoverEffect(aboutRef)
+                    }}
+                    onMouseLeave={() => removeHoverEffect(aboutRef)}>
+                    About
+                  </div>
+                </div>
+              </Link>
               <p>Here's a small bio about myself and what I do.</p>
             </div>
             <div className="contact-expertise">

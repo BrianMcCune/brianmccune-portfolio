@@ -20,6 +20,7 @@ const Projects = () => {
       ease: 'none',
       background: backgroundColors[index]
     });
+    
     gsap.to(`.project-image-container:nth-child(${index + 1}) > a > .project-image`, { 
       scale: 0.95, 
       duration: 0.2, 

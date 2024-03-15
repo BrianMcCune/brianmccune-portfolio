@@ -270,7 +270,7 @@ h3 {
   margin: 0;
 }
 
-.container {
+.expertise-text > .container {
   margin: 2dvh 0;
 }
 
@@ -467,6 +467,17 @@ a > .resume {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3dvw;
+}
+
+.contact-link > .container {
+  overflow: hidden;
+  height: calc(15px + 2dvw);
+  display: flex;
+}
+
+.about-title::after {
+  display: block;
+  content: 'About';
 }
 
 .contact-expertise, .contact-resume {
