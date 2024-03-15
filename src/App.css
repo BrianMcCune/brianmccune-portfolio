@@ -445,6 +445,10 @@ a > .resume {
   font-size: calc(15px + 1dvw);
 }
 
+a:visited {
+  text-decoration: none;
+}
+
 .contact-expertise > p,
 .contact-about > p,
 .contact-projects > p,
