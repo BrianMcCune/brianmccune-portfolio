@@ -10,11 +10,13 @@ import { useRef } from "react";
 const Navbar = (props) => {
 
   const aboutRef = useRef(null)
+  const expertiseRef = useRef(null)
+  const projectsRef = useRef(null)
 
 
   const createHoverEffect = (element) => {
     gsap.to(element.current, { 
-      width: 40,
+      width: '100%',
       duration: 0.2
     });
   }
@@ -49,8 +51,18 @@ const Navbar = (props) => {
           <div className="underline" ref={aboutRef}></div>
         </h2>
       </Link>
-      <Link to="expertise" offset={-70}className="link"><h2>Expertise</h2></Link>
-      <Link to="projects" offset={115} className="link"><h2>Projects</h2></Link>
+      <Link to="expertise" offset={-70}className="link">
+        <h2 className="navbar-expertise" onMouseEnter={() => {createHoverEffect(expertiseRef)}} onMouseLeave={() => removeHoverEffect(expertiseRef)}>
+          Expertise
+          <div className="underline" ref={expertiseRef}></div>
+        </h2>
+      </Link>
+      <Link to="projects" offset={115} className="link">
+        <h2 className="navbar-projects" onMouseEnter={() => {createHoverEffect(projectsRef)}} onMouseLeave={() => removeHoverEffect(projectsRef)}>
+          Projects
+          <div className="underline" ref={projectsRef}></div>
+        </h2>
+      </Link>
       <Link to="contact" className="link">
       <button onClick={() => handleOnClick()}>Let's Chat</button>
       </Link>

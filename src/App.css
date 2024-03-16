@@ -67,7 +67,7 @@ body {
   user-select: none;
 }
 
-.navbar-about {
+.navbar-about, .navbar-expertise, .navbar-projects {
   overflow: hidden;
 }
 
