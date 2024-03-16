@@ -67,6 +67,15 @@ body {
   user-select: none;
 }
 
+.navbar-about {
+  overflow: hidden;
+}
+
+.underline {
+  background-color: rgb(9, 9, 9);
+  height: 1.5px;
+  width: 0px;
+}
 
 .link > h2:hover, .brand > h1:hover, button:hover {
   opacity: 0.5;
