@@ -34,7 +34,7 @@ const Bio = () => {
       duration: 0.3
     })
 
-    tl.to('button', {
+    tl.to('button, .underline', {
       backgroundColor: 'rgb(241, 241, 241)',
       color: 'rgb(9, 9, 9)',
     }, 0)
@@ -55,7 +55,7 @@ const Bio = () => {
       duration: 0.3
     })
 
-    tl.to('button', {
+    tl.to('button, .underline', {
       backgroundColor: 'rgb(9, 9, 9)',
       color: 'rgb(241, 241, 241)',
     }, 1)
