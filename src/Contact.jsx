@@ -10,6 +10,9 @@ import { useRef } from "react";
 const Contact = () => {
 
   const aboutRef = useRef(null)
+  const expertiseRef = useRef(null)
+  const projectRef = useRef(null)
+  const resumeRef = useRef(null)
 
   const headline = "Let's Chat"
   let headlineArray = headline.split('')
@@ -54,8 +57,8 @@ const Contact = () => {
         // markers: true,
         scrub: true,
       },
-      opacity: 0,
-      y: 200
+      // opacity: 0,
+      y: 100
       }
     )
   })
@@ -104,21 +107,51 @@ const Contact = () => {
               <p>Here's a small bio about myself and what I do.</p>
             </div>
             <div className="contact-expertise">
-            <Link to="expertise" offset={-70}className="contact-link"><div>Expertise</div></Link>
+            <Link to="expertise" offset={-70}className="contact-link">
+              <div className="container">
+                <div className="expertise-title"
+                  ref={expertiseRef} 
+                  onMouseEnter={() => {createHoverEffect(expertiseRef)
+                  }}
+                  onMouseLeave={() => removeHoverEffect(expertiseRef)}>
+                  Expertise
+                </div>
+              </div>
+            </Link>
               <p>Check out the areas of front-end development I am great at.</p>
             </div>
             <div className="contact-projects">
-            <Link to="projects" offset={115} className="contact-link"><div>Projects</div></Link>
+              <Link to="projects" offset={115} className="contact-link">
+                <div className="container">
+                  <div className="project-title"
+                    ref={projectRef} 
+                    onMouseEnter={() => {createHoverEffect(projectRef)
+                    }}
+                    onMouseLeave={() => removeHoverEffect(projectRef)}>
+                    Projects
+                  </div>
+                </div>
+              </Link>
               <p>Take a look at some projects I've created, showcasing my skills.</p>
             </div>
             <div className="contact-resume">
-            <a href="./Resume.pdf" target="_blank"><div className="resume">Resume</div></a>
-              <p>See my work history and my achievements from my resume.</p>
+            <a href="./Resume.pdf" target="_blank">
+              <div className="resume">
+                <div className="resume-title"
+                  ref={resumeRef} 
+                  onMouseEnter={() => {createHoverEffect(resumeRef)
+                  }}
+                  onMouseLeave={() => removeHoverEffect(resumeRef)}>
+                  Resume
+                </div>
+              </div>
+            </a>
+            <p>See my work history and my achievements from my resume.</p>
             </div>
           </div>
         </div>
         <div className="copyright">© 2024 Brian McCune</div>
-        <div className="contact-circle"></div>
+        {/* <div className="contact-circle"></div> */}
       </div>
     </div>
    );

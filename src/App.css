@@ -363,7 +363,7 @@ h3 {
   border-radius: 10px;
 }
 
-.project-title {
+.project-name {
   font-size: 30px;
   padding: 20px;
   font-weight: 600;
@@ -415,19 +415,6 @@ a:visited {
   margin-bottom: 8dvh;
 }
 
-.contact-circle {
-  position: relative;
-  background: linear-gradient(rgb(107, 100, 92), rgb(241, 241, 241));
-  height: calc(50dvh + 17dvw);
-  width: calc(50dvh + 17dvw);
-  border-radius: 50%;
-  opacity:0.1;
-  margin-top: -90dvh;
-  z-index: -1;
-  margin-left: 20%;
-  transform: translate(-50%);
-}
-
 .contact-expertise,
 .contact-about,
 .contact-projects,
@@ -443,6 +430,12 @@ a:visited {
 a > .resume {
   font-weight: 700;
   font-size: calc(15px + 1dvw);
+}
+
+a > .resume {
+  overflow: hidden;
+  height: calc(15px + 2dvw);
+  display: flex;
 }
 
 a:visited {
@@ -482,6 +475,21 @@ a:visited {
 .about-title::after {
   display: block;
   content: 'About';
+}
+
+.project-title::after {
+  display: block;
+  content: 'Projects';
+}
+
+.expertise-title::after {
+  display: block;
+  content: 'Expertise';
+}
+
+.resume-title::after {
+  display: block;
+  content: 'Resume';
 }
 
 .contact-expertise, .contact-resume {

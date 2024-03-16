@@ -166,7 +166,7 @@ const Projects = () => {
           }}
           onMouseLeave={() => removeHoverEffect(elementRefs.current[index])}>
             <a href={project.deployment} target="_blank">
-              <div className="project-title">{project.title}</div>
+              <div className="project-name">{project.title}</div>
               <div className="project-tech">{project.usedTech}</div>
               <img className="project-image" src={project.image} />
             </a>
