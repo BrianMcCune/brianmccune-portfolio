@@ -14,21 +14,90 @@ const Expertise = () => {
 
   console.log(javascript)
 
-  const createHoverEffect = (e) => {
-    console.log(e)
-
+  const createHoverEffect = (e, key) => {
+    let prevLetterTwo = e.target.id - 2
+    let prevLetter = e.target.id - 1
+    let nextLetter = parseInt(e.target.id) + 1
+    let nextLetterTwo = parseInt(e.target.id) + 2
+    const element = document.getElementById(prevLetter);
+    const elementPrev = document.getElementById(prevLetterTwo);
+    const elementtwo = document.getElementById(nextLetter);
+    const elementtwoNext = document.getElementById(nextLetterTwo);
+    
     gsap.to(e.target, {
       scale: 1.4,
-      ease: 'power4.out',
-      duration: 0.3
+      ease: 'none',
+      duration: 0.2
+    });
+
+    gsap.to(element, {
+      scale: 1.2,
+      ease: 'none',
+      duration: 0.2,
+      // color: 'yellow'
+    });
+
+    gsap.to(elementPrev, {
+      scale: 1.1,
+      ease: 'none',
+      duration: 0.2,
+      // color: 'blue'
+    });
+    gsap.to(elementtwoNext, {
+      scale: 1.1,
+      ease: 'none',
+      duration: 0.2,
+      // color: 'blue'
+    });
+    gsap.to(elementtwo, {
+      scale: 1.2,
+      ease: 'none',
+      duration: 0.2,
+      // color: 'blue'
     });
   }
 
   const removeHoverEffect = (e) => {
+    let prevLetterTwo = e.target.id - 2
+    let prevLetter = e.target.id - 1
+    let nextLetter = parseInt(e.target.id) + 1
+    let nextLetterTwo = parseInt(e.target.id) + 2
+    const element = document.getElementById(prevLetter);
+    const elementPrev = document.getElementById(prevLetterTwo);
+    const elementtwo = document.getElementById(nextLetter);
+    const elementtwoNext = document.getElementById(nextLetterTwo);
+
+
     gsap.to(e.target, {
       scale: 1,
       ease: 'power4.out',
-      duration: 0.3
+      duration: 0.2
+    });
+
+    gsap.to(element, {
+      scale: 1,
+      ease: 'power4.out',
+      duration: 0.2,
+      // color: 'black'
+    });
+
+    gsap.to(elementtwo, {
+      scale: 1,
+      ease: 'power4.out',
+      duration: 0.2,
+      // color: 'black'
+    });
+    gsap.to(elementtwoNext, {
+      scale: 1,
+      ease: 'power4.out',
+      duration: 0.2,
+      // color: 'black'
+    });
+    gsap.to(elementPrev, {
+      scale: 1,
+      ease: 'power4.out',
+      duration: 0.2,
+      // color: 'black'
     });
   }
 
@@ -151,9 +220,9 @@ const Expertise = () => {
         <div className="expertise-list">
 
           <div className="expertise-languages" ref={letterRef}>
-            {javascript.map((index) => {
+            {javascript.map((index, key) => {
               return (
-                <p key={index} className="letter" onMouseEnter={(e) => {createHoverEffect(e)}}onMouseLeave={(e) => removeHoverEffect(e)}>
+                <p key={index} className="letter" id={key} onMouseEnter={(e) => {createHoverEffect(e)}}onMouseLeave={(e) => removeHoverEffect(e)}>
                   {index}
                 </p>
               )
