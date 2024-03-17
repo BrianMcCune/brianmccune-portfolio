@@ -2,14 +2,39 @@ import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
+import { useRef } from "react";
 // import Javascript from "./javascript.svg"
 
 const Expertise = () => {
 
+  const letterRef = useRef(null)
   const headline = 'Expertise'
   let headlineArray = headline.split('')
+  const javascript = 'Javascript'.split('')
+
+  console.log(javascript)
+
+  const createHoverEffect = (e) => {
+    console.log(e)
+
+    gsap.to(e.target, {
+      scale: 1.4,
+      ease: 'power4.out',
+      duration: 0.3
+    });
+  }
+
+  const removeHoverEffect = (e) => {
+    gsap.to(e.target, {
+      scale: 1,
+      ease: 'power4.out',
+      duration: 0.3
+    });
+  }
 
   useGSAP(() => {
+
+
 
     gsap.fromTo('.expertise-circle', {y: 80}, {
       scrollTrigger: {
@@ -124,7 +149,19 @@ const Expertise = () => {
           </div>
         </div>
         <div className="expertise-list">
-          <p>JavaScript</p>
+
+          <div className="expertise-languages" ref={letterRef}>
+            {javascript.map((index) => {
+              return (
+                <p key={index} className="letter" onMouseEnter={(e) => {createHoverEffect(e)}}onMouseLeave={(e) => removeHoverEffect(e)}>
+                  {index}
+                </p>
+              )
+            })}
+          </div>
+
+
+          {/* <p>JavaScript</p> */}
           <p>HTML</p>
           <p>CSS</p>
           <p>ReactJS</p>
