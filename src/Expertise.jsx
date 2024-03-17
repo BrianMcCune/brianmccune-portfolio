@@ -26,32 +26,32 @@ const Expertise = () => {
     
     gsap.to(e.target, {
       scale: 1.4,
-      ease: 'none',
+      ease: 'circ.out',
       duration: 0.2
     });
 
     gsap.to(element, {
       scale: 1.2,
-      ease: 'none',
+      ease: 'circ.out',
       duration: 0.2,
       // color: 'yellow'
     });
 
     gsap.to(elementPrev, {
       scale: 1.1,
-      ease: 'none',
+      ease: 'circ.out',
       duration: 0.2,
       // color: 'blue'
     });
     gsap.to(elementtwoNext, {
       scale: 1.1,
-      ease: 'none',
+      ease: 'circ.out',
       duration: 0.2,
       // color: 'blue'
     });
     gsap.to(elementtwo, {
       scale: 1.2,
-      ease: 'none',
+      ease: 'circ.out',
       duration: 0.2,
       // color: 'blue'
     });
@@ -70,32 +70,32 @@ const Expertise = () => {
 
     gsap.to(e.target, {
       scale: 1,
-      ease: 'power4.out',
+      ease: 'circ.out',
       duration: 0.2
     });
 
     gsap.to(element, {
       scale: 1,
-      ease: 'power4.out',
+      ease: 'circ.out',
       duration: 0.2,
       // color: 'black'
     });
 
     gsap.to(elementtwo, {
       scale: 1,
-      ease: 'power4.out',
+      ease: 'circ.out',
       duration: 0.2,
       // color: 'black'
     });
     gsap.to(elementtwoNext, {
       scale: 1,
-      ease: 'power4.out',
+      ease: 'circ.out',
       duration: 0.2,
       // color: 'black'
     });
     gsap.to(elementPrev, {
       scale: 1,
-      ease: 'power4.out',
+      ease: 'circ.out',
       duration: 0.2,
       // color: 'black'
     });
