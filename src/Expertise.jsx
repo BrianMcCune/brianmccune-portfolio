@@ -25,35 +25,31 @@ const Expertise = () => {
     const elementtwoNext = document.getElementById(nextLetterTwo);
     
     gsap.to(e.target, {
-      scale: 1.4,
-      ease: 'circ.out',
-      duration: 0.2
+      scale: 1.3,
+      ease: 'none',
+      duration: 0.15
     });
 
     gsap.to(element, {
       scale: 1.2,
-      ease: 'circ.out',
-      duration: 0.2,
-      // color: 'yellow'
+      ease: 'none',
+      duration: 0.15,
     });
 
     gsap.to(elementPrev, {
       scale: 1.1,
-      ease: 'circ.out',
-      duration: 0.2,
-      // color: 'blue'
+      ease: 'none',
+      duration: 0.15,
     });
     gsap.to(elementtwoNext, {
       scale: 1.1,
-      ease: 'circ.out',
-      duration: 0.2,
-      // color: 'blue'
+      ease: 'none',
+      duration: 0.15,
     });
     gsap.to(elementtwo, {
       scale: 1.2,
-      ease: 'circ.out',
-      duration: 0.2,
-      // color: 'blue'
+      ease: 'none',
+      duration: 0.15,
     });
   }
 
@@ -70,34 +66,30 @@ const Expertise = () => {
 
     gsap.to(e.target, {
       scale: 1,
-      ease: 'circ.out',
-      duration: 0.2
+      ease: 'none',
+      duration: 0.15,
     });
 
     gsap.to(element, {
       scale: 1,
-      ease: 'circ.out',
-      duration: 0.2,
-      // color: 'black'
+      ease: 'none',
+      duration: 0.15,
     });
 
     gsap.to(elementtwo, {
       scale: 1,
-      ease: 'circ.out',
-      duration: 0.2,
-      // color: 'black'
+      ease: 'none',
+      duration: 0.15,
     });
     gsap.to(elementtwoNext, {
       scale: 1,
-      ease: 'circ.out',
-      duration: 0.2,
-      // color: 'black'
+      ease: 'none',
+      duration: 0.15,
     });
     gsap.to(elementPrev, {
       scale: 1,
-      ease: 'circ.out',
-      duration: 0.2,
-      // color: 'black'
+      ease: 'none',
+      duration: 0.15,
     });
   }
 
@@ -135,8 +127,6 @@ const Expertise = () => {
       scrollTrigger: {
         trigger: '.strengths',
         toggleActions: 'play none none none',
-        // scrub: true,
-        // markers: true
       },
       duration: 0.5, 
       y: 60, 
