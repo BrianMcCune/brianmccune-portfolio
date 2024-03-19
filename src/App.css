@@ -596,10 +596,12 @@ a:visited {
   .about-headline {
     font-size: 60px;
     padding: 0;
+    margin-bottom: 5dvh;
   }
 
   .about > .container {
     flex-direction: column;
+    /* height: calc(60dvw + 250px); */
   }
 
   .img-container {
@@ -607,7 +609,6 @@ a:visited {
     min-height: 30dvh;
     height: calc(60dvw + 250px);
     width: 90dvw;
-    margin-top: 5dvh;
   }
 
   .text > h3 {
