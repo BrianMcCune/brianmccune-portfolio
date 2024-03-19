@@ -28,7 +28,7 @@ const Bio = () => {
       }
     })
 
-    tl.to('.navbar, .bio, .intro, .about', {
+    tl.to('.navbar, .bio, .intro, .about, .screen-adapt-text', {
       backgroundColor: 'rgb(9, 9, 9)',
       color: 'rgb(241, 241, 241)',
       duration: 0.3
@@ -114,6 +114,7 @@ const Bio = () => {
             )
           })}
         </div>
+        <div className="screen-adapt-text">{bioOne} {bioTwo} {bioThree}</div>
       </div>
     </div>
    );

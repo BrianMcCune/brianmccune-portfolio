@@ -180,7 +180,7 @@ button {
 .bio-container {
   display: flex;
   flex-direction: row;
-  font-size: 5dvw;
+  font-size: 5.1dvw;
   width: 79%;
   color: rgb(107, 100, 92);
   flex-wrap: wrap;
@@ -189,6 +189,10 @@ button {
 
 .three, .two, .one {
   display: flex;
+}
+
+.screen-adapt-text {
+  display: none;
 }
 
 .about {
@@ -561,11 +565,23 @@ a:visited {
   .bio {
     margin-top: 0;
     padding: 0;
-    min-height: 50dvh;
+    min-height: 80dvh;
+    justify-content: left;
   }
 
-  .bio-text {
-    color: white;
+  .bio-container {
+    margin-left: 8dvw;
+    margin-right: 8dvw;
+  }
+
+  .three, .two, .one {
+    display: none;
+  }
+
+  .screen-adapt-text {
+    display: contents;
+    color: rgb(9, 9, 9);
+    font-size: 8dvw;
   }
 
   .about {
@@ -589,12 +605,38 @@ a:visited {
   .img-container {
     animation: none;
     min-height: 30dvh;
+    height: calc(60dvw + 250px);
     width: 90dvw;
     margin-top: 5dvh;
   }
 
-  .self-image {
-    margin-bottom: -5dvh;
+  .text > h3 {
+    font-size: 35px;
+    margin-top: 5dvh;
+  }
+
+  .text > p {
+    font-size: 25px;
+  }
+
+  .headline-container {
+    justify-content: center;
+  }
+
+  .expertise > * {
+    margin-left: 0;
+  }
+
+  .expertise-headline {
+    font-size: 60px;
+  }
+
+  .expertise-text {
+    /* flex-direction: column; */
+  }
+
+  .expertise-text > .container {
+    
   }
 
   .expertise-circle {
