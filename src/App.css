@@ -184,6 +184,7 @@ button {
   width: 79%;
   color: rgb(107, 100, 92);
   flex-wrap: wrap;
+  contain: content;
 }
 
 .three, .two, .one {
@@ -548,11 +549,55 @@ a:visited {
     font-size: 2rem;
   }
 
+  .container > .circle {
+    max-width: 100dvw;
+    max-height: 100dvw;
+  }
+
+  .intro {
+    height: 90dvh;
+  }
+
+  .bio {
+    margin-top: 0;
+    padding: 0;
+    min-height: 50dvh;
+  }
+
+  .bio-text {
+    color: white;
+  }
+
+  .about {
+    align-items: center;
+    padding-top: 10dvh;
+  }
+
+  .about > .headline-container {
+    margin: 0;
+  }
+
+  .about-headline {
+    font-size: 60px;
+    padding: 0;
+  }
+
   .about > .container {
     flex-direction: column;
   }
 
   .img-container {
-    animation: none
+    animation: none;
+    min-height: 30dvh;
+    width: 90dvw;
+    margin-top: 5dvh;
+  }
+
+  .self-image {
+    margin-bottom: -5dvh;
+  }
+
+  .expertise-circle {
+    display: none;
   }
 }
