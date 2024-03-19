@@ -10,7 +10,7 @@ body {
   font-weight: 600;
   color: white;
   background-color: black;
-  height: 100dvh;
+  height: 100svh;
   width: 100%;
   z-index: 3;
 }
@@ -56,7 +56,7 @@ body {
 
 .navbar {
   position: fixed;
-  width: 100dvw;
+  width: 100svw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,12 +121,12 @@ button {
 .intro {
   text-transform: capitalize;
   color: rgb(9, 9, 9);
-  font-size: 7.5dvw;
+  font-size: 7.5svw;
   font-weight: 800;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100dvh;
+  height: 100svh;
   justify-content: center;
 }
 
@@ -144,7 +144,7 @@ button {
 }
 
 .intro > .subtitle {
-  font-size: calc(0.8dvw + 12px);
+  font-size: calc(0.8svw + 12px);
   font-weight: 500;
   text-align: center;
   margin-top: 10px;
@@ -158,29 +158,29 @@ button {
 
 .intro > .container {
   position: absolute;
-  margin-top: 4dvh;
+  margin-top: 4svh;
 }
 
 .container > .circle {
   background: linear-gradient(rgb(107, 100, 92), rgb(241, 241, 241));
-  height: calc(50dvh + 17dvw);
-  width: calc(50dvh + 17dvw);
+  height: calc(50svh + 17svw);
+  width: calc(50svh + 17svw);
   border-radius: 50%;
   opacity:0.1
 }
 
 .bio {
-  min-height: 100dvh;
+  min-height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 25dvh;
+  padding-top: 25svh;
 }
 
 .bio-container {
   display: flex;
   flex-direction: row;
-  font-size: 5.1dvw;
+  font-size: 5.1svw;
   width: 79%;
   color: rgb(107, 100, 92);
   flex-wrap: wrap;
@@ -198,33 +198,33 @@ button {
 .about {
   display: flex;
   font-size: 40px;
-  padding-top: 20dvh;
+  padding-top: 20svh;
   flex-direction: column;
 }
 
 .about > .headline-container {
   display: flex;
-  margin-left: 8dvw;
+  margin-left: 8svw;
   font-weight: 600;
-  font-size: 5dvw;
+  font-size: 5svw;
   overflow: hidden;
   color: rgb(110, 110, 85);
-  margin-bottom: 5dvh;
+  margin-bottom: 5svh;
 }
 
 .about > h2 {
   text-align: center;
   font-size: 5rem;
   font-weight: 400;
-  margin-bottom: 5dvh;
+  margin-bottom: 5svh;
 }
 
 .about > .container {
   display: flex;
-  min-height: 75dvh;
-  gap: 3dvw;
-  margin-left: 8dvw;
-  margin-right: 8dvw;
+  min-height: 75svh;
+  gap: 3svw;
+  margin-left: 8svw;
+  margin-right: 8svw;
   border-radius: 10px;
 }
 
@@ -256,12 +256,12 @@ img {
 }
 
 h3 {
-  font-size: 3.3dvw;
+  font-size: 3.3svw;
   margin-top: 0;
 }
 
 .text > p {
-  font-size: 1.75dvw;
+  font-size: 1.75svw;
   font-weight: 500;
 }
 
@@ -269,18 +269,18 @@ h3 {
   display: flex;
   flex-direction: column;
   margin-top: 15vh;
-  /* height: 150dvh; */
+  /* height: 150svh; */
 }
 
 .expertise > * {
-  margin-left: 8dvw;
+  margin-left: 8svw;
 }
 
 .expertise > .headline-container {
   display: flex;
   flex-direction: row;
   font-weight: 600;
-  font-size: 5dvw;
+  font-size: 5svw;
   color: rgb(110, 110, 85);
   overflow: hidden;
 }
@@ -290,12 +290,12 @@ h3 {
 }
 
 .expertise-text > .container {
-  margin: 2dvh 0;
+  margin: 2svh 0;
 }
 
 .expertise-info {
   display: flex;
-  gap: 7dvw;
+  gap: 7svw;
 }
 
 .expertise-info > * {
@@ -304,11 +304,11 @@ h3 {
 
 .expertise-list {
   line-height: 1;
-  margin-bottom: 20dvh;
+  margin-bottom: 20svh;
 }
 
 .expertise-list > p, .expertise-languages > .letter {
-  font-size: 4dvw;
+  font-size: 4svw;
   font-weight: 800;
   margin-top: 0px;
   margin-bottom: 10px;
@@ -329,7 +329,7 @@ h3 {
 }
 
 .text-one, .text-two {
-  font-size: 1.75dvw;
+  font-size: 1.75svw;
 }
 
 .circle-container {
@@ -341,14 +341,14 @@ h3 {
   position: absolute;
   left: 65%;
   transform: translate(-50%, 0);
-  height: calc(50dvh + 17dvw);
-  width: calc(50dvh + 17dvw);
+  height: calc(50svh + 17svw);
+  width: calc(50svh + 17svw);
   border-radius: 50%;
   opacity: 0.1;
 }
 
 .projects {
-  min-height: 130dvh;
+  min-height: 130svh;
   overflow-x: hidden;
 }
 
@@ -356,33 +356,33 @@ h3 {
   display: flex;
   flex-direction: row;
   font-weight: 600;
-  font-size: 5dvw;
+  font-size: 5svw;
   color: rgb(110, 110, 85);
   overflow: hidden;
-  margin-left: 8dvw;
-  margin-top: calc(9dvh + 100px);
+  margin-left: 8svw;
+  margin-top: calc(9svh + 100px);
 }
 
 .projects-list {
   display: flex;
-  width: 400dvw;
-  gap: 8dvw;
+  width: 400svw;
+  gap: 8svw;
   text-align: center;
-  margin-top: 1dvh;
-  margin-left: 8dvw;
+  margin-top: 1svh;
+  margin-left: 8svw;
 }
 
 .project-image {
   width: 90%;
   height: 100%;
-  max-height: 65dvh;
+  max-height: 65svh;
 }
 
 .project-image-container {
   overflow: hidden;
   background-color: rgb(241, 241, 241);
   height: fit-content;
-  min-height: clamp(50dvh, 60dvh, 70dvh);
+  min-height: clamp(50svh, 60svh, 70svh);
   border-radius: 10px;
 }
 
@@ -412,8 +412,8 @@ a:visited {
 }
 
 .contact-container {
-  margin-left: 8dvw;
-  margin-right: 8dvw;
+  margin-left: 8svw;
+  margin-right: 8svw;
 }
 
 .contact-container > .container {
@@ -423,19 +423,19 @@ a:visited {
 .container > .headline-container {
   display: flex;
   overflow: hidden;
-  margin-top: 10dvh;
+  margin-top: 10svh;
   font-weight: 600;
-  font-size: 5dvw;
+  font-size: 5svw;
   color: rgb(110, 110, 85);
 }
 
 .email {
-  margin-bottom: 2dvh;
-  font-size: calc(10px + 0.5dvw);
+  margin-bottom: 2svh;
+  font-size: calc(10px + 0.5svw);
 }
 
 .social-media-icons {
-  margin-bottom: 8dvh;
+  margin-bottom: 8svh;
 }
 
 .contact-expertise,
@@ -452,12 +452,12 @@ a:visited {
 .contact-link > div,
 a > .resume {
   font-weight: 700;
-  font-size: calc(15px + 1dvw);
+  font-size: calc(15px + 1svw);
 }
 
 a > .resume {
   overflow: hidden;
-  height: calc(15px + 2dvw);
+  height: calc(15px + 2svw);
   display: flex;
 }
 
@@ -474,8 +474,8 @@ a:visited {
 .contact-about > p,
 .contact-projects > p,
 .contact-resume > p {
-  margin-top: 1dvh;
-  font-size: calc(10px + 0.75dvw);
+  margin-top: 1svh;
+  font-size: calc(10px + 0.75svw);
 }
 
 .contact-container > .container {
@@ -491,12 +491,12 @@ a:visited {
 .summary-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3dvw;
+  gap: 3svw;
 }
 
 .contact-link > .container {
   overflow: hidden;
-  height: calc(15px + 2dvw);
+  height: calc(15px + 2svw);
   display: flex;
 }
 
@@ -525,9 +525,9 @@ a:visited {
 }
 
 .copyright {
-  margin-top: 10dvh;
-  margin-bottom: 5dvh;
-  font-size: calc(10px + 0.5dvw);
+  margin-top: 10svh;
+  margin-bottom: 5svh;
+  font-size: calc(10px + 0.5svw);
 }
 
 @keyframes blink {
@@ -586,7 +586,7 @@ a:visited {
   .screen-adapt-text {
     display: contents;
     color: rgb(9, 9, 9);
-    font-size: 8dvw;
+    font-size: 8svw;
   }
 
   .about {
@@ -604,27 +604,27 @@ a:visited {
     margin-bottom: 20px;
   }
 
-  .img-container {
+  /* .img-container {
     display: none;
-  }
+  } */
 
-  .mobile-image {
+  /* .mobile-image {
     display: inline;
-    height: 400px;
+    height: 100svh;
     border-radius: 10px;
-  }
+  } */
 
   .about > .container {
     flex-direction: column;
-    /* height: calc(60dvw + 250px); */
+    /* height: calc(60svw + 250px); */
   }
 
-  /* .img-container {
+  .img-container {
     animation: none;
-    min-height: 30dvh;
-    height: calc(60dvw + 250px);
-    width: 90dvw;
-  } */
+    min-height: 30svh;
+    height: calc(60svw + 250px);
+    width: 90svw;
+  }
 
   .text > h3 {
     font-size: 35px;
