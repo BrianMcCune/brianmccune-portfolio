@@ -23,7 +23,7 @@ const Navbar = (props) => {
 
   const removeHoverEffect = (element) => {
     gsap.to(element.current, { 
-      x: 41,
+      x: '100%',
       duration: 0.2,
       onComplete: () => {
         gsap.set(element.current, { x: 0, width: 0 });
