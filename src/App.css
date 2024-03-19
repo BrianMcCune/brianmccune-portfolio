@@ -225,6 +225,7 @@ button {
   gap: 3dvw;
   margin-left: 8dvw;
   margin-right: 8dvw;
+  border-radius: 10px;
 }
 
 .text {
@@ -597,6 +598,10 @@ a:visited {
     font-size: 60px;
     padding: 0;
     margin-bottom: 5dvh;
+  }
+
+  .img-container > img {
+    margin-top: -23%
   }
 
   .about > .container {
