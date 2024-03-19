@@ -609,7 +609,9 @@ a:visited {
   }
 
   .mobile-image {
-    display: block;
+    display: inline;
+    height: 66.5dvh;
+    border-radius: 10px;
   }
 
   .about > .container {
@@ -617,12 +619,12 @@ a:visited {
     /* height: calc(60dvw + 250px); */
   }
 
-  .img-container {
+  /* .img-container {
     animation: none;
     min-height: 30dvh;
     height: calc(60dvw + 250px);
     width: 90dvw;
-  }
+  } */
 
   .text > h3 {
     font-size: 35px;
