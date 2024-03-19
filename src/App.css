@@ -251,6 +251,10 @@ img {
   border-radius: 10px;
 }
 
+.mobile-image {
+  display: none;
+}
+
 h3 {
   font-size: 3.3dvw;
   margin-top: 0;
@@ -600,8 +604,12 @@ a:visited {
     margin-bottom: 5dvh;
   }
 
-  .img-container > img {
-    margin-top: 0%
+  .img-container {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
   }
 
   .about > .container {
