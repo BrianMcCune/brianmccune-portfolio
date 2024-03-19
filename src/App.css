@@ -612,6 +612,7 @@ a:visited {
     display: inline;
     height: 100svh;
     border-radius: 10px;
+    width: 80%;
   } */
 
   .about > .container {
@@ -621,8 +622,8 @@ a:visited {
 
   .img-container {
     animation: none;
-    min-height: 30svh;
-    height: calc(60svw + 250px);
+    /* min-height: 30svh; */
+    /* height: calc(60svw + 250px); */
     width: 90svw;
   }
 
