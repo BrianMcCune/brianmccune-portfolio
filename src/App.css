@@ -591,7 +591,7 @@ a:visited {
 
   .about {
     align-items: center;
-    padding-top: 10dvh;
+    padding-top: 100px;
   }
 
   .about > .headline-container {
@@ -601,7 +601,7 @@ a:visited {
   .about-headline {
     font-size: 60px;
     padding: 0;
-    margin-bottom: 5dvh;
+    margin-bottom: 20px;
   }
 
   .img-container {
@@ -610,7 +610,7 @@ a:visited {
 
   .mobile-image {
     display: inline;
-    height: 66.5dvh;
+    height: 400px;
     border-radius: 10px;
   }
 
@@ -628,7 +628,7 @@ a:visited {
 
   .text > h3 {
     font-size: 35px;
-    margin-top: 5dvh;
+    margin-top: 20px;
   }
 
   .text > p {
@@ -645,14 +645,6 @@ a:visited {
 
   .expertise-headline {
     font-size: 60px;
-  }
-
-  .expertise-text {
-    /* flex-direction: column; */
-  }
-
-  .expertise-text > .container {
-    
   }
 
   .expertise-circle {
