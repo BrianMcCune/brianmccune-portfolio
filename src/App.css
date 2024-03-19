@@ -534,3 +534,25 @@ a:visited {
     opacity: 1;
   }
 }
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .navbar-about, .navbar-expertise, .navbar-projects {
+    display: none;
+  }
+
+  .container > .name {
+    font-size: 2rem;
+  }
+
+  .about > .container {
+    flex-direction: column;
+  }
+
+  .img-container {
+    animation: none
+  }
+}

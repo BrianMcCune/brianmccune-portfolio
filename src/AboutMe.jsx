@@ -12,6 +12,10 @@ const AboutMe = () => {
 
   useGSAP(() => {
 
+    let mm = gsap.matchMedia();
+
+
+
     gsap.from('.about-headline', {
       scrollTrigger: {
         trigger: '.about > .container',
@@ -24,32 +28,34 @@ const AboutMe = () => {
       ease: 'power3.out'
     })
 
+    mm.add("(min-width: 768px)", () => {
 
-    gsap.from('.img-container', {
-      scrollTrigger: {
-        trigger: '.self-image',
-        toggleActions: 'play none none none',
-        // markers: true
-      },
-      scale: 0.5,
-      duration: 0.8,
-    })
+      gsap.from('.img-container', {
+        scrollTrigger: {
+          trigger: '.self-image',
+          toggleActions: 'play none none none',
+          // markers: true
+        },
+        scale: 0.5,
+        duration: 0.8,
+      })
 
-    gsap.set('.img-container', {
-      scale: 1
-    })
+      gsap.set('.img-container', {
+        scale: 1
+      })
 
-    gsap.to('.img-container', {
-      scrollTrigger: {
-        trigger: '.img-container',
-        start: () => 'top ' + (-window.innerWidth*0.04 + 240),
-        end: () => 'bottom ' + (window.innerWidth*0.25 + 250),
-        pin: '.text',
-        scrub: true,
-        // immediateRender: false,
-        // markers: true
-      },
-    })
+      gsap.to('.img-container', {
+        scrollTrigger: {
+          trigger: '.img-container',
+          start: () => 'top ' + (-window.innerWidth*0.04 + 240),
+          end: () => 'bottom ' + (window.innerWidth*0.25 + 250),
+          pin: '.text',
+          scrub: true,
+          // immediateRender: false,
+          // markers: true
+        },
+      })
+    });
   })
 
   return ( 
