@@ -88,7 +88,7 @@ const Projects = () => {
 
     tl.to('.projects, .navbar, .expertise, .contact', {
       backgroundColor: 'rgb(9, 9, 9)',
-      color: 'rgb(241, 241, 241)',
+      // color: 'rgb(241, 241, 241)',
       duration: 0.1
     })
 

@@ -49,7 +49,7 @@ const Bio = () => {
       duration: 0.4
     })
 
-    tl.to('.navbar, .bio, .intro, .about', {
+    tl.to('.navbar, .bio, .intro, .about, .screen-adapt-text', {
       color: 'rgb(9, 9, 9)',
       backgroundColor: 'rgb(241, 241, 241)',
       duration: 0.3
