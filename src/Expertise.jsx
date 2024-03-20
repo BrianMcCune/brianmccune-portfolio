@@ -15,82 +15,82 @@ const Expertise = () => {
   console.log(javascript)
 
   const createHoverEffect = (e, key) => {
-    let prevLetterTwo = e.target.id - 2
-    let prevLetter = e.target.id - 1
-    let nextLetter = parseInt(e.target.id) + 1
-    let nextLetterTwo = parseInt(e.target.id) + 2
-    const element = document.getElementById(prevLetter);
-    const elementPrev = document.getElementById(prevLetterTwo);
-    const elementtwo = document.getElementById(nextLetter);
-    const elementtwoNext = document.getElementById(nextLetterTwo);
+    // let prevLetterTwo = e.target.id - 2
+    // let prevLetter = e.target.id - 1
+    // let nextLetter = parseInt(e.target.id) + 1
+    // let nextLetterTwo = parseInt(e.target.id) + 2
+    // const element = document.getElementById(prevLetter);
+    // const elementPrev = document.getElementById(prevLetterTwo);
+    // const elementtwo = document.getElementById(nextLetter);
+    // const elementtwoNext = document.getElementById(nextLetterTwo);
     
-    gsap.to(e.target, {
-      scale: 1.3,
-      ease: 'none',
-      duration: 0.15
-    });
+    // gsap.to(e.target, {
+    //   scale: 1.3,
+    //   ease: 'none',
+    //   duration: 0.15
+    // });
 
-    gsap.to(element, {
-      scale: 1.2,
-      ease: 'none',
-      duration: 0.15,
-    });
+    // gsap.to(element, {
+    //   scale: 1.2,
+    //   ease: 'none',
+    //   duration: 0.15,
+    // });
 
-    gsap.to(elementPrev, {
-      scale: 1.1,
-      ease: 'none',
-      duration: 0.15,
-    });
-    gsap.to(elementtwoNext, {
-      scale: 1.1,
-      ease: 'none',
-      duration: 0.15,
-    });
-    gsap.to(elementtwo, {
-      scale: 1.2,
-      ease: 'none',
-      duration: 0.15,
-    });
+    // gsap.to(elementPrev, {
+    //   scale: 1.1,
+    //   ease: 'none',
+    //   duration: 0.15,
+    // });
+    // gsap.to(elementtwoNext, {
+    //   scale: 1.1,
+    //   ease: 'none',
+    //   duration: 0.15,
+    // });
+    // gsap.to(elementtwo, {
+    //   scale: 1.2,
+    //   ease: 'none',
+    //   duration: 0.15,
+    // });
   }
 
   const removeHoverEffect = (e) => {
-    let prevLetterTwo = e.target.id - 2
-    let prevLetter = e.target.id - 1
-    let nextLetter = parseInt(e.target.id) + 1
-    let nextLetterTwo = parseInt(e.target.id) + 2
-    const element = document.getElementById(prevLetter);
-    const elementPrev = document.getElementById(prevLetterTwo);
-    const elementtwo = document.getElementById(nextLetter);
-    const elementtwoNext = document.getElementById(nextLetterTwo);
+    // let prevLetterTwo = e.target.id - 2
+    // let prevLetter = e.target.id - 1
+    // let nextLetter = parseInt(e.target.id) + 1
+    // let nextLetterTwo = parseInt(e.target.id) + 2
+    // const element = document.getElementById(prevLetter);
+    // const elementPrev = document.getElementById(prevLetterTwo);
+    // const elementtwo = document.getElementById(nextLetter);
+    // const elementtwoNext = document.getElementById(nextLetterTwo);
 
 
-    gsap.to(e.target, {
-      scale: 1,
-      ease: 'none',
-      duration: 0.15,
-    });
+    // gsap.to(e.target, {
+    //   scale: 1,
+    //   ease: 'none',
+    //   duration: 0.15,
+    // });
 
-    gsap.to(element, {
-      scale: 1,
-      ease: 'none',
-      duration: 0.15,
-    });
+    // gsap.to(element, {
+    //   scale: 1,
+    //   ease: 'none',
+    //   duration: 0.15,
+    // });
 
-    gsap.to(elementtwo, {
-      scale: 1,
-      ease: 'none',
-      duration: 0.15,
-    });
-    gsap.to(elementtwoNext, {
-      scale: 1,
-      ease: 'none',
-      duration: 0.15,
-    });
-    gsap.to(elementPrev, {
-      scale: 1,
-      ease: 'none',
-      duration: 0.15,
-    });
+    // gsap.to(elementtwo, {
+    //   scale: 1,
+    //   ease: 'none',
+    //   duration: 0.15,
+    // });
+    // gsap.to(elementtwoNext, {
+    //   scale: 1,
+    //   ease: 'none',
+    //   duration: 0.15,
+    // });
+    // gsap.to(elementPrev, {
+    //   scale: 1,
+    //   ease: 'none',
+    //   duration: 0.15,
+    // });
   }
 
   useGSAP(() => {

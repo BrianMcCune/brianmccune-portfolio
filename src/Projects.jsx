@@ -80,6 +80,8 @@ const Projects = () => {
       delay: 0.1
     })
     
+    mm.add("(min-width: 768px)", () => {
+
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: '.projects',
@@ -137,6 +139,8 @@ const Projects = () => {
     tl.to('.fontawesomeicon', {
       color: 'rgb(9, 9, 9)'
     }, 1.1)
+
+  })
 
     mm.add("(min-width: 768px)", () => {
 
