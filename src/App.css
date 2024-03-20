@@ -671,9 +671,4 @@ a:visited {
     width: 80%;
     justify-self: center;
   }
-
-
-  .container > .text {
-    display: none;
-  }
 }
