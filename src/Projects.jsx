@@ -13,7 +13,7 @@ const Projects = () => {
   
   const createHoverEffect = (element, index) => {
     // 7, 13, 6
-    mm.add("(min-width: 768px)", () => {
+    // mm.add("(min-width: 768px)", () => {
       const backgroundColors = ['rgb(200, 221, 233)', 'rgb(235, 194, 96)', 'rgb(120, 171, 219)', 'rgb(248, 191, 95)']
 
       gsap.to(element, { 
@@ -34,11 +34,11 @@ const Projects = () => {
         duration: 0.2,
         // ease: 'none'
       })
-    })
+    // })
   };
 
   const removeHoverEffect = (element) => {
-    mm.add("(min-width: 768px)", () => {
+    // mm.add("(min-width: 768px)", () => {
       gsap.to(element, { 
         scale: 0.95, 
         duration: 0.2,
@@ -57,7 +57,7 @@ const Projects = () => {
         duration: 0.2,
         // ease: 'none'
       })
-    })
+    // })
   };
 
   const headline = 'Projects'
