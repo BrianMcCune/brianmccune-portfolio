@@ -673,11 +673,7 @@ a:visited {
   }
 
 
-
-
-
-  .intro {
+  .about > .container {
     display: none;
   }
-
 }
