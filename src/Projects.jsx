@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 import { projectData } from "./project-data";
 
 const Projects = () => {
-  
+
   ScrollTrigger.refresh() 
 
   const elementRefs = useRef([]);
@@ -81,6 +81,92 @@ const Projects = () => {
   const headline = 'Projects'
   let headlineArray = headline.split('')
 
+
+  useLayoutEffect(() => {
+
+    if (counter === 1) {
+      tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: '.projects',
+          markers: true,
+          start: 'center bottom',
+          end: '270% top',
+          scrub: true,
+          stagger: 0
+        }
+      })
+      
+    } else {
+      tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: '.projects',
+          markers: true,
+          start: '25% bottom',
+          end: 'bottom top',
+          scrub: true,
+          stagger: 0
+        }
+      })
+    }
+  
+      tl.to('.navbar, .expertise, .contact, body', {
+        backgroundColor: 'rgb(9, 9, 9)',
+        color: 'rgb(241, 241, 241)',
+        duration: 0.1,
+        stagger: 0
+      }, 0)
+  
+      tl.to('.projects', {
+        backgroundColor: 'rgb(9, 9, 9)',
+        duration: 0.1,
+        stagger: 0
+      }, 0)
+  
+      tl.to('button, .underline', {
+        backgroundColor: 'rgb(241, 241, 241)',
+        color: 'rgb(9, 9, 9)',
+      }, 0)
+  
+      tl.to('.projects-headline, .contact-headline, .fontawesomeicon', {
+        color: 'rgb(241, 241, 241)'
+      }, 0)
+  
+      tl.to('.navbar, .expertise, .contact, body', {
+        backgroundColor: 'rgb(9, 9, 9)',
+        color: 'rgb(241, 241, 241)',
+        duration: 0.8
+      })
+  
+      tl.to('.projects', {
+        color: 'rgb(9, 9, 9)',
+        // color: 'rgb(241, 241, 241)',
+        duration: 0.8
+      }, 0.2)
+  
+      tl.to('.projects, .navbar, .expertise, .contact, body', {
+        color: 'rgb(9, 9, 9)',
+        backgroundColor: 'rgb(241, 241, 241)',
+        duration: 0.1
+      })
+  
+      tl.to('button, .underline', {
+        backgroundColor: 'rgb(9, 9, 9)',
+        color: 'rgb(241, 241, 241)',
+      }, 1)
+  
+      tl.to('.projects-headline, .contact-headline', {
+        color: 'rgb(110, 110, 85)'
+      }, 1)
+  
+      tl.to('.fontawesomeicon', {
+        color: 'rgb(9, 9, 9)'
+      }, 1)
+  
+      return () => {
+        tl.revert(); // Kill the animation
+      };
+    }, []);
+
   useGSAP(() => {
     gsap.from('.projects-headline', {
       scrollTrigger: {
@@ -96,87 +182,6 @@ const Projects = () => {
       ease: 'power3.out',
       delay: 0.1
     })
-    
-  if (counter === 1) {
-    tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.projects',
-        markers: true,
-        start: 'center bottom',
-        end: '270% top',
-        scrub: true,
-        stagger: 0
-      }
-    })
-    
-  } else {
-    tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.projects',
-        markers: true,
-        start: '25% bottom',
-        end: 'bottom top',
-        scrub: true,
-        stagger: 0
-      }
-    })
-  }
-
-  
-  console.log(counter)
-
-    tl.to('.navbar, .expertise, .contact, body', {
-      backgroundColor: 'rgb(9, 9, 9)',
-      color: 'rgb(241, 241, 241)',
-      duration: 0.1,
-      stagger: 0
-    }, 0)
-
-    tl.to('.projects', {
-      backgroundColor: 'rgb(9, 9, 9)',
-      duration: 0.1,
-      stagger: 0
-    }, 0)
-
-    tl.to('button, .underline', {
-      backgroundColor: 'rgb(241, 241, 241)',
-      color: 'rgb(9, 9, 9)',
-    }, 0)
-
-    tl.to('.projects-headline, .contact-headline, .fontawesomeicon', {
-      color: 'rgb(241, 241, 241)'
-    }, 0)
-
-    tl.to('.navbar, .expertise, .contact, body', {
-      backgroundColor: 'rgb(9, 9, 9)',
-      color: 'rgb(241, 241, 241)',
-      duration: 0.8
-    })
-
-    tl.to('.projects', {
-      color: 'rgb(9, 9, 9)',
-      // color: 'rgb(241, 241, 241)',
-      duration: 0.8
-    }, 0.2)
-
-    tl.to('.projects, .navbar, .expertise, .contact, body', {
-      color: 'rgb(9, 9, 9)',
-      backgroundColor: 'rgb(241, 241, 241)',
-      duration: 0.1
-    })
-
-    tl.to('button, .underline', {
-      backgroundColor: 'rgb(9, 9, 9)',
-      color: 'rgb(241, 241, 241)',
-    }, 1)
-
-    tl.to('.projects-headline, .contact-headline', {
-      color: 'rgb(110, 110, 85)'
-    }, 1)
-
-    tl.to('.fontawesomeicon', {
-      color: 'rgb(9, 9, 9)'
-    }, 1)
 
     mm.add("(min-width: 768px)", () => {
 
