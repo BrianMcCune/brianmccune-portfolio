@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Intro = () => {
 
@@ -49,7 +50,8 @@ const Intro = () => {
       y: 400
       }
     )
-  },{})
+    ScrollTrigger.refresh()
+  })
 
 
   return ( 
