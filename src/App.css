@@ -671,4 +671,19 @@ a:visited {
     width: 80%;
     justify-self: center;
   }
+
+
+
+
+  .navbar {
+    display: none;
+  }
+
+  .intro {
+    display: none;
+  }
+
+  .about {
+    display: none;
+  }
 }

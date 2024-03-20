@@ -119,7 +119,7 @@ const Expertise = () => {
         toggleActions: 'play none none none',
       },
       duration: 0.4, 
-      // y:250, 
+      y:250, 
       stagger: 0.05, 
       ease: 'power3.out',
       delay: 0.1
@@ -131,7 +131,7 @@ const Expertise = () => {
         toggleActions: 'play none none none',
       },
       duration: 0.5, 
-      // y: 60, 
+      y: 60, 
       opacity: 0, 
       ease: 'power3.out'
     })
@@ -144,7 +144,7 @@ const Expertise = () => {
         // markers: true
       },
       duration: 0.5, 
-      // y: 60, 
+      y: 60, 
       opacity: 0, 
       ease: 'power3.out'
     })
@@ -157,7 +157,7 @@ const Expertise = () => {
         // markers: true
       },
       duration: 0.5, 
-      // y: 60, 
+      y: 60, 
       opacity: 0, 
       ease: 'power3.out'
     })
@@ -170,7 +170,7 @@ const Expertise = () => {
         // markers: true
       },
       duration: 0.5, 
-      // y: 60, 
+      y: 60, 
       opacity: 0, 
       ease: 'power3.out'
     })
