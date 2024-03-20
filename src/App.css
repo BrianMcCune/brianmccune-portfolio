@@ -671,4 +671,8 @@ a:visited {
     width: 80%;
     justify-self: center;
   }
+
+  .text-one {
+    font-size: 50px;
+  }
 }

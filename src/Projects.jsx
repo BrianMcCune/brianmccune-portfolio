@@ -6,6 +6,8 @@ gsap.registerPlugin(ScrollTrigger);
 import { projectData } from "./project-data";
 
 const Projects = () => {
+  
+  ScrollTrigger.refresh() 
 
   const elementRefs = useRef([]);
   let mm = gsap.matchMedia();
