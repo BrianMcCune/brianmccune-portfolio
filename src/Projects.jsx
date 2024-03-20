@@ -4,7 +4,6 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 import { projectData } from "./project-data";
-import { useEffect } from "react";
 
 const Projects = () => {
 

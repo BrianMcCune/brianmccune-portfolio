@@ -95,20 +95,22 @@ const Expertise = () => {
 
   useGSAP(() => {
 
+    let mm = gsap.matchMedia();
 
-
-    gsap.fromTo('.expertise-circle', {y: 80}, {
-      scrollTrigger: {
-        trigger: '.expertise',
-        start: 'top center',
-        end: 'bottom center',
-        scrub: true,
-        // pin: '.expertise',
-        // markers: true
-      },
-      y: -120,
-      opacity: 0.01,
-      scale: 0.9
+    mm.add("(min-width: 768px)", () => {
+      gsap.fromTo('.expertise-circle', {y: 80}, {
+        scrollTrigger: {
+          trigger: '.expertise',
+          start: 'top center',
+          end: 'bottom center',
+          scrub: true,
+          // pin: '.expertise',
+          // markers: true
+        },
+        y: -120,
+        opacity: 0.01,
+        scale: 0.9
+      })
     })
 
     gsap.from('.expertise-headline', {
