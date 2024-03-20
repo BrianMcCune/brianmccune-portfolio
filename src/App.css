@@ -605,16 +605,16 @@ a:visited {
     margin-bottom: 20px;
   }
 
-  /* .img-container {
+  .img-container {
     display: none;
-  } */
+  }
 
-  /* .mobile-image {
+  .mobile-image {
     display: inline;
-    height: 100svh;
+    /* height: 100svh; */
     border-radius: 10px;
-    width: 80%;
-  } */
+    width: 100%;
+  }
 
   .about > .container {
     flex-direction: column;
