@@ -104,7 +104,7 @@ const Projects = () => {
     tl = gsap.timeline({
       scrollTrigger: {
         trigger: '.projects',
-        markers: true,
+        // markers: true,
         start: 'center bottom',
         end: '270% top',
         scrub: true,
@@ -117,8 +117,8 @@ const Projects = () => {
     tl = gsap.timeline({
       scrollTrigger: {
         trigger: '.projects',
-        markers: true,
-        start: '25% bottom',
+        // markers: true,
+        start: '15% bottom',
         end: 'bottom top',
         scrub: true,
         stagger: 0

@@ -50,7 +50,6 @@ const Intro = () => {
       y: 400
       }
     )
-    ScrollTrigger.refresh()
   })
 
 

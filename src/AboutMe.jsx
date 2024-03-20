@@ -6,15 +6,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 const AboutMe = () => {
-  ScrollTrigger.refresh()
   const headline = "About Me"
   let headlineArray = headline.split('')
 
   useGSAP(() => {
-    ScrollTrigger.refresh()
+    // ScrollTrigger.refresh()
     let mm = gsap.matchMedia();
-
-
 
     gsap.from('.about-headline', {
       scrollTrigger: {
@@ -27,7 +24,6 @@ const AboutMe = () => {
       stagger: 0.05, 
       ease: 'power3.out'
     })
-    ScrollTrigger.refresh()
     mm.add("(min-width: 768px)", () => {
 
       gsap.from('.img-container', {
@@ -44,19 +40,30 @@ const AboutMe = () => {
         scale: 1
       })
 
+      // ScrollTrigger.refresh()
       gsap.to('.img-container', {
         scrollTrigger: {
-          trigger: '.img-container',
-          start: () => 'top ' + (-window.innerWidth*0.04 + 240),
-          end: () => 'bottom ' + (window.innerWidth*0.25 + 250),
+          trigger: '.about',
+          start: () => 'top ' + (-window.innerWidth*0.27 + 240),
+          end: () => 'bottom ' + (window.innerWidth*0.09 + 430),
           pin: '.text',
           scrub: true,
-          // immediateRender: false,
+          // immediateRender: true,
           // markers: true
         },
       })
+      // gsap.to('.img-container', {
+      //   scrollTrigger: {
+      //     trigger: '.img-container',
+      //     start: () => 'top ' + (-window.innerWidth*0.04 + 240),
+      //     end: () => 'bottom ' + (window.innerWidth*0.25 + 250),
+      //     pin: '.text',
+      //     scrub: true,
+      //     // immediateRender: true,
+      //     markers: true
+      //   },
+      // })
     });
-    ScrollTrigger.refresh()
   })
 
   return ( 

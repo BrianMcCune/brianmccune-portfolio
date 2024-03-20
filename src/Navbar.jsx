@@ -8,7 +8,7 @@ import { useRef } from "react";
 
 
 const Navbar = (props) => {
-  ScrollTrigger.refresh()
+  // ScrollTrigger.refresh()
   const aboutRef = useRef(null)
   const expertiseRef = useRef(null)
   const projectsRef = useRef(null)
@@ -29,7 +29,7 @@ const Navbar = (props) => {
         gsap.set(element.current, { x: 0, width: 0 });
       }
     })
-    ScrollTrigger.refresh()
+    // ScrollTrigger.refresh()
   }
 
   useGSAP(() => {
@@ -38,7 +38,7 @@ const Navbar = (props) => {
       duration: 0.8,
       delay: 2.4
     })
-    ScrollTrigger.refresh()
+    // ScrollTrigger.refresh()
   })
 
   return ( 

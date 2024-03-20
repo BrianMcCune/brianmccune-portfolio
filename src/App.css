@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 .intro-animation {
@@ -234,7 +235,7 @@ button {
 
 .img-container {
   width: 50%;
-  /* min-width: 50%; */
+  min-width: 50%;
   overflow: hidden;
   border-radius: 10px;
   height: fit-content;
@@ -391,6 +392,7 @@ h3 {
   padding: 20px;
   font-weight: 600;
   text-align: left;
+  color: rgb(9, 9, 9);
 }
 
 a {
@@ -560,13 +562,14 @@ a:visited {
 
   .container > .circle {
     /* max-width: 100svw; */
-    width: 500px;
+    width: 350px;
     /* max-height: 100svw; */
-    height: 500px;
+    height: 350px;
     /* margin-top: -80px; */
   }
 
-  .intro {
+
+  .intro > .container {
     /* height: ; */
   }
 
@@ -575,6 +578,7 @@ a:visited {
     padding: 0;
     /* min-height: 80svh; */
     justify-content: left;
+    min-height: 500px;
   }
 
   .bio-container {
@@ -590,7 +594,7 @@ a:visited {
     display: contents;
     color: rgb(9, 9, 9);
     /* font-size: 8svw; */
-    font-size: 50px;
+    font-size: 32px;
   }
 
   .about {
@@ -621,14 +625,15 @@ a:visited {
 
   .about > .container {
     flex-direction: column;
-    /* height: calc(60svw + 250px); */
+    height: calc(60svw + 250px);
   }
 
   .img-container {
     animation: none;
-    /* min-height: 30svh; */
-    /* height: calc(60svw + 250px); */
+    min-height: 30svh;
+    height: calc(60svw + 250px);
     border-radius: 10px;
+    width: 100%;
     /* width: 90svw; */
   }
 
