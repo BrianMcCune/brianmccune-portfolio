@@ -673,7 +673,7 @@ a:visited {
   }
 
 
-  .about > .container {
+  .container > img {
     display: none;
   }
 }
