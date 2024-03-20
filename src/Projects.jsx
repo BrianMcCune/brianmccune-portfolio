@@ -4,11 +4,27 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 import { projectData } from "./project-data";
+import { useEffect } from "react";
 
 const Projects = () => {
 
   const elementRefs = useRef([]);
   let mm = gsap.matchMedia();
+  let counter
+  let tl
+  mm.add("(min-width: 768px)", () => {
+    if (counter === 2) {
+      window.location.reload()
+    }
+    counter = 1
+  })
+
+  mm.add("(max-width: 767px)", () => {
+    if (counter === 1) {
+      window.location.reload()
+    }
+    counter = 2
+  })
 
   
   const createHoverEffect = (element, index) => {
@@ -80,17 +96,6 @@ const Projects = () => {
       delay: 0.1
     })
     
-    let counter
-    let tl
-    mm.add("(min-width: 768px)", () => {
-    
-    counter = 1
-  })
-
-    mm.add("(max-width: 767px)", () => {
-    
-    counter = 2
-  })
   if (counter === 1) {
     tl = gsap.timeline({
       scrollTrigger: {
@@ -108,7 +113,7 @@ const Projects = () => {
       scrollTrigger: {
         trigger: '.projects',
         markers: true,
-        start: '10% bottom',
+        start: '25% bottom',
         end: 'bottom top',
         scrub: true,
         stagger: 0
