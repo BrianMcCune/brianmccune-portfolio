@@ -221,7 +221,7 @@ button {
 
 .about > .container {
   display: flex;
-  min-height: 75svh;
+  /* min-height: 75svh; */
   gap: 3svw;
   margin-left: 8svw;
   margin-right: 8svw;
@@ -234,7 +234,7 @@ button {
 
 .img-container {
   width: 50%;
-  min-width: 50%;
+  /* min-width: 50%; */
   overflow: hidden;
   border-radius: 10px;
   height: fit-content;
