@@ -13,7 +13,7 @@ const Projects = () => {
   
   const createHoverEffect = (element, index) => {
     // 7, 13, 6
-    // mm.add("(min-width: 768px)", () => {
+    mm.add("(min-width: 768px)", () => {
       const backgroundColors = ['rgb(200, 221, 233)', 'rgb(235, 194, 96)', 'rgb(120, 171, 219)', 'rgb(248, 191, 95)']
 
       gsap.to(element, { 
@@ -34,11 +34,11 @@ const Projects = () => {
         duration: 0.2,
         // ease: 'none'
       })
-    // })
+    })
   };
 
   const removeHoverEffect = (element) => {
-    // mm.add("(min-width: 768px)", () => {
+    mm.add("(min-width: 768px)", () => {
       gsap.to(element, { 
         scale: 0.95, 
         duration: 0.2,
@@ -57,7 +57,7 @@ const Projects = () => {
         duration: 0.2,
         // ease: 'none'
       })
-    // })
+    })
   };
 
   const headline = 'Projects'
@@ -80,9 +80,19 @@ const Projects = () => {
       delay: 0.1
     })
     
-    // mm.add("(min-width: 768px)", () => {
+    let counter
+    let tl
+    mm.add("(min-width: 768px)", () => {
+    
+    counter = 1
+  })
 
-    const tl = gsap.timeline({
+    mm.add("(max-width: 767px)", () => {
+    
+    counter = 2
+  })
+  if (counter === 1) {
+    tl = gsap.timeline({
       scrollTrigger: {
         trigger: '.projects',
         markers: true,
@@ -92,6 +102,22 @@ const Projects = () => {
         stagger: 0
       }
     })
+    
+  } else {
+    tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.projects',
+        markers: true,
+        start: '10% bottom',
+        end: 'bottom top',
+        scrub: true,
+        stagger: 0
+      }
+    })
+  }
+
+  
+  console.log(counter)
 
     tl.to('.navbar, .expertise, .contact', {
       backgroundColor: 'rgb(9, 9, 9)',
@@ -140,9 +166,7 @@ const Projects = () => {
       color: 'rgb(9, 9, 9)'
     }, 1.1)
 
-  // })
-
-    // mm.add("(min-width: 768px)", () => {
+    mm.add("(min-width: 768px)", () => {
 
       gsap.to('.project-image-container', {
         xPercent: -310,
@@ -156,7 +180,7 @@ const Projects = () => {
           // markers: true
         },
       })
-    // })
+    })
   })
 
 

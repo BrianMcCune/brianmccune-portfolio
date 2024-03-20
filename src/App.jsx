@@ -7,11 +7,9 @@ import AboutMe from './AboutMe'
 import Expertise from './Expertise'
 import Projects from './Projects'
 import Contact from './Contact'
+import { useEffect, useState } from 'react'
 
 function App() {
-
-
-
   
  
   return (

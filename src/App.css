@@ -654,8 +654,7 @@ a:visited {
     display: none;
   }
 
-  /* .projects {
-    overflow: visible;
+  .projects {
     margin-right: auto;
   }
 
@@ -671,5 +670,5 @@ a:visited {
   .project-image-container {
     width: 80%;
     justify-self: center;
-  } */
+  }
 }
