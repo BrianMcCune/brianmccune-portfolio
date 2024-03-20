@@ -31,13 +31,13 @@ const Navbar = (props) => {
     })
   }
 
-  useGSAP(() => {
-    gsap.from('.navbar', {
-      y: -50,
-      duration: 0.8,
-      delay: 2.4
-    })
-  })
+  // useGSAP(() => {
+  //   gsap.from('.navbar', {
+  //     y: -50,
+  //     duration: 0.8,
+  //     delay: 2.4
+  //   })
+  // })
 
   return ( 
     <div className="navbar">

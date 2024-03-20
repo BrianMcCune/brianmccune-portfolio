@@ -125,7 +125,7 @@ const Projects = () => {
   
   console.log(counter)
 
-    tl.to('.navbar, .expertise, .contact', {
+    tl.to('.navbar, .expertise, .contact, body', {
       backgroundColor: 'rgb(9, 9, 9)',
       color: 'rgb(241, 241, 241)',
       duration: 0.1,
@@ -147,13 +147,19 @@ const Projects = () => {
       color: 'rgb(241, 241, 241)'
     }, 0)
 
-    tl.to('.projects, .navbar, .expertise, .contact, html', {
+    tl.to('.navbar, .expertise, .contact, body', {
       backgroundColor: 'rgb(9, 9, 9)',
       color: 'rgb(241, 241, 241)',
       duration: 0.8
     })
 
-    tl.to('.projects, .navbar, .expertise, .contact, html', {
+    tl.to('.projects', {
+      backgroundColor: 'rgb(9, 9, 9)',
+      // color: 'rgb(241, 241, 241)',
+      duration: 0.8
+    }, 0.2)
+
+    tl.to('.projects, .navbar, .expertise, .contact, body', {
       color: 'rgb(9, 9, 9)',
       backgroundColor: 'rgb(241, 241, 241)',
       duration: 0.1
@@ -162,15 +168,15 @@ const Projects = () => {
     tl.to('button, .underline', {
       backgroundColor: 'rgb(9, 9, 9)',
       color: 'rgb(241, 241, 241)',
-    }, 1.1)
+    }, 1)
 
     tl.to('.projects-headline, .contact-headline', {
       color: 'rgb(110, 110, 85)'
-    }, 1.1)
+    }, 1)
 
     tl.to('.fontawesomeicon', {
       color: 'rgb(9, 9, 9)'
-    }, 1.1)
+    }, 1)
 
     mm.add("(min-width: 768px)", () => {
 
