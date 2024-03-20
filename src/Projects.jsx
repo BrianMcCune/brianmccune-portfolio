@@ -80,7 +80,7 @@ const Projects = () => {
   let headlineArray = headline.split('')
 
   useGSAP(() => {
-
+    ScrollTrigger.refresh()
     gsap.from('.projects-headline', {
       scrollTrigger: {
         trigger: '.projects',
@@ -100,7 +100,7 @@ const Projects = () => {
     tl = gsap.timeline({
       scrollTrigger: {
         trigger: '.projects',
-        markers: true,
+        // markers: true,
         start: 'center bottom',
         end: '270% top',
         scrub: true,
@@ -109,17 +109,17 @@ const Projects = () => {
     })
     
   } else {
+    ScrollTrigger.refresh()
     tl = gsap.timeline({
       scrollTrigger: {
         trigger: '.projects',
-        markers: true,
+        // markers: true,
         start: '25% bottom',
         end: 'bottom top',
         scrub: true,
         stagger: 0
       }
     })
-    ScrollTrigger.refresh()
   }
 
   
