@@ -11,6 +11,7 @@ const Projects = () => {
   let mm = gsap.matchMedia();
   let counter
   let tl
+
   mm.add("(min-width: 768px)", () => {
     if (counter === 2) {
       window.location.reload()
@@ -118,6 +119,7 @@ const Projects = () => {
         stagger: 0
       }
     })
+    ScrollTrigger.refresh()
   }
 
   
