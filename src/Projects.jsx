@@ -8,50 +8,55 @@ import { projectData } from "./project-data";
 const Projects = () => {
 
   const elementRefs = useRef([]);
+  let mm = gsap.matchMedia();
 
   
   const createHoverEffect = (element, index) => {
     // 7, 13, 6
-    const backgroundColors = ['rgb(200, 221, 233)', 'rgb(235, 194, 96)', 'rgb(120, 171, 219)', 'rgb(248, 191, 95)']
+    mm.add("(min-width: 768px)", () => {
+      const backgroundColors = ['rgb(200, 221, 233)', 'rgb(235, 194, 96)', 'rgb(120, 171, 219)', 'rgb(248, 191, 95)']
 
-    gsap.to(element, { 
-      scale: 1.05, 
-      duration: 0.2, 
-      ease: 'none',
-      background: backgroundColors[index]
-    });
-    
-    gsap.to(`.project-image-container:nth-child(${index + 1}) > a > .project-image`, { 
-      scale: 0.95, 
-      duration: 0.2, 
-      ease: 'none',
-    });
+      gsap.to(element, { 
+        scale: 1.05, 
+        duration: 0.2, 
+        ease: 'none',
+        background: backgroundColors[index]
+      });
+      
+      gsap.to(`.project-image-container:nth-child(${index + 1}) > a > .project-image`, { 
+        scale: 0.95, 
+        duration: 0.2, 
+        ease: 'none',
+      });
 
-    gsap.to(`.project-image-container:nth-child(${index + 1}) > a > .project-tech`, {
-      opacity: 1,
-      duration: 0.2,
-      // ease: 'none'
+      gsap.to(`.project-image-container:nth-child(${index + 1}) > a > .project-tech`, {
+        opacity: 1,
+        duration: 0.2,
+        // ease: 'none'
+      })
     })
   };
 
   const removeHoverEffect = (element) => {
-    gsap.to(element, { 
-      scale: 0.95, 
-      duration: 0.2,
-      ease: 'none', 
-      background: 'rgb(241, 241, 241)'
-    });
+    mm.add("(min-width: 768px)", () => {
+      gsap.to(element, { 
+        scale: 0.95, 
+        duration: 0.2,
+        ease: 'none', 
+        background: 'rgb(241, 241, 241)'
+      });
 
-    gsap.to(`.project-image`, { 
-      scale: 1.05, 
-      duration: 0.2,
-      ease: 'none', 
-    });
+      gsap.to(`.project-image`, { 
+        scale: 1.05, 
+        duration: 0.2,
+        ease: 'none', 
+      });
 
-    gsap.to('.project-tech', {
-      opacity: 0,
-      duration: 0.2,
-      // ease: 'none'
+      gsap.to('.project-tech', {
+        opacity: 0,
+        duration: 0.2,
+        // ease: 'none'
+      })
     })
   };
 
@@ -74,11 +79,11 @@ const Projects = () => {
       ease: 'power3.out',
       delay: 0.1
     })
-
+    
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: '.projects',
-        // markers: true,
+        markers: true,
         start: 'center bottom',
         end: '270% top',
         scrub: true,
@@ -98,8 +103,6 @@ const Projects = () => {
       duration: 0.1,
       stagger: 0
     }, 0)
-
-
 
     tl.to('button, .underline', {
       backgroundColor: 'rgb(241, 241, 241)',
@@ -135,19 +138,21 @@ const Projects = () => {
       color: 'rgb(9, 9, 9)'
     }, 1.1)
 
-    gsap.to('.project-image-container', {
-      xPercent: -310,
-      ease: 'none',
-      scrollTrigger: {
-        trigger: '.projects',
-        start: '12.7% top',
-        pin: true,
-        scrub: 1,
-        end: '+=1500',
-        // markers: true
-      },
+    mm.add("(min-width: 768px)", () => {
+
+      gsap.to('.project-image-container', {
+        xPercent: -310,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: '.projects',
+          start: '12.7% top',
+          pin: true,
+          scrub: 1,
+          end: '+=1500',
+          // markers: true
+        },
+      })
     })
-    
   })
 
 

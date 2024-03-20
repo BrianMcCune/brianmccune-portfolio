@@ -624,6 +624,7 @@ a:visited {
     animation: none;
     /* min-height: 30svh; */
     /* height: calc(60svw + 250px); */
+    border-radius: 10px;
     width: 90svw;
   }
 
@@ -650,5 +651,23 @@ a:visited {
 
   .expertise-circle {
     display: none;
+  }
+
+  .projects {
+    overflow: visible;
+    margin-right: auto;
+  }
+
+  .projects-list {
+    flex-direction: column;
+    margin: 0;
+    width: 100svw;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .project-image-container {
+    width: 80%;
+    justify-self: center;
   }
 }
