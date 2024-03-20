@@ -561,6 +561,7 @@ a:visited {
   .container > .circle {
     max-width: 100svw;
     max-height: 100svw;
+    margin-top: -80px;
   }
 
   .intro {
@@ -653,7 +654,7 @@ a:visited {
     display: none;
   }
 
-  .projects {
+  /* .projects {
     overflow: visible;
     margin-right: auto;
   }
@@ -661,7 +662,8 @@ a:visited {
   .projects-list {
     flex-direction: column;
     margin: 0;
-    width: 100svw;
+    padding:0 ;
+    width: 100dvw;
     align-items: center;
     justify-content: center;
   }
@@ -669,5 +671,5 @@ a:visited {
   .project-image-container {
     width: 80%;
     justify-self: center;
-  }
+  } */
 }

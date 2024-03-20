@@ -80,7 +80,7 @@ const Projects = () => {
       delay: 0.1
     })
     
-    mm.add("(min-width: 768px)", () => {
+    // mm.add("(min-width: 768px)", () => {
 
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -140,9 +140,9 @@ const Projects = () => {
       color: 'rgb(9, 9, 9)'
     }, 1.1)
 
-  })
+  // })
 
-    mm.add("(min-width: 768px)", () => {
+    // mm.add("(min-width: 768px)", () => {
 
       gsap.to('.project-image-container', {
         xPercent: -310,
@@ -156,7 +156,7 @@ const Projects = () => {
           // markers: true
         },
       })
-    })
+    // })
   })
 
 
