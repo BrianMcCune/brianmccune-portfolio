@@ -559,19 +559,21 @@ a:visited {
   }
 
   .container > .circle {
-    max-width: 100svw;
-    max-height: 100svw;
+    /* max-width: 100svw; */
+    width: 500px;
+    /* max-height: 100svw; */
+    height: 500px;
     margin-top: -80px;
   }
 
   .intro {
-    height: 90svh;
+    /* height: ; */
   }
 
   .bio {
     margin-top: 0;
     padding: 0;
-    min-height: 80svh;
+    /* min-height: 80svh; */
     justify-content: left;
   }
 
@@ -587,7 +589,8 @@ a:visited {
   .screen-adapt-text {
     display: contents;
     color: rgb(9, 9, 9);
-    font-size: 8svw;
+    /* font-size: 8svw; */
+    font-size: 50px;
   }
 
   .about {
@@ -626,7 +629,13 @@ a:visited {
     /* min-height: 30svh; */
     /* height: calc(60svw + 250px); */
     border-radius: 10px;
-    width: 90svw;
+    /* width: 90svw; */
+  }
+
+  img {
+    height: 650px;
+    /* margin-bottom: 100px; */
+    border-radius: 10px;
   }
 
   .text > h3 {
@@ -673,6 +682,6 @@ a:visited {
   }
 
   .mobile-image {
-    display: none;
+    /* display: none; */
   }
 }
