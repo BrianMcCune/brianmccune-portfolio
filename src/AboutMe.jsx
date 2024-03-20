@@ -6,12 +6,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 const AboutMe = () => {
-
+  ScrollTrigger.refresh()
   const headline = "About Me"
   let headlineArray = headline.split('')
 
   useGSAP(() => {
-
+    ScrollTrigger.refresh()
     let mm = gsap.matchMedia();
 
 
@@ -27,7 +27,7 @@ const AboutMe = () => {
       stagger: 0.05, 
       ease: 'power3.out'
     })
-
+    ScrollTrigger.refresh()
     mm.add("(min-width: 768px)", () => {
 
       gsap.from('.img-container', {
@@ -56,6 +56,7 @@ const AboutMe = () => {
         },
       })
     });
+    ScrollTrigger.refresh()
   })
 
   return ( 

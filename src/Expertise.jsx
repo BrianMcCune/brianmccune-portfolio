@@ -6,7 +6,7 @@ import { useRef } from "react";
 // import Javascript from "./javascript.svg"
 
 const Expertise = () => {
-
+  ScrollTrigger.refresh()
   const letterRef = useRef(null)
   const headline = 'Expertise'
   let headlineArray = headline.split('')
@@ -94,7 +94,7 @@ const Expertise = () => {
   }
 
   useGSAP(() => {
-
+    ScrollTrigger.refresh()
     let mm = gsap.matchMedia();
 
     mm.add("(min-width: 768px)", () => {
@@ -174,7 +174,7 @@ const Expertise = () => {
       opacity: 0, 
       ease: 'power3.out'
     })
-
+    ScrollTrigger.refresh()
   })
 
 

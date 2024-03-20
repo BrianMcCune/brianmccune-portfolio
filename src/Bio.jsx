@@ -16,6 +16,7 @@ const Bio = () => {
   let bioThreeArray = bioThree.split('')
 
   useGSAP(() => {
+    ScrollTrigger.refresh()
 
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -75,6 +76,7 @@ const Bio = () => {
       color: 'white',
       stagger: 3, 
     })
+    ScrollTrigger.refresh()
   })
 
 
