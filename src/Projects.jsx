@@ -116,10 +116,10 @@ const Projects = () => {
     ScrollTrigger.refresh()
     tl = gsap.timeline({
       scrollTrigger: {
-        trigger: '.projects',
-        // markers: true,
-        start: '15% bottom',
-        end: 'bottom top',
+        trigger: '.expertise',
+        markers: true,
+        start: '80% top',
+        end: '360% top',
         scrub: true,
         stagger: 0
       }

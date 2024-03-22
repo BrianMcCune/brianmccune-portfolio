@@ -672,7 +672,7 @@ a:visited {
   }
 
   .expertise-list > p {
-    margin-left: 10.5svw;
+    /* margin-left: 10.5svw; */
     font-size: 35px;
   }
 
