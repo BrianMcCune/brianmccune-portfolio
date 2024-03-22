@@ -605,7 +605,6 @@ a:visited {
 
   .about > .container {
     flex-direction: column;
-    height: calc(60svw + 250px);
   }
 
   .img-container {
@@ -645,6 +644,38 @@ a:visited {
   .expertise-circle {
     display: none;
   }
+
+  .expertise-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8svw;
+    margin-right: 8svw;
+  }
+  
+  .expertise-text {
+    width: 100%;
+  }
+
+  .strengths, .experiences {
+    font-size: 35px
+  }
+
+  .text-one, .text-two {
+    font-size: 25px;
+  }
+
+  .expertise-list {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .expertise-list > p {
+    margin-left: 10.5svw;
+    font-size: 35px;
+  }
+
 
   .projects {
     margin-right: auto;

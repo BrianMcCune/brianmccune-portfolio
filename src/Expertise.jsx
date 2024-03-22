@@ -208,7 +208,7 @@ const Expertise = () => {
         </div>
         <div className="expertise-list">
 
-          <div className="expertise-languages" ref={letterRef}>
+          {/* <div className="expertise-languages" ref={letterRef}>
             {javascript.map((index, key) => {
               return (
                 <p key={index} className="letter" id={key} onMouseEnter={(e) => {createHoverEffect(e)}}onMouseLeave={(e) => removeHoverEffect(e)}>
@@ -216,10 +216,10 @@ const Expertise = () => {
                 </p>
               )
             })}
-          </div>
+          </div> */}
 
 
-          {/* <p>JavaScript</p> */}
+          <p>JavaScript</p>
           <p>HTML</p>
           <p>CSS</p>
           <p>ReactJS</p>
