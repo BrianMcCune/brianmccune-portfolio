@@ -667,15 +667,22 @@ a:visited {
   .expertise-list {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: auto;
   }
 
   .expertise-list > p {
-    /* margin-left: 10.5svw; */
+    /* text-align: left; */
     font-size: 35px;
   }
 
+  .projects > .headline-container {
+    margin-left: 0;
+  }
+
+  .projects-headline {
+    font-size: 60px;
+  }
 
   .projects {
     margin-right: auto;
@@ -693,5 +700,14 @@ a:visited {
   .project-image-container {
     width: 80%;
     justify-self: center;
+  }
+
+  .projects-list > .project-tech {
+    display: inline;
+    color: black;
+  }
+
+  .contact-headline {
+    font-size: 60px;
   }
 }
