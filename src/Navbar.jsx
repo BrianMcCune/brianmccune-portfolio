@@ -35,7 +35,7 @@ const Navbar = (props) => {
   useGSAP(() => {
     gsap.from('.navbar', {
       y: -50,
-      duration: 0.8,
+      duration: 0.7,
       delay: 2.4
     })
     // ScrollTrigger.refresh()
