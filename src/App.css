@@ -508,6 +508,7 @@ a:visited {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3svw;
+  z-index: 2;
 }
 
 .contact-link > .container {
@@ -545,10 +546,12 @@ a:visited {
   height: calc(50svh + 17svw);
   width: calc(50svh + 17svw);
   border-radius: 50%;
-  opacity: 0.1;
+  opacity: 1;
   margin-top: -97svh;
   margin-left: auto;
   margin-right: auto;
+  z-index: 1;
+  position: relative;
 }
 
 .copyright {
