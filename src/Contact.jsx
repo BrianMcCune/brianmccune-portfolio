@@ -53,11 +53,12 @@ const Contact = () => {
     gsap.from('.contact-circle', {
       scrollTrigger: {
         trigger: '.contact',
-        start: '-30%',
+        start: 'top center',
+        end: 'center center',
         // markers: true,
         scrub: true,
       },
-      // opacity: 0,
+      opacity: 0,
       y: 100
       }
     )
