@@ -536,6 +536,17 @@ a:visited {
   justify-self: right;
 }
 
+.contact-circle {
+  background: linear-gradient(rgb(107, 100, 92), rgb(241, 241, 241));
+  height: calc(50svh + 17svw);
+  width: calc(50svh + 17svw);
+  border-radius: 50%;
+  opacity:0.1;
+  margin-top: -105svh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .copyright {
   margin-top: 10svh;
   margin-bottom: 5svh;
@@ -571,8 +582,8 @@ a:visited {
   }
 
   .container > .circle {
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 450px;
     margin-top: -50px;
   }
 
@@ -729,5 +740,11 @@ a:visited {
 
   .contact-headline {
     font-size: 60px;
+  }
+
+  .contact-circle {
+    margin-top: -95svh;
+    width: 450px;
+    height: 450px;
   }
 }

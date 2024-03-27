@@ -151,7 +151,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="copyright">© 2024 Brian McCune</div>
-        {/* <div className="contact-circle"></div> */}
+        <div className="contact-circle"></div>
       </div>
     </div>
    );
