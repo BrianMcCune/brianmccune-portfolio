@@ -14,6 +14,24 @@ const Navbar = (props) => {
   const projectsRef = useRef(null)
 
 
+  const createButtonHoverEffect = () => {
+    gsap.to('.buttonhover', {
+      // backgroundColor: 'orange',
+      y: -38,
+      scale: 1,
+      duration: 0.2
+    })
+  }
+
+  const removeButtonHoverEffect = () => {
+    gsap.to('.buttonhover', {
+      // backgroundColor: 'black',
+      y: 0,
+      duration: 0.2,
+      scale: 0.4
+    })
+  }
+
   const createHoverEffect = (element) => {
     gsap.to(element.current, { 
       width: '100%',
@@ -66,7 +84,16 @@ const Navbar = (props) => {
         </h2>
       </Link>
       <Link to="contact" className="link">
-      <button onClick={() => handleOnClick()}>Let's Chat</button>
+      <button onClick={() => handleOnClick()}
+      
+      onMouseEnter={() => {createButtonHoverEffect(projectsRef)}} onMouseLeave={() => removeButtonHoverEffect(projectsRef)}
+      
+      
+      >
+        <div className="chat">
+        Let's Chat
+        </div>
+        <div className="buttonhover"></div></button>
       </Link>
     </div>
    );
