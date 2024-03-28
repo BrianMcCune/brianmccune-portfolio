@@ -359,7 +359,7 @@ h3 {
 }
 
 .projects {
-  min-height: 130svh;
+  height: 130svh;
   overflow-x: hidden;
 }
 
@@ -393,7 +393,8 @@ h3 {
   overflow: hidden;
   background-color: rgb(241, 241, 241);
   height: fit-content;
-  min-height: clamp(50svh, 60svh, 70svh);
+  /* min-height: clamp(50svh, 60svh, 70svh); */
+  /* min-height: 60svh; */
   border-radius: 10px;
 }
 
@@ -724,6 +725,7 @@ a:visited {
 
   .projects {
     margin-right: auto;
+    height: fit-content;
   }
 
   .projects-list {
@@ -738,6 +740,13 @@ a:visited {
   .project-image-container {
     width: 80%;
     justify-self: center;
+    height: 500px;
+  }
+
+  .project-image {
+    width: 90%;
+    height: 400px;
+    max-height: none;
   }
 
   .projects-list > .project-tech {
