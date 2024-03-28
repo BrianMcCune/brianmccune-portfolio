@@ -753,5 +753,6 @@ a:visited {
     margin-top: -83svh;
     width: 450px;
     height: 450px;
+    display: none;
   }
 }
