@@ -178,7 +178,7 @@ button {
   height: calc(50svh + 17svw);
   width: calc(50svh + 17svw);
   border-radius: 50%;
-  opacity:0.1
+  opacity:0.1;
 }
 
 .bio {
@@ -590,8 +590,8 @@ a:visited {
   }
 
   .container > .circle {
-    width: 450px;
-    height: 450px;
+    width: 100svw;
+    height: 100svw;
     margin-top: -50px;
   }
 
