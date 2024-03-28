@@ -280,7 +280,7 @@ h3 {
 .expertise {
   display: flex;
   flex-direction: column;
-  margin-top: 15vh;
+  margin-top: 15svh;
 }
 
 .expertise > * {
@@ -672,6 +672,14 @@ a:visited {
     justify-content: center;
   }
 
+  .expertise {
+    margin-top: 50px;
+  }
+
+  .expertise-text > .container {
+    margin: 0;
+}
+
   .expertise > * {
     margin-left: 0;
   }
@@ -708,6 +716,7 @@ a:visited {
     width: 100%;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto;
+    margin-bottom: 50px;
   }
 
   .expertise-list > p {
@@ -754,8 +763,25 @@ a:visited {
     color: black;
   }
 
+  .container > .headline-container {
+    margin-top: 50px;  
+  }
+
   .contact-headline {
     font-size: 60px;
+  }
+
+  .email {
+    margin-bottom: 20px;
+  }
+
+  .summary-container {
+    gap: 20px
+  }
+
+  .contact-expertise > p, .contact-about > p, .contact-projects > p, .contact-resume > p {
+    font-size: 15px;
+    margin-top: 10px;
   }
 
   .contact-circle {
@@ -763,5 +789,18 @@ a:visited {
     width: 450px;
     height: 450px;
     display: none;
+  }
+
+  .contact-link > .container {
+    height: 25px;
+  }
+
+  .social-media-icons {
+    margin-bottom: 35px;
+  }
+
+  .copyright {
+    margin-top: 50px;
+    margin-bottom: 25px;
   }
 }
