@@ -126,19 +126,20 @@ const Projects = () => {
     })
     ScrollTrigger.refresh()
   }
+  
+  tl.to('.projects', {
+    backgroundColor: 'rgb(9, 9, 9)',
+    duration: 0.1,
+    stagger: 0
+  }, 0)
 
-    tl.to('.navbar, .expertise, .contact, body', {
+    tl.to('.expertise, .contact, .navbar', {
       backgroundColor: 'rgb(9, 9, 9)',
       color: 'rgb(241, 241, 241)',
       duration: 0.1,
-      stagger: 0
+      // stagger: 0
     }, 0)
 
-    tl.to('.projects', {
-      backgroundColor: 'rgb(9, 9, 9)',
-      duration: 0.1,
-      stagger: 0
-    }, 0)
 
     tl.to('button, .underline', {
       backgroundColor: 'rgb(241, 241, 241)',
