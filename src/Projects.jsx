@@ -104,9 +104,9 @@ const Projects = () => {
     tl = gsap.timeline({
       scrollTrigger: {
         trigger: '.projects',
-        markers: true,
+        // markers: true,
         start: 'center bottom',
-        end: '+=2000px',
+        end: '+=2250px',
         scrub: true,
         stagger: 0
       }
@@ -140,6 +140,13 @@ const Projects = () => {
       // stagger: 0
     }, 0)
 
+    tl.to('h2, h1', {
+      // backgroundColor: 'rgb(9, 9, 9)',
+      color: 'rgb(241, 241, 241)',
+      duration: 0.1,
+      // stagger: 0
+    }, 0)
+
 
     tl.to('button, .underline', {
       backgroundColor: 'rgb(241, 241, 241)',
@@ -166,6 +173,13 @@ const Projects = () => {
       color: 'rgb(9, 9, 9)',
       backgroundColor: 'rgb(241, 241, 241)',
       duration: 0.1
+    })
+
+    tl.to('h2, h1', {
+      // backgroundColor: 'rgb(9, 9, 9)',
+      color: 'rgb(9, 9, 9)',
+      duration: 0.1,
+      // stagger: 0
     })
 
     tl.to('button, .underline', {
