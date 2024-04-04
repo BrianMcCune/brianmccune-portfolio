@@ -28,7 +28,7 @@ const Bio = () => {
       }
     })
 
-    tl.to('.navbar, .bio, .intro, .about, .screen-adapt-text', {
+    tl.to('.bio, .intro, .about, .screen-adapt-text', {
       backgroundColor: 'rgb(9, 9, 9)',
       color: 'rgb(241, 241, 241)',
       duration: 0.3
@@ -39,7 +39,7 @@ const Bio = () => {
       color: 'rgb(9, 9, 9)',
     }, 0)
 
-    tl.to('.about-headline', {
+    tl.to('h2, h1, .about-headline', {
       color: 'rgb(241, 241, 241)'
     }, 0)
 
@@ -62,6 +62,10 @@ const Bio = () => {
 
     tl.to('.about-headline', {
       color: 'rgb(110, 110, 85)'
+    }, 1)
+
+    tl.to('h2, h1', {
+      color: 'rgb(9, 9, 9)'
     }, 1)
 
     gsap.to('.bio-text', {
