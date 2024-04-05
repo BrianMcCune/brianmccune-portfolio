@@ -102,8 +102,6 @@ const Expertise = () => {
           start: 'top center',
           end: 'bottom center',
           scrub: true,
-          // pin: '.expertise',
-          // markers: true
         },
         y: -120,
         opacity: 0.01,
