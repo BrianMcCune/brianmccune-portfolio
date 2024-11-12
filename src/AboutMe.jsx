@@ -1,6 +1,7 @@
 import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import headshot from './assets/headshot.jpg';
 gsap.registerPlugin(ScrollTrigger);
 
 const AboutMe = () => {
@@ -69,9 +70,11 @@ const AboutMe = () => {
       </div>
       <div className="container">
         <div className="img-container">
-          <img className="self-image" src="./headshot.jpg" alt='developer headshot' />
+          {/* <img className="self-image" src="./headshot.jpg" alt='developer headshot' /> */}
+          <img className="self-image" src={headshot} alt="developer headshot" />
         </div>
-        <img className="mobile-image" src="./headshot.jpg" alt='developer headshot' />
+        {/* <img className="mobile-image" src="./headshot.jpg" alt='developer headshot' /> */}
+        <img className="mobile-image" src={headshot} alt="developer headshot" />
         <div className="text">
           <h3>Intro and hobbies</h3>
           <p>
