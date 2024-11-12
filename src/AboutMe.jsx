@@ -30,7 +30,7 @@ const AboutMe = () => {
           trigger: '.self-image',
           toggleActions: 'play none none none',
         },
-        scale: 0.5,
+        // scale: 0.5,
         duration: 0.8,
       });
 
