@@ -1,7 +1,9 @@
+import React, { useEffect } from "react";
 import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import headshot from './assets/headshot.jpg';
+
 gsap.registerPlugin(ScrollTrigger);
 
 const AboutMe = () => {
@@ -55,25 +57,35 @@ const AboutMe = () => {
     };
   });
 
+  useEffect(() => {
+    const onLoad = () => {
+      ScrollTrigger.refresh();
+    };
+
+    window.addEventListener('load', onLoad);
+
+    return () => {
+      window.removeEventListener('load', onLoad);
+    };
+  }, []);
+
   return ( 
     <div className="about" id="about">
       <div className="headline-container">
         {headlineArray.map((index) => {
           return (
-            <div className="about-headline">
-              <span key={headlineArray[index]} className="letter">
+            <div className="about-headline" key={index}>
+              <span className="letter">
                 {index === ' ' ? '\u00A0' : index}
               </span>
             </div>
-          )
+          );
         })}
       </div>
       <div className="container">
         <div className="img-container">
-          {/* <img className="self-image" src="./headshot.jpg" alt='developer headshot' /> */}
           <img className="self-image" src={headshot} alt="developer headshot" />
         </div>
-        {/* <img className="mobile-image" src="./headshot.jpg" alt='developer headshot' /> */}
         <img className="mobile-image" src={headshot} alt="developer headshot" />
         <div className="text">
           <h3>Intro and hobbies</h3>
