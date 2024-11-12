@@ -24,14 +24,14 @@ const AboutMe = () => {
     });
 
     // mm.add("(min-width: 768px)", () => {
-      gsap.from('.img-container', {
-        scrollTrigger: {
-          trigger: '.self-image',
-          toggleActions: 'play none none none',
-        },
-        scale: 0.5,
-        duration: 0.8,
-      });
+      // gsap.from('.img-container', {
+      //   scrollTrigger: {
+      //     trigger: '.self-image',
+      //     toggleActions: 'play none none none',
+      //   },
+      //   scale: 0.5,
+      //   duration: 0.8,
+      // });
 
       // gsap.set('.img-container', { scale: 1 });
 
@@ -44,7 +44,7 @@ const AboutMe = () => {
           end: 'top top-=200rem',
           pin: '.text',
           scrub: true,
-          // markers: true,
+          markers: true,
         },
       });
 
