@@ -11,7 +11,8 @@ body {
   font-weight: 600;
   color: white;
   background-color: black;
-  height: 120svh;
+  height: 100svh;
+  align-items: center;
   width: 100%;
   z-index: 3;
 }
@@ -20,7 +21,7 @@ body {
   overflow: hidden;
   font-weight: 400;
   margin-left: 35px;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .container > .name {
@@ -242,6 +243,7 @@ button {
 
 .text {
   height: fit-content;
+  position: relative;
 }
 
 .img-container {

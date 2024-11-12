@@ -30,7 +30,7 @@ const AboutMe = () => {
           trigger: '.self-image',
           toggleActions: 'play none none none',
         },
-        // scale: 0.5,
+        scale: 0.5,
         duration: 0.8,
       });
 
@@ -38,11 +38,14 @@ const AboutMe = () => {
 
       gsap.to('.img-container', {
         scrollTrigger: {
-          trigger: '.about',
-          start: () => 'top ' + (-window.innerWidth * 0.27 + 240),
-          end: () => 'bottom ' + (window.innerWidth * 0.09 + 430),
+          trigger: '.img-container',
+          // start: () => 'top ' + (-window.innerWidth * 0.27 + 240),
+          // end: () => 'bottom ' + (window.innerWidth * 0.09 + 430),
+          start: 'top-=200rem top',
+          end: 'top top-=200rem',
           pin: '.text',
           scrub: true,
+          // markers: true,
         },
       });
 
