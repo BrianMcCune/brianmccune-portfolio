@@ -1,4 +1,4 @@
-import { useRef, useLayoutEffect } from "react";
+import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -9,10 +9,10 @@ const Projects = () => {
 
   // ScrollTrigger.refresh()
 
-  const elementRefs = useRef([]);
-  let mm = gsap.matchMedia();
-  let counter
-  let tl
+  // const elementRefs = useRef([]);
+  // let mm = gsap.matchMedia();
+  // let counter
+  // let tl
 
   // mm.add("(min-width: 768px)", () => {
   //   if (counter === 2) {
@@ -180,7 +180,7 @@ const Projects = () => {
     //   color: 'rgb(9, 9, 9)'
     // }, 1)
 
-    mm.add("(min-width: 768px)", () => {
+    // mm.add("(min-width: 768px)", () => {
 
       gsap.to('.projects-list', {
         xPercent: -30,
@@ -191,12 +191,12 @@ const Projects = () => {
           // end: '+=1500',
           pin: true,
           scrub: 1,
-          anticipatePin: 1,
-          markers: true,
+          // anticipatePin: 1,
+          // markers: true,
         },
       })
     })
-  })
+  // })
 
   return ( 
     <div className="projects" id="projects">
@@ -216,7 +216,7 @@ const Projects = () => {
           return (
             <div className="project-image-container" 
               key={index}
-              ref={(el) => {elementRefs.current[index] = el}}
+              // ref={(el) => {elementRefs.current[index] = el}}
               // onMouseEnter={() => {createHoverEffect(elementRefs.current[index], index)}}
               // onMouseLeave={() => removeHoverEffect(elementRefs.current[index])}
               >
