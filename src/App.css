@@ -183,7 +183,8 @@ button {
 }
 
 .bio {
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  min-height: 5000px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -251,7 +252,7 @@ button {
   min-width: 50%;
   overflow: hidden;
   border-radius: 10px;
-  height: fit-content;
+  /* height: fit-content; */
 }
 
 .img-container > img {
