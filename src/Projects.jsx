@@ -202,7 +202,8 @@ const Projects = () => {
         ease: 'none',
         scrollTrigger: {
           trigger: '.projects',
-          start: '12.7% top',
+          // start: '12.7% top',
+          start: 'top+=100rem top',
           pin: true,
           scrub: 1,
           end: '+=1500',
