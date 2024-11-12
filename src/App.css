@@ -213,7 +213,7 @@ button {
   font-size: 40px;
   padding-top: 20vh;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 150vh;
 }
 
 .about > .headline-container {
