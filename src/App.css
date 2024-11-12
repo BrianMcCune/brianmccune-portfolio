@@ -211,8 +211,9 @@ button {
 .about {
   display: flex;
   font-size: 40px;
-  padding-top: 20svh;
+  padding-top: 20vh;
   flex-direction: column;
+  min-height: 5000px;
 }
 
 .about > .headline-container {

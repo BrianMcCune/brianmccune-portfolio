@@ -35,18 +35,18 @@ const AboutMe = () => {
 
       // gsap.set('.img-container', { scale: 1 });
 
-      // gsap.to('.img-container', {
-      //   scrollTrigger: {
-      //     trigger: '.img-container',
-      //     // start: () => 'top ' + (-window.innerWidth * 0.27 + 240),
-      //     // end: () => 'bottom ' + (window.innerWidth * 0.09 + 430),
-      //     start: 'top-=200rem top',
-      //     end: 'top top-=200rem',
-      //     pin: '.text',
-      //     scrub: true,
-      //     markers: true,
-      //   },
-      // });
+      gsap.to('.img-container', {
+        scrollTrigger: {
+          trigger: '.img-container',
+          // start: () => 'top ' + (-window.innerWidth * 0.27 + 240),
+          // end: () => 'bottom ' + (window.innerWidth * 0.09 + 430),
+          start: 'top-=200rem top',
+          end: 'top top-=200rem',
+          pin: '.text',
+          scrub: true,
+          markers: true,
+        },
+      });
 
       // ScrollTrigger.refresh();
     });
