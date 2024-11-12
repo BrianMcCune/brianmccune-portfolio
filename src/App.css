@@ -11,7 +11,7 @@ body {
   font-weight: 600;
   color: white;
   background-color: black;
-  height: 100svh;
+  height: 100vh;
   align-items: center;
   width: 100%;
   z-index: 3;
@@ -147,7 +147,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100svh;
+  height: 100vh;
   justify-content: center;
 }
 
@@ -176,14 +176,14 @@ button {
 
 .container > .circle {
   background: linear-gradient(rgb(107, 100, 92), rgb(241, 241, 241));
-  height: calc(50svh + 17svw);
-  width: calc(50svh + 17svw);
+  /* height: calc(50svh + 17svw);
+  width: calc(50svh + 17svw); */
   border-radius: 50%;
   opacity:0.1;
 }
 
 .bio {
-  min-height: 100svh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -354,14 +354,14 @@ h3 {
   position: absolute;
   left: 65%;
   transform: translate(-50%, 0);
-  height: calc(50svh + 17svw);
-  width: calc(50svh + 17svw);
+  /* height: calc(50svh + 17svw);
+  width: calc(50svh + 17svw); */
   border-radius: 50%;
   opacity: 0.1;
 }
 
 .projects {
-  height: 130svh;
+  /* height: 130svh; */
   overflow-x: hidden;
 }
 
