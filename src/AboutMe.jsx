@@ -10,7 +10,7 @@ const AboutMe = () => {
   let headlineArray = headline.split('');
 
   useGSAP(() => {
-    // let mm = gsap.matchMedia();
+    let mm = gsap.matchMedia();
 
     gsap.from('.about-headline', {
       scrollTrigger: {
@@ -23,33 +23,33 @@ const AboutMe = () => {
       ease: 'power3.out'
     });
 
-    // mm.add("(min-width: 768px)", () => {
-      // gsap.from('.img-container', {
-      //   scrollTrigger: {
-      //     trigger: '.self-image',
-      //     toggleActions: 'play none none none',
-      //   },
-      //   scale: 0.5,
-      //   duration: 0.8,
-      // });
+    mm.add("(min-width: 768px)", () => {
+      gsap.from('.img-container', {
+        scrollTrigger: {
+          trigger: '.self-image',
+          toggleActions: 'play none none none',
+        },
+        scale: 0.5,
+        duration: 0.8,
+      });
 
       // gsap.set('.img-container', { scale: 1 });
 
-      gsap.to('.img-container', {
-        scrollTrigger: {
-          trigger: '.img-container',
-          // start: () => 'top ' + (-window.innerWidth * 0.27 + 240),
-          // end: () => 'bottom ' + (window.innerWidth * 0.09 + 430),
-          start: 'top-=200rem top',
-          end: 'top top-=200rem',
-          pin: '.text',
-          scrub: true,
-          markers: true,
-        },
-      });
+      // gsap.to('.img-container', {
+      //   scrollTrigger: {
+      //     trigger: '.img-container',
+      //     // start: () => 'top ' + (-window.innerWidth * 0.27 + 240),
+      //     // end: () => 'bottom ' + (window.innerWidth * 0.09 + 430),
+      //     start: 'top-=200rem top',
+      //     end: 'top top-=200rem',
+      //     pin: '.text',
+      //     scrub: true,
+      //     markers: true,
+      //   },
+      // });
 
       // ScrollTrigger.refresh();
-    // });
+    });
 
     // window.addEventListener("resize", ScrollTrigger.refresh);
 
