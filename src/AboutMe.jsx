@@ -23,7 +23,7 @@ const AboutMe = () => {
       ease: 'power3.out'
     });
 
-    mm.add("(min-width: 768px)", () => {
+    // mm.add("(min-width: 768px)", () => {
       gsap.from('.img-container', {
         scrollTrigger: {
           trigger: '.self-image',
@@ -49,7 +49,7 @@ const AboutMe = () => {
       });
 
       // ScrollTrigger.refresh();
-    });
+    // });
 
     // window.addEventListener("resize", ScrollTrigger.refresh);
 
