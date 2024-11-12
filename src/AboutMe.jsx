@@ -3,68 +3,56 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-
-
 const AboutMe = () => {
-  const headline = "About Me"
-  let headlineArray = headline.split('')
+  const headline = "About Me";
+  let headlineArray = headline.split('');
 
   useGSAP(() => {
-    // ScrollTrigger.refresh()
     let mm = gsap.matchMedia();
 
     gsap.from('.about-headline', {
       scrollTrigger: {
         trigger: '.about > .container',
         toggleActions: 'play none none none',
-        // markers: true
       },
       duration: 0.4, 
-      y:250, 
+      y: 250, 
       stagger: 0.05, 
       ease: 'power3.out'
-    })
-    mm.add("(min-width: 768px)", () => {
+    });
 
+    mm.add("(min-width: 768px)", () => {
       gsap.from('.img-container', {
         scrollTrigger: {
           trigger: '.self-image',
           toggleActions: 'play none none none',
-          // markers: true
         },
         scale: 0.5,
         duration: 0.8,
-      })
+      });
 
-      gsap.set('.img-container', {
-        scale: 1
-      })
+      gsap.set('.img-container', { scale: 1 });
 
-      // ScrollTrigger.refresh()
       gsap.to('.img-container', {
         scrollTrigger: {
           trigger: '.about',
-          start: () => 'top ' + (-window.innerWidth*0.27 + 240),
-          end: () => 'bottom ' + (window.innerWidth*0.09 + 430),
+          start: () => 'top ' + (-window.innerWidth * 0.27 + 240),
+          end: () => 'bottom ' + (window.innerWidth * 0.09 + 430),
           pin: '.text',
           scrub: true,
-          // immediateRender: true,
-          // markers: true
         },
-      })
-      // gsap.to('.img-container', {
-      //   scrollTrigger: {
-      //     trigger: '.img-container',
-      //     start: () => 'top ' + (-window.innerWidth*0.04 + 240),
-      //     end: () => 'bottom ' + (window.innerWidth*0.25 + 250),
-      //     pin: '.text',
-      //     scrub: true,
-      //     // immediateRender: true,
-      //     markers: true
-      //   },
-      // })
+      });
+
+      ScrollTrigger.refresh();
     });
-  })
+
+    window.addEventListener("resize", ScrollTrigger.refresh);
+
+    return () => {
+      mm.revert();
+      window.removeEventListener("resize", ScrollTrigger.refresh);
+    };
+  });
 
   return ( 
     <div className="about" id="about">
@@ -95,7 +83,7 @@ const AboutMe = () => {
         </div>
       </div>
     </div>
-   );
+  );
 }
- 
+
 export default AboutMe;
