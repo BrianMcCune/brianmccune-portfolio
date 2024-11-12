@@ -86,10 +86,10 @@ const AboutMe = () => {
         })}
       </div>
       <div className="container">
-        <div className="img-container">
+        {/* <div className="img-container">
           <img className="self-image" src={headshot} alt="developer headshot" />
         </div>
-        <img className="mobile-image" src={headshot} alt="developer headshot" />
+        <img className="mobile-image" src={headshot} alt="developer headshot" /> */}
         <div className="text">
           <h3>Intro and hobbies</h3>
           <p>
