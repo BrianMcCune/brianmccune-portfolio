@@ -14,21 +14,21 @@ const Projects = () => {
   let counter
   let tl
 
-  mm.add("(min-width: 768px)", () => {
-    if (counter === 2) {
-      window.location.reload()
-    }
-    counter = 1
-    // ScrollTrigger.refresh()
-  })
+  // mm.add("(min-width: 768px)", () => {
+  //   if (counter === 2) {
+  //     window.location.reload()
+  //   }
+  //   counter = 1
+  //   // ScrollTrigger.refresh()
+  // })
 
-  mm.add("(max-width: 767px)", () => {
-    if (counter === 1) {
-      window.location.reload()
-    }
-    counter = 2
-    // ScrollTrigger.refresh()
-  })
+  // mm.add("(max-width: 767px)", () => {
+  //   if (counter === 1) {
+  //     window.location.reload()
+  //   }
+  //   counter = 2
+  //   // ScrollTrigger.refresh()
+  // })
 
   // const createHoverEffect = (element, index) => {
   //   mm.add("(min-width: 768px)", () => {
@@ -119,66 +119,66 @@ const Projects = () => {
       // ScrollTrigger.refresh()
     }
 
-    tl.to('.projects', {
-      backgroundColor: 'rgb(9, 9, 9)',
-      duration: 0.1,
-      stagger: 0
-    }, 0)
+    // tl.to('.projects', {
+    //   backgroundColor: 'rgb(9, 9, 9)',
+    //   duration: 0.1,
+    //   stagger: 0
+    // }, 0)
 
-    tl.to('.expertise, .contact, .navbar', {
-      backgroundColor: 'rgb(9, 9, 9)',
-      color: 'rgb(241, 241, 241)',
-      duration: 0.1,
-    }, 0)
+    // tl.to('.expertise, .contact, .navbar', {
+    //   backgroundColor: 'rgb(9, 9, 9)',
+    //   color: 'rgb(241, 241, 241)',
+    //   duration: 0.1,
+    // }, 0)
 
-    tl.to('h2, h1', {
-      color: 'rgb(241, 241, 241)',
-      duration: 0.1,
-    }, 0)
+    // tl.to('h2, h1', {
+    //   color: 'rgb(241, 241, 241)',
+    //   duration: 0.1,
+    // }, 0)
 
-    tl.to('button, .underline', {
-      backgroundColor: 'rgb(241, 241, 241)',
-      color: 'rgb(9, 9, 9)',
-    }, 0)
+    // tl.to('button, .underline', {
+    //   backgroundColor: 'rgb(241, 241, 241)',
+    //   color: 'rgb(9, 9, 9)',
+    // }, 0)
 
-    tl.to('.projects-headline, .contact-headline, .fontawesomeicon', {
-      color: 'rgb(241, 241, 241)'
-    }, 0)
+    // tl.to('.projects-headline, .contact-headline, .fontawesomeicon', {
+    //   color: 'rgb(241, 241, 241)'
+    // }, 0)
 
-    tl.to('.navbar, .expertise, .contact, body', {
-      backgroundColor: 'rgb(9, 9, 9)',
-      color: 'rgb(241, 241, 241)',
-      duration: 0.8
-    })
+    // tl.to('.navbar, .expertise, .contact, body', {
+    //   backgroundColor: 'rgb(9, 9, 9)',
+    //   color: 'rgb(241, 241, 241)',
+    //   duration: 0.8
+    // })
 
-    tl.to('.projects', {
-      color: 'rgb(9, 9, 9)',
-      duration: 0.8
-    }, 0.2)
+    // tl.to('.projects', {
+    //   color: 'rgb(9, 9, 9)',
+    //   duration: 0.8
+    // }, 0.2)
 
-    tl.to('.projects, .navbar, .expertise, .contact, body', {
-      color: 'rgb(9, 9, 9)',
-      backgroundColor: 'rgb(241, 241, 241)',
-      duration: 0.1
-    })
+    // tl.to('.projects, .navbar, .expertise, .contact, body', {
+    //   color: 'rgb(9, 9, 9)',
+    //   backgroundColor: 'rgb(241, 241, 241)',
+    //   duration: 0.1
+    // })
 
-    tl.to('h2, h1', {
-      color: 'rgb(9, 9, 9)',
-      duration: 0.1,
-    })
+    // tl.to('h2, h1', {
+    //   color: 'rgb(9, 9, 9)',
+    //   duration: 0.1,
+    // })
 
-    tl.to('button, .underline', {
-      backgroundColor: 'rgb(9, 9, 9)',
-      color: 'rgb(241, 241, 241)',
-    }, 1)
+    // tl.to('button, .underline', {
+    //   backgroundColor: 'rgb(9, 9, 9)',
+    //   color: 'rgb(241, 241, 241)',
+    // }, 1)
 
-    tl.to('.projects-headline, .contact-headline', {
-      color: 'rgb(110, 110, 85)'
-    }, 1)
+    // tl.to('.projects-headline, .contact-headline', {
+    //   color: 'rgb(110, 110, 85)'
+    // }, 1)
 
-    tl.to('.fontawesomeicon', {
-      color: 'rgb(9, 9, 9)'
-    }, 1)
+    // tl.to('.fontawesomeicon', {
+    //   color: 'rgb(9, 9, 9)'
+    // }, 1)
 
     mm.add("(min-width: 768px)", () => {
 
