@@ -44,7 +44,7 @@ const AboutMe = () => {
           end: 'top top-=200rem',
           pin: '.text',
           scrub: true,
-          markers: true,
+          // markers: true,
         },
       });
 
