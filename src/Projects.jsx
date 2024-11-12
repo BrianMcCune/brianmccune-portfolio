@@ -93,31 +93,31 @@ const Projects = () => {
     //   delay: 0.1
     // })
 
-    if (counter === 1) {
-      // ScrollTrigger.refresh()
-      tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: '.projects',
-          start: 'center bottom',
-          end: '+=2250px',
-          scrub: true,
-          stagger: 0
-        }
-      })
-      // ScrollTrigger.refresh()
-    } else {
-      // ScrollTrigger.refresh()
-      tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: '.projects',
-          start: 'top center',
-          end: 'bottom top',
-          scrub: true,
-          stagger: 0
-        }
-      })
-      // ScrollTrigger.refresh()
-    }
+    // if (counter === 1) {
+    //   // ScrollTrigger.refresh()
+    //   tl = gsap.timeline({
+    //     scrollTrigger: {
+    //       trigger: '.projects',
+    //       start: 'center bottom',
+    //       end: '+=2250px',
+    //       scrub: true,
+    //       stagger: 0
+    //     }
+    //   })
+    //   // ScrollTrigger.refresh()
+    // } else {
+    //   // ScrollTrigger.refresh()
+    //   tl = gsap.timeline({
+    //     scrollTrigger: {
+    //       trigger: '.projects',
+    //       start: 'top center',
+    //       end: 'bottom top',
+    //       scrub: true,
+    //       stagger: 0
+    //     }
+    //   })
+    //   // ScrollTrigger.refresh()
+    // }
 
     // tl.to('.projects', {
     //   backgroundColor: 'rgb(9, 9, 9)',
