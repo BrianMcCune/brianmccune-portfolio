@@ -33,7 +33,7 @@ const AboutMe = () => {
         duration: 0.8,
       });
 
-      gsap.set('.img-container', { scale: 1 });
+      // gsap.set('.img-container', { scale: 1 });
 
       gsap.to('.img-container', {
         scrollTrigger: {
