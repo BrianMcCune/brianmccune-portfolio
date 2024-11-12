@@ -7,7 +7,7 @@ import { projectData } from "./project-data";
 
 const Projects = () => {
 
-  ScrollTrigger.refresh() 
+  ScrollTrigger.refresh()
 
   const elementRefs = useRef([]);
   let mm = gsap.matchMedia();
@@ -22,17 +22,15 @@ const Projects = () => {
     ScrollTrigger.refresh()
   })
 
-  // mm.add("(max-width: 767px)", () => {
-  //   if (counter === 1) {
-  //     window.location.reload()
-  //   }
-  //   counter = 2
-  //   ScrollTrigger.refresh()
-  // })
+  mm.add("(max-width: 767px)", () => {
+    if (counter === 1) {
+      window.location.reload()
+    }
+    counter = 2
+    ScrollTrigger.refresh()
+  })
 
-  
   const createHoverEffect = (element, index) => {
-    // 7, 13, 6
     mm.add("(min-width: 768px)", () => {
       const backgroundColors = ['rgb(200, 221, 233)', 'rgb(235, 194, 96)', 'rgb(120, 171, 219)', 'rgb(248, 191, 95)']
 
@@ -52,7 +50,6 @@ const Projects = () => {
       gsap.to(`.project-image-container:nth-child(${index + 1}) > a > .project-tech`, {
         opacity: 1,
         duration: 0.2,
-        // ease: 'none'
       })
     })
   };
@@ -75,7 +72,6 @@ const Projects = () => {
       gsap.to('.project-tech', {
         opacity: 0,
         duration: 0.2,
-        // ease: 'none'
       })
     })
   };
@@ -89,8 +85,6 @@ const Projects = () => {
         trigger: '.projects',
         start: 'top center',
         toggleActions: 'play none none none',
-        // scrub: true,
-        // markers: true
       },
       duration: 0.4, 
       y:250, 
@@ -99,54 +93,48 @@ const Projects = () => {
       delay: 0.1
     })
 
-  if (counter === 1) {
-    ScrollTrigger.refresh()
-    tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.projects',
-        // markers: true,
-        start: 'center bottom',
-        end: '+=2250px',
-        scrub: true,
-        stagger: 0
-      }
-    })
-    ScrollTrigger.refresh()
-  } else {
-    ScrollTrigger.refresh()
-    tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: '.projects',
-        // markers: true,
-        start: 'top center',
-        end: 'bottom top',
-        scrub: true,
-        stagger: 0
-      }
-    })
-    ScrollTrigger.refresh()
-  }
-  
-  tl.to('.projects', {
-    backgroundColor: 'rgb(9, 9, 9)',
-    duration: 0.1,
-    stagger: 0
-  }, 0)
+    if (counter === 1) {
+      ScrollTrigger.refresh()
+      tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: '.projects',
+          start: 'center bottom',
+          end: '+=2250px',
+          scrub: true,
+          stagger: 0
+        }
+      })
+      ScrollTrigger.refresh()
+    } else {
+      ScrollTrigger.refresh()
+      tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: '.projects',
+          start: 'top center',
+          end: 'bottom top',
+          scrub: true,
+          stagger: 0
+        }
+      })
+      ScrollTrigger.refresh()
+    }
+
+    tl.to('.projects', {
+      backgroundColor: 'rgb(9, 9, 9)',
+      duration: 0.1,
+      stagger: 0
+    }, 0)
 
     tl.to('.expertise, .contact, .navbar', {
       backgroundColor: 'rgb(9, 9, 9)',
       color: 'rgb(241, 241, 241)',
       duration: 0.1,
-      // stagger: 0
     }, 0)
 
     tl.to('h2, h1', {
-      // backgroundColor: 'rgb(9, 9, 9)',
       color: 'rgb(241, 241, 241)',
       duration: 0.1,
-      // stagger: 0
     }, 0)
-
 
     tl.to('button, .underline', {
       backgroundColor: 'rgb(241, 241, 241)',
@@ -165,7 +153,6 @@ const Projects = () => {
 
     tl.to('.projects', {
       color: 'rgb(9, 9, 9)',
-      // color: 'rgb(241, 241, 241)',
       duration: 0.8
     }, 0.2)
 
@@ -176,10 +163,8 @@ const Projects = () => {
     })
 
     tl.to('h2, h1', {
-      // backgroundColor: 'rgb(9, 9, 9)',
       color: 'rgb(9, 9, 9)',
       duration: 0.1,
-      // stagger: 0
     })
 
     tl.to('button, .underline', {
@@ -202,26 +187,24 @@ const Projects = () => {
         ease: 'none',
         scrollTrigger: {
           trigger: '.projects',
-          // start: '12.7% top',
-          start: 'top+=100rem top',
+          start: 'top+=125rem top',
+          end: '+=1500',
           pin: true,
           scrub: 1,
-          end: '+=1500',
-          // markers: true
+          anticipatePin: 1,
+          markers: true
         },
       })
     })
   })
 
-
-  
   return ( 
     <div className="projects" id="projects">
       <div className="headline-container">
         {headlineArray.map((index) => {
           return (
-            <div className="projects-headline">
-              <span key={headlineArray[index]} className="letter">
+            <div className="projects-headline" key={index}>
+              <span className="letter">
                 {index === ' ' ? '\u00A0' : index}
               </span>
             </div>
@@ -231,23 +214,22 @@ const Projects = () => {
       <div className="projects-list">
         {projectData.map((project, index) => {
           return (
-          <div className="project-image-container" 
-          key={index}
-          ref={(el) => {elementRefs.current[index] = el}}
-          onMouseEnter={() => {createHoverEffect(elementRefs.current[index], index)
-          }}
-          onMouseLeave={() => removeHoverEffect(elementRefs.current[index])}>
-            <a href={project.deployment} target="_blank">
-              <div className="project-name">{project.title}</div>
-              <div className="project-tech">{project.usedTech}</div>
-              <img className="project-image" src={project.image} />
-            </a>
-          </div>
+            <div className="project-image-container" 
+              key={index}
+              ref={(el) => {elementRefs.current[index] = el}}
+              onMouseEnter={() => {createHoverEffect(elementRefs.current[index], index)}}
+              onMouseLeave={() => removeHoverEffect(elementRefs.current[index])}>
+              <a href={project.deployment} target="_blank">
+                <div className="project-name">{project.title}</div>
+                <div className="project-tech">{project.usedTech}</div>
+                <img className="project-image" src={project.image} />
+              </a>
+            </div>
           )
         })}
       </div>
     </div>
-   );
+  );
 }
- 
+
 export default Projects;
