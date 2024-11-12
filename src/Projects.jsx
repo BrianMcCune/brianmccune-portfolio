@@ -22,13 +22,13 @@ const Projects = () => {
     ScrollTrigger.refresh()
   })
 
-  mm.add("(max-width: 767px)", () => {
-    if (counter === 1) {
-      window.location.reload()
-    }
-    counter = 2
-    ScrollTrigger.refresh()
-  })
+  // mm.add("(max-width: 767px)", () => {
+  //   if (counter === 1) {
+  //     window.location.reload()
+  //   }
+  //   counter = 2
+  //   ScrollTrigger.refresh()
+  // })
 
   
   const createHoverEffect = (element, index) => {
