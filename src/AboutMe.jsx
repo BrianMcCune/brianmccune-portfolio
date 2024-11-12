@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -11,7 +10,7 @@ const AboutMe = () => {
   let headlineArray = headline.split('');
 
   useGSAP(() => {
-    let mm = gsap.matchMedia();
+    // let mm = gsap.matchMedia();
 
     gsap.from('.about-headline', {
       scrollTrigger: {
@@ -49,28 +48,16 @@ const AboutMe = () => {
         },
       });
 
-      ScrollTrigger.refresh();
+      // ScrollTrigger.refresh();
     });
 
-    window.addEventListener("resize", ScrollTrigger.refresh);
+    // window.addEventListener("resize", ScrollTrigger.refresh);
 
-    return () => {
-      mm.revert();
-      window.removeEventListener("resize", ScrollTrigger.refresh);
-    };
+    // return () => {
+    //   mm.revert();
+    //   window.removeEventListener("resize", ScrollTrigger.refresh);
+    // };
   });
-
-  useEffect(() => {
-    const onLoad = () => {
-      ScrollTrigger.refresh();
-    };
-
-    window.addEventListener('load', onLoad);
-
-    return () => {
-      window.removeEventListener('load', onLoad);
-    };
-  }, []);
 
   return ( 
     <div className="about" id="about">
@@ -86,10 +73,10 @@ const AboutMe = () => {
         })}
       </div>
       <div className="container">
-        {/* <div className="img-container">
+        <div className="img-container">
           <img className="self-image" src={headshot} alt="developer headshot" />
         </div>
-        <img className="mobile-image" src={headshot} alt="developer headshot" /> */}
+        <img className="mobile-image" src={headshot} alt="developer headshot" />
         <div className="text">
           <h3>Intro and hobbies</h3>
           <p>
