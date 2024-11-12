@@ -222,7 +222,7 @@ const Projects = () => {
               <a href={project.deployment} target="_blank">
                 <div className="project-name">{project.title}</div>
                 <div className="project-tech">{project.usedTech}</div>
-                <img className="project-image" src={project.image} />
+                {/* <img className="project-image" src={project.image} /> */}
               </a>
             </div>
           )
