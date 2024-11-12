@@ -192,7 +192,7 @@ const Projects = () => {
           pin: true,
           scrub: 1,
           anticipatePin: 1,
-          markers: true,
+          // markers: true,
         },
       })
     })
@@ -218,8 +218,7 @@ const Projects = () => {
               key={index}
               ref={(el) => {elementRefs.current[index] = el}}
               onMouseEnter={() => {createHoverEffect(elementRefs.current[index], index)}}
-              onMouseLeave={() => removeHoverEffect(elementRefs.current[index])}
-              >
+              onMouseLeave={() => removeHoverEffect(elementRefs.current[index])}>
               <a href={project.deployment} target="_blank">
                 <div className="project-name">{project.title}</div>
                 <div className="project-tech">{project.usedTech}</div>
