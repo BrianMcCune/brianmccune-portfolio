@@ -1,8 +1,22 @@
 import JacksImage from './assets/Jacks.png';
 import NavigatEDUImage from './assets/NavigatEDU.png';
-import CalculatorImage from './assets/Calculator.png';
+import ConsultingImage from './assets/ConsultingImage.png';
 import TFTImage from './assets/TFT.png';
+import SurvivalImage from './assets/SurvivalImage.png'
+
 let projectData = [
+  {
+    title: 'Survival Course Site',
+    deployment: 'https://twstsurvival.com/',
+    image: SurvivalImage,
+    usedTech: 'HTML, CSS, JS, ReactJS, GSAP'
+  },
+  {
+    title: 'Texas Consulting Commision',
+    deployment: 'https://circlelconsultants.com/',
+    image: ConsultingImage,
+    usedTech: 'HTML, CSS, JS, ReactJS, GSAP'
+  },
   {
     title: 'React Business Site',
     deployment: 'https://jacks-barbershop.herokuapp.com/',
@@ -17,14 +31,6 @@ let projectData = [
     image: NavigatEDUImage,
     gitHub: 'https://github.com/Brian4755/navigateEDU-frontend',
     // description: '5-day Hackathon project composed of fullstack functionality and complex user experience. Worked with Several UI/UX designers'
-    usedTech: 'HTML, CSS, JS, ReactJS'
-  },
-  {
-    title: 'ReactJS Calculator',
-    deployment: 'https://calcreactjavascript.netlify.app/',
-    image: CalculatorImage,
-    gitHub: 'https://github.com/Brian4755/Calculator',
-    // description: 'ReactJS calculator fully designed and functional'
     usedTech: 'HTML, CSS, JS, ReactJS'
   },
   {

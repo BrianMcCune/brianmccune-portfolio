@@ -183,7 +183,7 @@ const Projects = () => {
     mm.add("(min-width: 768px)", () => {
 
       gsap.to('.project-image-container', {
-        xPercent: -310,
+        xPercent: -330,
         ease: 'none',
         scrollTrigger: {
           trigger: '.projects',
