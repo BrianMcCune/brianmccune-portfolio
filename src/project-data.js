@@ -18,7 +18,7 @@ let projectData = [
     usedTech: 'HTML, CSS, JS, ReactJS, GSAP'
   },
   {
-    title: 'React Business Site',
+    title: 'Barbershop Business',
     deployment: 'https://jacks-barbershop.herokuapp.com/',
     image: JacksImage,
     gitHub: 'https://github.com/Brian4755/Jack-s-Barbershop',
