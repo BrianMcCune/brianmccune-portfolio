@@ -87,7 +87,7 @@ const Contact = () => {
               </a>
             </div>
             <div>
-              <a href="https://github.com/Brian4755" target="_blank">
+              <a href="https://github.com/Brianmccune" target="_blank">
               <FontAwesomeIcon className='fontawesomeicon' style={{fontSize: '35px', color: 'rgb(9, 9, 9)'}} icon={faGithub} />
               </a>
             </div>
