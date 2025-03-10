@@ -19,7 +19,7 @@ let projectData = [
   },
   {
     title: 'Barbershop Business',
-    deployment: 'https://jacks-barbershop.herokuapp.com/',
+    deployment: 'https://jacksbarbershop.netlify.app/',
     image: JacksImage,
     gitHub: 'https://github.com/Brian4755/Jack-s-Barbershop',
     // description: 'Barbershop business website made with React and hooks such as useState and useEffect'
@@ -35,7 +35,7 @@ let projectData = [
   },
   {
     title: 'TFT CheatSheet',
-    deployment: 'https://tftcheatsheet.herokuapp.com/',
+    deployment: 'https://tftcheatsheet.onrender.com/',
     image: TFTImage,
     gitHub: 'https://github.com/Brian4755/TFTCheatSheet',
     // description: 'Forum/guide for a game called TeamFight Tactics. Used technologies such as EJS mongoDB/mongoose and JavaScript'
