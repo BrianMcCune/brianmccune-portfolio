@@ -3,13 +3,20 @@ import NavigatEDUImage from './assets/NavigatEDU.png';
 import ConsultingImage from './assets/ConsultingImage.png';
 import TFTImage from './assets/TFT.png';
 import SurvivalImage from './assets/SurvivalImage.png'
+import NanasImage from './assets/NanasImage.png'
 
 let projectData = [
+  {
+    title: "Nana's Kitchen",
+    deployment: 'https://nanaskitchennb.com/',
+    image: NanasImage,
+    usedTech: 'Gatsby, Typescript, GSAP, ReactJS'
+  },
   {
     title: 'Survival Course Site',
     deployment: 'https://twstsurvival.com/',
     image: SurvivalImage,
-    usedTech: 'HTML, CSS, JS, ReactJS, GSAP'
+    usedTech: 'Vite, ReactJS, GSAP'
   },
   {
     title: 'Texas Consulting Commision',
