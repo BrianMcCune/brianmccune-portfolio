@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Bio = () => {
-
+// create line of black rounded edges that move up and gets pinned to screen. upon center text have animation while scroll with text still centered
   const bioOne = 'I create webpages, keeping up with'
 
   const bioTwo = 'emerging trends and technologies'

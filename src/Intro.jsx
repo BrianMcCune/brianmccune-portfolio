@@ -1,13 +1,17 @@
 import gsap from "gsap";
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import AnimatedLetters from "./assets/AnimatedLetters";
+
+const introOneText = "HELLO, I'M";
+const introTwoText = "BRIAN MCCUNE.";
+
+const introOneChars = introOneText.split('');
+const introTwoChars = introTwoText.split('');
+
 
 const Intro = () => {
 
-  const introOne = "HELLO, I'M"
-  const introTwo = "BRIAN MCCUNE."
-  let intOneArray = introOne.split('')
-  let intTwoArray = introTwo.split('')
   
   useGSAP(() => {
 
@@ -69,26 +73,10 @@ const Intro = () => {
         <div className="circle"></div>
       </div>
       <div className="lineOne">
-          {intOneArray.map((index) => {
-            return (
-              <div className="intro-container-one">
-                <span key={intOneArray[index]} className="letter">
-                  {index === ' ' ? '\u00A0' : index}
-                </span>
-              </div>
-            )
-          })}
+        <AnimatedLetters letters={introOneChars} containerClass="intro-container-one"/>
       </div>
       <div className="lineTwo">
-          {intTwoArray.map((index) => {
-            return (
-              <div className="intro-container-two">
-                <span key={index}>
-                  {index === ' ' ? '\u00A0' : index}
-                </span>
-            </div>
-            )
-          })}
+        <AnimatedLetters letters={introTwoChars} containerClass="intro-container-two"/>
       </div>
       <div className="subtitle">
         <p>Front End Web Developer & ReactJS Fan <br />Creating modern UI designs.</p>
