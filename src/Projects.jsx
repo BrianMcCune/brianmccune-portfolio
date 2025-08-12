@@ -7,7 +7,6 @@ import { projectData } from "./project-data";
 
 const Projects = () => {
 
-  // ScrollTrigger.refresh()
 
   const elementRefs = useRef([]);
   let mm = gsap.matchMedia();
@@ -19,7 +18,6 @@ const Projects = () => {
       window.location.reload()
     }
     counter = 1
-    // ScrollTrigger.refresh()
   })
 
   mm.add("(max-width: 767px)", () => {
@@ -27,7 +25,6 @@ const Projects = () => {
       window.location.reload()
     }
     counter = 2
-    // ScrollTrigger.refresh()
   })
 
   const createHoverEffect = (element, index) => {
@@ -94,7 +91,6 @@ const Projects = () => {
     })
 
     if (counter === 1) {
-      // ScrollTrigger.refresh()
       tl = gsap.timeline({
         scrollTrigger: {
           trigger: '.projects',
@@ -104,9 +100,7 @@ const Projects = () => {
           stagger: 0
         }
       })
-      // ScrollTrigger.refresh()
     } else {
-      // ScrollTrigger.refresh()
       tl = gsap.timeline({
         scrollTrigger: {
           trigger: '.projects',
@@ -116,7 +110,6 @@ const Projects = () => {
           stagger: 0
         }
       })
-      // ScrollTrigger.refresh()
     }
 
     tl.to('.projects', {

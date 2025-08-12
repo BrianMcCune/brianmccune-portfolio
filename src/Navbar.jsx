@@ -77,7 +77,7 @@ const Navbar = (props) => {
           <div className="underline" ref={expertiseRef}></div>
         </h2>
       </Link>
-      <Link to="projects" offset={115} className="link">
+      <Link to="projects" className="link">
         <h2 className="navbar-projects" onMouseEnter={() => {createHoverEffect(projectsRef)}} onMouseLeave={() => removeHoverEffect(projectsRef)}>
           Projects
           <div className="underline" ref={projectsRef}></div>
